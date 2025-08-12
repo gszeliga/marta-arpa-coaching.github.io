@@ -2,7 +2,23 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Marta Arpa Coaching'
 theme = 'ananke'
+sectionPagesMenu = 'main'
 
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+# [menus]
+#   [[menus.main]]
+#     name = 'About'
+#     pageRef = '/about'
+#     weight = 10
+#   [[menus.main]]
+#     name = 'Contact'
+#     pageRef = '/contact'
+#     weight = 1
+#   [[menus.main]]
+#     name = 'Sample'
+#     pageRef = '/contact/sample'
+#     parent = 'Contact'
+#     weight = 2
