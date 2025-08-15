@@ -1,8 +1,8 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Marta Arpa Coaching'
-theme = 'ananke'
-sectionPagesMenu = 'main'
+theme = 'arcana'
+## sectionPagesMenu = 'main'
 
 [caches]
   [caches.images]
