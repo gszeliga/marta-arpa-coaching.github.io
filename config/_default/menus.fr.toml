@@ -1,0 +1,8 @@
+[[main]]
+name = "Services"
+weight = 30
+[[main]]
+parent = "Services"
+name = "Stratégie 360"
+url = 'services/strategy'
+weight = 31
