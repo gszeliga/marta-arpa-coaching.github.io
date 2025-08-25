@@ -25,17 +25,16 @@
                 href="http://localhost:1313/fr/"
                 />
   </url><url>
-    <loc>http://localhost:1313/fr/about/</loc>
-    <lastmod>2025-08-12T20:21:42+02:00</lastmod>
+    <loc>http://localhost:1313/fr/about/about_me/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/about/"
+                href="http://localhost:1313/about/about_me/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/about/"
+                href="http://localhost:1313/fr/about/about_me/"
                 />
   </url><url>
     <loc>http://localhost:1313/fr/services/</loc>
@@ -62,6 +61,18 @@
                 rel="alternate"
                 hreflang="fr"
                 href="http://localhost:1313/fr/services/strategy/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fr/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/about/"
                 />
   </url><url>
     <loc>http://localhost:1313/fr/categories/</loc>

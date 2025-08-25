@@ -4,6 +4,3 @@ draft = false
 title = 'About'
 menu = 'main'
 +++
-
-
-## About Me
