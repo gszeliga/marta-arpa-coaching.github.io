@@ -1,0 +1,207 @@
+// custom.scss
+
+// ===============================
+// Custom Overrides
+// ===============================
+
+body {
+  background-color: #1e3f2b;
+  color: #55f997;
+}
+
+#header {
+  background-color: #1e3f2b;
+  color: #55f997;
+}
+
+#nav {
+  &:after {
+    background-color: #e9f12b;
+  }
+
+  > ul {
+    margin: 0;
+
+    > li {
+      &.current {
+        &:before {
+          background-color: #e9f12b;
+        }
+      }
+    }
+  }
+}
+
+article p,
+article h2,
+article h3 {
+  color: #1e3f2b;
+}
+
+/* === Header Customization === */
+// #header {
+//   position: sticky; // keeps header visible while scrolling
+//   top: 0;
+//   z-index: 1000;
+//   background: rgba(34, 34, 34, 0.9); // semi-transparent dark bg
+//   backdrop-filter: blur(8px); // nice glassy effect
+//   padding: 0.5rem 2rem;
+//   transition:
+//     background 0.3s ease,
+//     box-shadow 0.3s ease;
+
+//   // Add shadow on scroll (optional, if theme JS adds scrolled class)
+//   &.scrolled {
+//     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+//   }
+
+//   // Logo area
+//   #logo {
+//     margin-right: auto;
+//   }
+
+//   // Nav links
+//   // nav {
+//   //   display: flex;
+//   //   gap: 1.5rem;
+
+//   //   a {
+//   //     font-size: 1rem;
+//   //     font-weight: 500;
+//   //     color: #eee;
+//   //     text-decoration: none;
+//   //     transition: color 0.2s ease;
+
+//   //     &:hover {
+//   //       color: #ff6600;
+//   //     }
+//   //   }
+//   // }
+// }
+
+/* === Logo Wrapper Customization === */
+// #logo {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   padding: 0.75rem 1.5rem;
+//   background: transparent;
+//   //border-radius: 12px;
+//   //box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+//   transition: all 0.3s ease;
+
+//   // If it's an image
+//   // img {
+//   //   max-height: 50px; // adjust size
+//   //   width: auto;
+//   // }
+
+//   // If it's text-based
+//   h1,
+//   h2,
+//   span {
+//     font-family: "Inter", sans-serif;
+//     font-size: 1.5rem;
+//     font-weight: 700;
+//     color: #ff6600;
+//     margin: 0;
+//   }
+
+//   // &:hover {
+//   //   transform: scale(1.05);
+//   //   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+//   // }
+// }
+
+/* === Main Banner Customization === */
+// #banner {
+//   position: relative;
+//   //background: url("/images/my-banner.jpg") no-repeat center center;
+//   background-size: cover;
+//   color: #fff;
+//   text-align: center;
+//   padding: 6rem 1rem;
+
+//   // Optional overlay
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     inset: 0;
+//     background: rgba(0, 0, 0, 0.5); // dark overlay
+//     z-index: 0;
+//   }
+// }
+
+// Global font + background
+// body {
+//   font-family: "Inter", sans-serif;
+//   font-size: 16px;
+//   line-height: 1.6;
+//   background-color: #f8f9fa;
+//   color: #333;
+// }
+
+// Links
+// a {
+//   color: #ff6600;
+//   text-decoration: none;
+//   transition: color 0.2s ease;
+
+//   &:hover {
+//     color: #cc5200;
+//     text-decoration: underline;
+//   }
+// }
+
+// Header styling
+// header {
+//   background: linear-gradient(90deg, #1e1e1e, #333);
+//   color: #fff;
+
+//   nav a {
+//     color: #ddd;
+
+//     &:hover {
+//       color: #fff;
+//     }
+//   }
+// }
+
+// Buttons
+// .button,
+// button,
+// input[type="submit"] {
+//   background-color: #ff6600;
+//   color: #fff;
+//   border-radius: 6px;
+//   padding: 0.5rem 1.2rem;
+//   border: none;
+//   transition: background-color 0.2s ease;
+
+//   &:hover {
+//     background-color: #cc5200;
+//   }
+// }
+
+// Cards / Content blocks
+// .card,
+// .box {
+//   border-radius: 12px;
+//   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+//   padding: 1.5rem;
+//   background: #fff;
+// }
+
+// Footer
+// footer {
+//   background: #222;
+//   color: #aaa;
+
+//   a {
+//     color: #ff6600;
+
+//     &:hover {
+//       color: #fff;
+//     }
+//   }
+// }
