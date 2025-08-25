@@ -4,6 +4,34 @@
 // Custom Overrides
 // ===============================
 
+body {
+  background-color: #1e3f2b;
+  color: #d7f7e4;
+}
+
+#header {
+  background-color: #1e3f2b;
+  color: #d7f7e4;
+}
+
+#nav {
+  &:after {
+    background-color: #e9f12b;
+  }
+
+  > ul {
+    margin: 0;
+
+    > li {
+      &.current {
+        &:before {
+          background-color: #e9f12b;
+        }
+      }
+    }
+  }
+}
+
 /* === Header Customization === */
 // #header {
 //   position: sticky; // keeps header visible while scrolling
