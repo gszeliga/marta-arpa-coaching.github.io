@@ -6,7 +6,7 @@
 
 body {
   background-color: #1e3f2b;
-  color: #1e3f2b;
+  color: #55f997;
 }
 
 #header {
@@ -30,6 +30,12 @@ body {
       }
     }
   }
+}
+
+article p,
+article h2,
+article h3 {
+  color: #1e3f2b;
 }
 
 /* === Header Customization === */
