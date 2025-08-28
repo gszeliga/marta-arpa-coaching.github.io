@@ -1,6 +1,6 @@
 baseURL = "https://example.org/"
 languageCode = "en-us"
-title = "Marta Arpa Coaching"
+#title = "Marta Arpa Coaching"
 copyright = "© Untitled. All rights reserved"
 
 defaultContentLanguage = "en"
