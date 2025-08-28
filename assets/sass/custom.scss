@@ -18,6 +18,15 @@ body {
   color: #55f997;
 }
 
+#titleBar {
+  background-color: #d7f7e4;
+  color: #55f997;
+}
+
+#navPanel {
+  background-color: #1e3f2b;
+}
+
 #nav {
   background-color: #1e3f2b;
 
@@ -85,12 +94,14 @@ article h3 {
   position: relative;
   background-position: center;
   background-size: cover;
-  min-height: 60vh; /* adjust banner height */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 4rem 1rem;
+  min-height: 100vh; /* adjust banner height */
+  width: auto;
+  height: auto;
+  //display: flex;
+  //align-items: center;
+  //justify-content: center;
+  //text-align: center;
+  //padding: 4rem 1rem;
 
   /* optional grayscale overlay */
   &::before {
