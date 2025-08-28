@@ -101,3 +101,11 @@ article h3 {
     z-index: 0;
   }
 }
+
+.icon-wrapper img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 1rem auto; /* center + spacing */
+}
