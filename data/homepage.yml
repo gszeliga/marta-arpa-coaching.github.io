@@ -10,8 +10,9 @@ items:
     items_per_row: 3
     items:
       - title: Mi Filosofia
-        icon: fa-paper-plane
-        #iconImage: images/banner-alt.png
+        #icon: fa-paper-plane
+        # https://ar.inspiredpencil.com/pictures-2023/philosophy-symbol
+        iconPath: images/icons/philosophy.png
         content: >
           El verdadero éxito de una persona u organización no reside únicamente en lo que logra, sino en cómo se transforma durante el proceso y en su capacidad para sostener ese cambio en el tiempo
       - title: Also Important
