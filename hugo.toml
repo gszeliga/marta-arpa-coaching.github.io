@@ -1,12 +1,12 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'Marta Arpa Coaching'
+#title = 'Marta Arpa Coaching'
 theme = 'arcana'
 ## sectionPagesMenu = 'main'
 
 [caches]
-  [caches.images]
-    dir = ':cacheDir/images'
+[caches.images]
+dir = ':cacheDir/images'
 
 # [menus]
 #   [[menus.main]]

@@ -2,5 +2,5 @@
 title: Home
 menu: main
 weight: 10
-image: images/banner.jpg
+image: images/banner-alt.png
 ---
