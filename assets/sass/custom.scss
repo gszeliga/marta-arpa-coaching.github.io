@@ -94,22 +94,58 @@ article h3 {
   position: relative;
   background-position: center;
   background-size: cover;
-  min-height: 100vh; /* adjust banner height */
-  width: auto;
-  height: auto;
+  height: fit-content;
+  //object-fit: contain;
+  min-height: 20em; /* adjust banner height */
+  //max-width: 100%;
+  //height: auto;
   //display: flex;
   //align-items: center;
   //justify-content: center;
   //text-align: center;
   //padding: 4rem 1rem;
+  header {
+    background: rgba(30, 63, 43, 0.8);
+  }
 
   /* optional grayscale overlay */
   &::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.4); /* dark overlay */
+    //background: rgba(0, 0, 0, 0.4); /* dark overlay */
     z-index: 0;
+  }
+}
+
+.wrapper {
+  // padding: 5em 0 3em 0;
+
+  // &.style1 {
+  //     background: _palette(bg);
+  // }
+
+  // &.style2 {
+  //     background-color:       _palette(bg);
+  //     background-image:       url('images/bg02.png'),         url('images/bg03.png'),         url('images/bg01.png');
+  //     background-position:    top left,                       bottom left,                    top left;
+  //     background-size:        100% 6em,                       100% 6em,                       auto;
+  //     background-repeat:      no-repeat,                      no-repeat,                      repeat;
+  // }
+
+  &.style3 {
+    background: radial-gradient(circle, #1e3f2b, #55f997);
+    // @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15))', 'url("images/bg01.png")'));
+    // color: _palette(accent, fg);
+
+    // .button {
+    //     background: _palette(accent, fg);
+    //     color: _palette(fg);
+
+    //     &:hover {
+    //         color: _palette(accent, bg) !important;
+    //     }
+    // }
   }
 }
 

@@ -2,5 +2,5 @@
 title: Home
 menu: main
 weight: 10
-image: images/banner-alt.png
+# image: images/banner-coaching.png
 ---
