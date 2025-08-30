@@ -90,20 +90,14 @@ article h3 {
 }
 
 /* === Banner Customization === */
+
 #banner {
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  height: fit-content;
-  //object-fit: contain;
-  min-height: 20em; /* adjust banner height */
-  //max-width: 100%;
-  //height: auto;
-  //display: flex;
-  //align-items: center;
-  //justify-content: center;
-  //text-align: center;
-  //padding: 4rem 1rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 100%;
+  min-height: 10vh;
+
   header {
     background: rgba(30, 63, 43, 0.8);
   }
@@ -134,7 +128,8 @@ article h3 {
   // }
 
   &.style3 {
-    background: radial-gradient(circle, #1e3f2b, #55f997);
+    background: radial-gradient(circle, #1e3f2b, #d7f7e4);
+    //background-color: #1e3f2b;
     // @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15))', 'url("images/bg01.png")'));
     // color: _palette(accent, fg);
 
