@@ -3,7 +3,7 @@ languageCode = "en-us"
 #title = "Marta Arpa Coaching"
 copyright = "© Untitled. All rights reserved"
 
-defaultContentLanguage = "en"
+defaultContentLanguage = "es"
 
 [languages]
 [languages.en]

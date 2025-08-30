@@ -1,5 +1,5 @@
 ---
-title: "About Me"
+title: "Acerca de mí"
 description: "Con más de 15 años de experiencia en el ámbito de la consultoría, coaching y dirección de proyectos, me dedico a potenciar el desarrollo humano y organizacional. Mi enfoque se centra en facilitar procesos de transformación que permitan a individuos y equipos superar desafíos, innovar y alcanzar sus metas más ambiciosas. Creo firmemente en el poder del autoconocimiento y la estrategia para generar cambios sostenibles y significativos."
 menu: main
 weight: 80
