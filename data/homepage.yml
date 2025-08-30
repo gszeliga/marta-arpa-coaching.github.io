@@ -1,6 +1,6 @@
 banner:
   enable: true
-  image: images/banner-alt.png
+  image: images/banner-coaching-es.png
   contents: Wanna know more about our newsletter?
   button:
     contents: Learn More
@@ -15,16 +15,14 @@ items:
         iconPath: images/icons/philosophy.png
         content: >
           El verdadero éxito de una persona u organización no reside únicamente en lo que logra, sino en cómo se transforma durante el proceso y en su capacidad para sostener ese cambio en el tiempo
-      - title: Also Important
-        icon: fa-pencil-alt
+      - title: Mi Propósito
+        iconPath: images/icons/growing-seed.png
         content: >
-          Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl
-          amet mattis, sed a rutrum accumsan sed. Suspendisse eu.
-      - title: Probably Important
-        icon: fa-wrench
+          Catalizar el **potencial** de personas y organizaciones para crear un impacto positivo y duradero en su entorno. Cada persona y cada organización tiene un potencial único esperando ser desarrollado.
+      - title: Mi compromiso
+        iconPath: images/icons/help.png
         content: >
-          Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl
-          amet mattis, sed a rutrum accumsan sed. Suspendisse eu.
+          Mi compromiso es acompañarte en ese camino, aportando mi experiencia, conocimiento y pasión por el desarrollo humano.
   - type: heading
     heading: A gigantic heading you can use for whatever
     contents: With a much smaller subtitle hanging out just below it
