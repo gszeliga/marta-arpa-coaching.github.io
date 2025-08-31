@@ -1,4 +1,5 @@
 baseURL = "https://example.org/"
+canonifyURLs = true
 languageCode = "en-us"
 #title = "Marta Arpa Coaching"
 copyright = "© Untitled. All rights reserved"
