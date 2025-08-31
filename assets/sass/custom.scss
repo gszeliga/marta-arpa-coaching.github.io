@@ -132,7 +132,7 @@ header.major h2 {
 article p,
 article h2,
 article h3 {
-  color: #1d1d1b !important;
+  color: #1e3f2b !important;
 }
 
 article header p {
@@ -148,11 +148,16 @@ article p img {
   min-height: 10vh;
 }
 
+article h3 img {
+  max-height: 28px; // adjust as needed
+  padding-right: 3px;
+}
+
 #sidebar section img {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
-  width: 100%;
+  width: 80%;
   min-height: 10vh;
   opacity: 0.8;
   border-radius: 50%;
