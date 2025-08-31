@@ -8,8 +8,13 @@ body {
   background-color: #d7f7e4;
   color: #55f997;
   font-family:
-    Miryad Pro,
-    Raleway Medium;
+    "Source Sans Pro",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
 }
 
 // highlights
@@ -20,7 +25,7 @@ body {
 }
 
 #header {
-  background-color: #e9e9e7;
+  background-color: #1d1d1b;
   color: #1e3f2b;
 }
 
@@ -29,9 +34,15 @@ body {
 }
 
 #titleBar {
-  background-color: #e9e9e7;
+  background-color: #1d1d1b;
   color: #55f997;
   box-shadow: 0 4px 0 0 #1e3f2b;
+
+  .toggle {
+    &:before {
+      color: #55f997;
+    }
+  }
 }
 
 #navPanel {
@@ -122,6 +133,34 @@ article p,
 article h2,
 article h3 {
   color: #1e3f2b !important;
+}
+
+article header p {
+  font-size: 1.1em;
+}
+
+article p img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 0%;
+  width: 100%;
+  min-height: 10vh;
+}
+
+article h3 img {
+  max-height: 28px; // adjust as needed
+  padding-right: 3px;
+}
+
+#sidebar section img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 80%;
+  min-height: 10vh;
+  opacity: 0.8;
+  border-radius: 50%;
 }
 
 /* Logo image */
