@@ -143,8 +143,19 @@ article p img {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
+  padding: 0%;
   width: 100%;
   min-height: 10vh;
+}
+
+#sidebar section img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 100%;
+  min-height: 10vh;
+  opacity: 0.8;
+  border-radius: 50%;
 }
 
 /* Logo image */
