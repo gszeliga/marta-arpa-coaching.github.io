@@ -186,7 +186,7 @@ article h3 img {
   width: 100%;
   min-height: 10vh;
   color: #1e3f2b;
-  background-color: #f8f9fa;
+  background-color: #e9e9e7;
   padding: 60px 0;
   overflow: hidden; /* Prevent any overflow issues */
 
@@ -221,6 +221,16 @@ article h3 img {
   align-items: start;
   flex-grow: 1;
   clear: both; /* Clear any floated elements */
+  text-align: left;
+}
+
+.banner-column {
+  h3 {
+    color: #1e3f2b;
+  }
+  img {
+    max-height: 32px; // adjust as needed
+  }
 }
 
 .banner-content {
