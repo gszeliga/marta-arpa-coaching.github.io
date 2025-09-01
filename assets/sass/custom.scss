@@ -185,6 +185,8 @@ article h3 img {
   background-position: top;
   width: 100%;
   min-height: 10vh;
+  color: #1e3f2b;
+  background-color: #d7f7e4;
 
   header {
     background: rgba(30, 63, 43, 0.8);
@@ -197,6 +199,78 @@ article h3 img {
     inset: 0;
     //background: rgba(0, 0, 0, 0.4); /* dark overlay */
     z-index: 0;
+  }
+}
+
+// banner column
+#banner {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+  background-image: none;
+  overflow: hidden; /* Prevent any overflow issues */
+}
+
+#banner .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Consistent spacing between header and grid */
+}
+
+#banner header {
+  text-align: center;
+  flex-shrink: 0; /* Prevent header from shrinking */
+}
+
+.banner-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  align-items: start;
+  flex-grow: 1;
+  clear: both; /* Clear any floated elements */
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  #banner header {
+    margin-bottom: 25px;
+    padding: 0 !important;
+    position: static !important;
+    transform: none !important;
+  }
+
+  #banner header h2 {
+    font-size: 1.8rem;
+    margin: 0 0 15px 0;
+    position: static !important;
+  }
+
+  .banner-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+}
+
+.banner-header {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 576px) {
+  .banner-content {
+    min-height: auto;
+  }
+
+  .banner-header {
+    margin-bottom: 25px;
   }
 }
 

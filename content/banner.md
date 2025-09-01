@@ -1,5 +1,9 @@
 ---
-title: "Welcome to My Site"
+# title: "Welcome to My Site"
 ---
 
-This is your banner content with **markdown** support!
+<table>
+    <tr>
+        <td>Hola</td>
+    </tr>
+ </table>
