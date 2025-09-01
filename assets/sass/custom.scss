@@ -22,6 +22,11 @@ body {
   padding-top: 2%;
   padding-left: 2%;
   padding-right: 2%;
+  text-align: justify;
+
+  h3 {
+    text-align: center;
+  }
 }
 
 #header {
@@ -149,8 +154,9 @@ article p img {
 }
 
 article h3 img {
-  max-height: 28px; // adjust as needed
+  max-height: 32px; // adjust as needed
   padding-right: 3px;
+  padding-top: 3px;
 }
 
 #sidebar section img {
@@ -178,11 +184,16 @@ article h3 img {
 /* === Banner Customization === */
 
 #banner {
+  background-image: none !important;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
   width: 100%;
-  min-height: 10vh;
+  min-height: 60vh;
+  color: #1e3f2b;
+  background-color: #e9e9e7;
+  padding: 60px 0;
+  //overflow: hidden; /* Prevent any overflow issues */
 
   header {
     background: rgba(30, 63, 43, 0.8);
@@ -197,6 +208,55 @@ article h3 img {
     z-index: 0;
   }
 }
+
+// banner column
+#banner .container {
+  //max-width: 1200px;
+  //margin: 0 auto;
+  padding: 0 20px;
+  //display: flex;
+  //flex-direction: column;
+  //gap: 40px; /* Consistent spacing between header and grid */
+}
+
+.banner-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  //align-items: start;
+  //flex-grow: 1;
+  //clear: both; /* Clear any floated elements */
+  text-align: left;
+}
+
+.banner-column {
+  h3 {
+    color: #1e3f2b;
+  }
+  img {
+    max-height: 32px; // adjust as needed
+  }
+}
+
+.banner-content {
+  //display: flex;
+  //flex-direction: column;
+  min-height: 400px;
+}
+
+.banner-header {
+  margin-bottom: 10px;
+}
+
+// @media (max-width: 576px) {
+//   .banner-content {
+//     min-height: auto;
+//   }
+
+//   .banner-header {
+//     margin-bottom: 25px;
+//   }
+// }
 
 .wrapper {
   // padding: 5em 0 3em 0;
