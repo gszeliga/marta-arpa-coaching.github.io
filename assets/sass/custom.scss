@@ -186,7 +186,9 @@ article h3 img {
   width: 100%;
   min-height: 10vh;
   color: #1e3f2b;
-  background-color: #d7f7e4;
+  background-color: #f8f9fa;
+  padding: 60px 0;
+  overflow: hidden; /* Prevent any overflow issues */
 
   header {
     background: rgba(30, 63, 43, 0.8);
@@ -203,13 +205,6 @@ article h3 img {
 }
 
 // banner column
-#banner {
-  background-color: #f8f9fa;
-  padding: 60px 0;
-  background-image: none;
-  overflow: hidden; /* Prevent any overflow issues */
-}
-
 #banner .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -219,11 +214,6 @@ article h3 img {
   gap: 40px; /* Consistent spacing between header and grid */
 }
 
-#banner header {
-  text-align: center;
-  flex-shrink: 0; /* Prevent header from shrinking */
-}
-
 .banner-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -231,27 +221,6 @@ article h3 img {
   align-items: start;
   flex-grow: 1;
   clear: both; /* Clear any floated elements */
-}
-
-/* Responsive adjustments */
-@media (max-width: 576px) {
-  #banner header {
-    margin-bottom: 25px;
-    padding: 0 !important;
-    position: static !important;
-    transform: none !important;
-  }
-
-  #banner header h2 {
-    font-size: 1.8rem;
-    margin: 0 0 15px 0;
-    position: static !important;
-  }
-
-  .banner-grid {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
 }
 
 .banner-content {
