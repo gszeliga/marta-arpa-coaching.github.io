@@ -8,16 +8,16 @@ banner:
   columns:
     - title: Coaching Ejecutivo
       text: Empoderar a líderes y equipos para maximizar su rendimiento y alcanzar objetivos estratégicos.
-      icon: /images/icons/executive.gif
+      icon: /images/icons/leadership.png
     - title: Coaching Personal
       text: Fomentar una transformación profunda para el desarrollo integral y la realización personal.
-      icon: /images/icons/executive.gif
+      icon: /images/icons/management.png
     - title: PMaaS y CMaaS
-      text: Gestión profesional de proyectos y cambios para garantizar una ejecución eficiente y la adaptación organizativa
-      icon: /images/icons/executive.gif
+      text: Gestión de proyectos para garantizar una ejecución eficiente y la adaptación organizativa
+      icon: /images/icons/activity.png
     - title: Consultoría del Cambio
-      text: Facilitar transformaciones organizativas fluidas y exitosas a través de estrategias personalizadas
-      icon: /images/icons/executive.gif
+      text: Facilitar transformaciones organizativas a través de estrategias personalizadas
+      icon: /images/icons/adaptation.png
 items:
   - type: highlights
     items_per_row: 3
