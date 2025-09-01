@@ -7,41 +7,13 @@
       {{- end }}
     </header>
     <div class="banner-grid">
-      {{ range .Site.Data.banner.columns }}
+      {{ range .columns }}
       <div class="banner-column">
+        <img src="{{ .icon | relURL }}" />
         <h3>{{ .title }}</h3>
         <p>{{ .text }}</p>
       </div>
       {{ end }}
-      <div class="banner-column">
-        <!-- <img src="/images/icons/executive.gif" /> -->
-        <h3>Coaching Ejecutivo</h3>
-        <p>
-          Empoderar a líderes y equipos para maximizar su rendimiento y alcanzar
-          objetivos estratégicos.
-        </p>
-      </div>
-      <div class="banner-column">
-        <h3>Coaching Personal</h3>
-        <p>
-          Fomentar una transformación profunda para el desarrollo integral y la
-          realización personal.
-        </p>
-      </div>
-      <div class="banner-column">
-        <h3>PMaaS y CMaaS</h3>
-        <p>
-          Gestión profesional de proyectos y cambios para garantizar una
-          ejecución eficiente y la adaptación organizativa
-        </p>
-      </div>
-      <div class="banner-column">
-        <h3>Consultoría del Cambio</h3>
-        <p>
-          Facilitar transformaciones organizativas fluidas y exitosas a través
-          de estrategias personalizadas
-        </p>
-      </div>
     </div>
   </div>
 </section>
