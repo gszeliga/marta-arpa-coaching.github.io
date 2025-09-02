@@ -4,7 +4,7 @@ weight = 30
 [[main]]
 parent = "Servicios"
 name = "Coaching Ejecutivo"
-url = '/services/coaching-ex'
+url = '/services/coaching-ex/main-raw'
 weight = 31
 [[main]]
 parent = "Servicios"
