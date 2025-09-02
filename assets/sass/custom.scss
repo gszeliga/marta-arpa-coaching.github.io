@@ -316,10 +316,10 @@ article h3 img {
 .banner-container {
   max-width: 1200px;
   margin: 0 auto;
-  background: #d7f7e4;
+  background: #e9e9e7;
   color: #1e3f2b;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(85, 249, 151, 1);
   overflow: hidden;
 }
 
@@ -350,7 +350,7 @@ article h3 img {
 
 .services-2-x-2-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .service-item {
@@ -375,10 +375,20 @@ article h3 img {
   font-size: 3rem;
   margin-bottom: 20px;
   display: block;
+  img {
+    max-height: 48px; // adjust as needed
+  }
 }
 
 .service-title {
   font-size: 1.5rem;
+  font-weight: 700;
+  color: #d7f7e4;
+  margin: 0 0 15px 0;
+}
+
+.service-price {
+  font-size: 1.1rem;
   font-weight: 700;
   color: #d7f7e4;
   margin: 0 0 15px 0;
@@ -389,6 +399,7 @@ article h3 img {
   line-height: 1.6;
   margin: 0;
   font-size: 1rem;
+  text-align: justify;
 
   ul li {
     color: #1e3f2b;
