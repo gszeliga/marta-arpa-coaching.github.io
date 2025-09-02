@@ -6,6 +6,9 @@ copyright = "© Untitled. All rights reserved"
 
 defaultContentLanguage = "es"
 
+[markup.goldmark.renderer]
+unsafe = true # Allow HTML in md files
+
 [languages]
 [languages.en]
 languageName = "English"
