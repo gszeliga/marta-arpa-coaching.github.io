@@ -311,20 +311,21 @@ article h3 img {
   margin: 0 auto 1rem auto; /* center + spacing */
 }
 
-// table: coaching
+// ==== table: coaching ====
 
 .banner-container {
   max-width: 1200px;
   margin: 0 auto;
   background: #d7f7e4;
+  color: #1e3f2b;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
 .banner-header {
   //background: linear-gradient(135deg, #667eea, #764ba2);
-  color: #1e3f2b;
+  //color: #1e3f2b;
   text-align: center;
   padding: 40px 20px;
 }
@@ -347,12 +348,17 @@ article h3 img {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.services-2-x-2-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .service-item {
   padding: 40px 30px;
 }
 
 .service-item:nth-child(1) {
-  border-right: 1px solid #e9ecef;
+  //border-right: 1px solid #e9ecef;
   border-bottom: 1px solid #e9ecef;
 }
 
@@ -374,15 +380,19 @@ article h3 img {
 .service-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #2c3e50;
+  color: #d7f7e4;
   margin: 0 0 15px 0;
 }
 
 .service-description {
-  color: #d7f7e4;
+  //color: #d7f7e4;
   line-height: 1.6;
   margin: 0;
   font-size: 1rem;
+
+  ul li {
+    color: #1e3f2b;
+  }
 }
 
 /* Mobile responsive */
@@ -398,6 +408,11 @@ article h3 img {
   .services-grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
+  }
+
+  .services-2-x-2-grid {
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
   }
 
   .service-item {
