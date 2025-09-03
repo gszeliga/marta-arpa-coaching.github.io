@@ -163,10 +163,11 @@ article h3 img {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
-  width: 80%;
+  width: 85%;
   min-height: 10vh;
-  opacity: 0.8;
-  border-radius: 50%;
+  //opacity: 0.8;
+  border-radius: 10%;
+  //mask: radial-gradient(circle, black 60%, transparent 100%);
 }
 
 /* Logo image */
