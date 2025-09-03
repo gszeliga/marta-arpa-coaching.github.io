@@ -485,6 +485,48 @@ article h3 img {
   opacity: 1;
 }
 
+// tarifas
+
+/* Animated underline marker effect for service-price */
+.service-price.marker-underline {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #d7f7e4;
+  margin: 0 0 15px 0;
+  position: relative;
+  display: inline-block;
+}
+
+.service-price.marker-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #55f997, #d7f7e4);
+  transition: width 0.5s ease;
+}
+
+.service-item:hover .service-price.marker-underline::after {
+  width: 100%;
+}
+
+/* Optional: Add a subtle glow effect on hover */
+.service-item:hover .service-price.marker-underline {
+  text-shadow: 0 0 8px rgba(85, 249, 151, 0.3);
+}
+
+/* Optional: Make the 2x2 grid items more interactive */
+.services-2-x-2-grid .service-item {
+  transition: all 0.3s ease;
+}
+
+.services-2-x-2-grid .service-item:hover {
+  background: rgba(215, 247, 228, 0.1);
+  transform: translateY(-2px);
+}
+
 /* Mobile responsive */
 @media screen and (max-width: 768px) {
   .banner-header {
