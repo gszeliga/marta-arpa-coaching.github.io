@@ -154,7 +154,7 @@ article p img {
 }
 
 article h3 img {
-  max-height: 32px; // adjust as needed
+  max-height: 48px; // adjust as needed
   padding-right: 3px;
   padding-top: 3px;
 }
@@ -235,7 +235,7 @@ article h3 img {
     color: #1e3f2b;
   }
   img {
-    max-height: 32px; // adjust as needed
+    max-height: 48px; // adjust as needed
   }
 }
 
@@ -568,7 +568,11 @@ article h3 img {
 .pricing-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  //grid-template-rows: 1fr 1fr;
+}
+
+.pricing-grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .pricing-item {
@@ -693,6 +697,11 @@ article h3 img {
     grid-template-rows: auto;
   }
 
+  .pricings-grid-3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
   .pricing-item:nth-child(1) {
     border-right: 1px solid rgba(30, 63, 43, 0.1);
     border-bottom: 1px solid rgba(30, 63, 43, 0.1);
@@ -721,6 +730,11 @@ article h3 img {
     grid-template-columns: 1fr;
   }
 
+  .pricing-grid-3 {
+    /* Fix typo: was "pricings-grid" */
+    grid-template-columns: 1fr;
+  }
+
   .pricing-item {
     padding: 25px 20px;
     border-right: none !important;
@@ -739,4 +753,81 @@ article h3 img {
   .pricing-price {
     font-size: 1.4rem;
   }
+}
+
+// markers
+
+/* 1. Classic Background Highlight */
+.bg-highlight {
+  background: linear-gradient(120deg, #d7f7e4 0%, #d7f7e4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.3em;
+  background-position: 0 88%;
+  padding: 2px 4px;
+}
+
+/* 2. Marker Pen Effect */
+.marker-highlight {
+  color: #1e3f2b;
+  background:
+    linear-gradient(
+      104deg,
+      rgba(85, 249, 151, 0) 0.9%,
+      rgba(85, 249, 151, 1) 2.4%,
+      rgba(85, 249, 151, 0.5) 5.8%,
+      rgba(85, 249, 151, 0.1) 93%,
+      rgba(85, 249, 151, 0) 96%
+    ),
+    linear-gradient(
+      183deg,
+      rgba(85, 249, 151, 0) 0%,
+      rgba(85, 249, 151, 0.3) 7.9%,
+      rgba(85, 249, 151, 0) 15%
+    );
+  padding: 2px 6px;
+}
+
+/* 3. Underline Highlight */
+.underline-highlight {
+  position: relative;
+  text-decoration: none;
+}
+
+.underline-highlight::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #55f997, #d7f7e4);
+}
+
+/* 9. Badge Style */
+.badge-highlight {
+  background: linear-gradient(135deg, #55f997, #d7f7e4);
+  color: #1e3f2b;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9em;
+  display: inline-block;
+  box-shadow: 0 2px 8px rgba(85, 249, 151, 0.3);
+}
+
+/* 5. Box Highlight */
+.box-highlight {
+  background: rgba(85, 249, 151, 0.15);
+  border: 2px solid #55f997;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+/* 14. Side Border Highlight */
+.side-border-highlight {
+  border-left: 4px solid #55f997;
+  padding-left: 12px;
+  background: linear-gradient(90deg, rgba(85, 249, 151, 0.1), transparent);
+  padding: 8px 12px;
 }
