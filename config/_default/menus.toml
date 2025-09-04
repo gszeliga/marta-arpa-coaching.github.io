@@ -4,7 +4,7 @@ weight = 30
 [[main]]
 parent = "Servicios"
 name = "Coaching Ejecutivo"
-url = '/services/coaching-ex/main-raw'
+url = '/services/coaching-ex/main'
 weight = 31
 [[main]]
 parent = "Servicios"
@@ -18,6 +18,6 @@ url = '/services/maas'
 weight = 33
 [[main]]
 parent = "Servicios"
-name = "Consultoría del Cambio"
+name = "Consultoría"
 url = '/services/consultancy'
 weight = 34
