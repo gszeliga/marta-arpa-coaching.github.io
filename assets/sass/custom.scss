@@ -235,7 +235,7 @@ article h3 img {
     color: #1e3f2b;
   }
   img {
-    max-height: 32px; // adjust as needed
+    max-height: 48px; // adjust as needed
   }
 }
 
@@ -739,4 +739,24 @@ article h3 img {
   .pricing-price {
     font-size: 1.4rem;
   }
+}
+
+// markers
+.marker-highlight {
+  background:
+    linear-gradient(
+      104deg,
+      rgba(85, 249, 151, 0) 0.9%,
+      rgba(85, 249, 151, 1) 2.4%,
+      rgba(85, 249, 151, 0.5) 5.8%,
+      rgba(85, 249, 151, 0.1) 93%,
+      rgba(85, 249, 151, 0) 96%
+    ),
+    linear-gradient(
+      183deg,
+      rgba(85, 249, 151, 0) 0%,
+      rgba(85, 249, 151, 0.3) 7.9%,
+      rgba(85, 249, 151, 0) 15%
+    );
+  padding: 2px 6px;
 }
