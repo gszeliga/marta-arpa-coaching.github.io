@@ -17,6 +17,34 @@ body {
     sans-serif;
 }
 
+.logo-container {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  min-height: 70px; /* Give it some height for vertical centering */
+}
+
+.logo-video {
+  max-height: 20vh;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  .logo-video {
+    height: 40px;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-video {
+    height: 35px;
+    max-width: 150px;
+  }
+}
+
 // highlights
 .box.highlight {
   padding-top: 2%;
