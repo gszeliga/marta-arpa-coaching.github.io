@@ -25,7 +25,7 @@ body {
 }
 
 .logo-video {
-  max-height: 20vh;
+  max-height: 15vh;
   width: auto;
   object-fit: contain;
 
@@ -112,6 +112,15 @@ body {
         color: #55f997;
         text-shadow: 1px 1px 3px rgba(85, 249, 151, 0.4);
       }
+    }
+  }
+}
+
+.dropotron {
+  > li {
+    a:hover {
+      color: #55f997;
+      text-shadow: 1px 1px 3px rgba(85, 249, 151, 0.4);
     }
   }
 }
