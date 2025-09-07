@@ -14,7 +14,7 @@ weight = 32
 [[main]]
 parent = "Servicios"
 name = "PMaaS y CMaaS"
-url = '/services/maas'
+url = '/services/maas/main'
 weight = 33
 [[main]]
 parent = "Servicios"
