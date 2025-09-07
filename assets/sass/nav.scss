@@ -1,0 +1,53 @@
+#titleBar {
+  background-color: #1d1d1b;
+  color: #55f997;
+  box-shadow: 0 4px 0 0 #1e3f2b;
+
+  .toggle {
+    &:before {
+      color: #55f997;
+    }
+  }
+}
+
+#navPanel {
+  background-color: #1e3f2b;
+}
+
+#nav {
+  background-color: #1e3f2b;
+
+  &:after {
+    background-color: #55f997;
+  }
+
+  > ul {
+    margin: 0;
+
+    > li {
+      &.current {
+        &:before {
+          background-color: #55f997;
+        }
+      }
+
+      a {
+        color: #d7f7e4;
+      }
+
+      a:hover {
+        color: #55f997;
+        text-shadow: 1px 1px 3px rgba(85, 249, 151, 0.4);
+      }
+    }
+  }
+}
+
+.dropotron {
+  > li {
+    a:hover {
+      color: #55f997;
+      text-shadow: 1px 1px 3px rgba(85, 249, 151, 0.4);
+    }
+  }
+}
