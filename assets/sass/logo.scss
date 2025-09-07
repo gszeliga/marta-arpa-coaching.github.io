@@ -1,0 +1,44 @@
+.logo-container {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  min-height: 10vh; /* Give it some height for vertical centering */
+}
+
+.logo-video {
+  max-height: 18vh;
+  width: auto;
+  object-fit: contain;
+
+  /* Crop the edges */
+  clip-path: inset(2px 2px 2px 2px); /* Crop 2px from each side */
+  /* or */
+  clip-path: inset(5% 5% 5% 5%); /* Crop 5% from each side */
+}
+
+/* Responsive breakpoints */
+@media (max-width: 810px) {
+  .logo-video {
+    max-height: 4vh;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-video {
+    height: 35px;
+    max-width: 150px;
+  }
+}
+
+/* Logo image */
+#logo {
+  text-align: center;
+}
+
+#logo img {
+  max-height: 78px; // adjust as needed
+  width: auto;
+  display: inline-block;
+  margin: 0 auto;
+}
