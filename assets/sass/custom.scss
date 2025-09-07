@@ -282,7 +282,31 @@ article h3 img {
   margin-bottom: 10px;
 }
 
+@media (max-width: 810px) {
+  /* Banner */
+
+  #banner {
+    min-height: 50vh;
+  }
+
+  .banner-grid {
+    min-height: auto;
+  }
+}
+
 @media (max-width: 576px) {
+  /* Banner */
+
+  #banner {
+    min-height: 60vh;
+  }
+
+  /* Wrapper */
+
+  .wrapper {
+    padding: 2em 20px 1px 20px;
+  }
+
   .banner-content {
     min-height: auto;
   }
@@ -293,12 +317,26 @@ article h3 img {
 
   .banner-grid {
     grid-template-columns: repeat(2, 1fr);
+    min-height: auto;
   }
 
   .banner-column {
     img {
       max-height: 30px; // adjust as needed
     }
+  }
+}
+
+@media (max-width: 385px) {
+  /* Banner */
+
+  #banner {
+    min-height: 100vh;
+  }
+
+  .banner-grid {
+    grid-template-columns: 1fr;
+    min-height: auto;
   }
 }
 
