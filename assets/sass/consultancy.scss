@@ -126,7 +126,7 @@
 
 /* Methodology Timeline */
 .methodology-container {
-  margin: 40px 0;
+  margin: 40px 25vh;
 }
 
 .timeline {
@@ -307,7 +307,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 810px) {
   .slide {
     padding: 25px;
     margin-bottom: 30px;
@@ -315,6 +315,10 @@
 
   .slide-title {
     font-size: 1.8rem;
+  }
+
+  .methodology-container {
+    margin: 40px 0;
   }
 
   .timeline::before {
