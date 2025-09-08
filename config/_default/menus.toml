@@ -19,5 +19,5 @@ weight = 33
 [[main]]
 parent = "Servicios"
 name = "Consultoría"
-url = '/services/consultancy'
+url = '/services/consultancy/main'
 weight = 34
