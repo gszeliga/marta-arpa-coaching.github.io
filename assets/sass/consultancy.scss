@@ -381,8 +381,11 @@
   }
 
   .main-section-grid,
-  .objectives-grid,
-  .deliverables-grid {
+  .objectives-grid {
     grid-template-columns: 1fr;
+  }
+
+  .deliverables-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
