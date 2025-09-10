@@ -13,7 +13,7 @@
   //overflow: hidden; /* Prevent any overflow issues */
 
   header {
-    background: rgba(30, 63, 43, 0.8);
+    background: radial-gradient(circle, #1e3f2b, #d7f7e4);
   }
 
   /* optional grayscale overlay */
@@ -53,7 +53,47 @@
   img {
     max-height: 48px; // adjust as needed
   }
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  padding: 5px;
 }
+
+// banner effect
+
+.banner-column img {
+  transition: all 0.3s ease;
+  //border-radius: 50%;
+}
+
+.banner-column h3 {
+  transition: all 0.3s ease;
+}
+
+.banner-column p {
+  transition: all 0.3s ease;
+}
+
+.banner-column:hover {
+  //background: rgba(85, 249, 151, 0.1);
+  transform: translateY(-5px);
+  //box-shadow: 0 8px 25px rgba(85, 249, 151, 0.2);
+}
+
+.banner-column:hover img {
+  transform: scale(1.15) rotate(5deg);
+  //box-shadow: 0 4px 15px rgba(85, 249, 151, 0.3);
+}
+
+.banner-column:hover h3 {
+  color: #1e3f2b;
+  transform: translateX(5px);
+}
+
+.banner-column:hover p {
+  transform: translateX(3px);
+  color: #1e3f2b;
+}
+// test
 
 .banner-content {
   //display: flex;
@@ -63,6 +103,7 @@
 
 .banner-header {
   margin-bottom: 10px;
+  background: radial-gradient(circle, #1e3f2b, #d7f7e4);
 }
 
 @media (max-width: 810px) {
@@ -121,4 +162,71 @@
     grid-template-columns: 1fr;
     min-height: auto;
   }
+}
+
+// box hightlight
+.ripple {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(
+    circle,
+    rgba(233, 241, 43, 0.3) 0%,
+    transparent 70%
+  );
+  border-radius: 30%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease;
+}
+
+.ripple:hover::after {
+  width: 300px;
+  height: 300px;
+}
+
+.ripple:hover {
+  color: #1e3f2b;
+}
+
+.ripple:hover h3 {
+  color: #1e3f2b;
+  position: relative;
+  z-index: 2;
+}
+
+// card
+
+.card {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.card:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow:
+    0 10px 40px rgba(30, 63, 43, 0.15),
+    0 0 0 1px rgba(85, 249, 151, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.card:hover h3 {
+  color: #55f997;
+}
+
+.card:hover p {
+  color: #1e3f2b;
 }
