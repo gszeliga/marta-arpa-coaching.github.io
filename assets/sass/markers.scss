@@ -74,3 +74,46 @@
   background: linear-gradient(90deg, rgba(85, 249, 151, 0.1), transparent);
   padding: 8px 12px;
 }
+
+// i.e. <span class="check-icon">✓</span>
+.circle-icon {
+  background: linear-gradient(135deg, #55f997, #d7f7e4);
+  color: #1e3f2b;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 20px;
+  flex-shrink: 0;
+  font-size: 1.2rem;
+}
+
+.marker-underline {
+  position: relative;
+  display: inline-block; /* Ensures it works on inline elements too */
+}
+
+.marker-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #1e3f2b, #55f997);
+  transition: width 0.4s ease;
+  border-radius: 2px;
+}
+
+.marker-underline:hover::after {
+  width: 100%;
+}
+
+/* Optional: Add lift effect on hover */
+.marker-underline:hover {
+  transform: translateY(-2px);
+  transition: transform 0.3s ease;
+}

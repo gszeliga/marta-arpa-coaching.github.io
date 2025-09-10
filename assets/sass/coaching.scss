@@ -93,28 +93,7 @@
   }
 }
 
-/* Option 2: Underline marker effect */
-.service-title.marker-underline {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #1e3f2b;
-  margin: 0 0 15px 0;
-  position: relative;
-  display: inline-block;
-}
-
-.service-title.marker-underline::after {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 3px;
-  background: linear-gradient(90deg, #1e3f2b, #55f997);
-  transition: width 0.5s ease;
-}
-
-.service-item:hover .service-title.marker-underline::after {
+.service-item:hover {
   width: 100%;
 }
 
@@ -174,34 +153,8 @@
 
 // tarifas
 
-/* Animated underline marker effect for service-price */
-.service-price.marker-underline {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #d7f7e4;
-  margin: 0 0 15px 0;
-  position: relative;
-  display: inline-block;
-}
-
-.service-price.marker-underline::after {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 3px;
-  background: linear-gradient(90deg, #55f997, #d7f7e4);
-  transition: width 0.5s ease;
-}
-
-.service-item:hover .service-price.marker-underline::after {
+.service-item:hover {
   width: 100%;
-}
-
-/* Optional: Add a subtle glow effect on hover */
-.service-item:hover .service-price.marker-underline {
-  text-shadow: 0 0 8px rgba(85, 249, 151, 0.3);
 }
 
 /* Mobile responsive */
@@ -241,7 +194,6 @@
   }
 
   .service-title.marker-highlight,
-  .service-title.marker-underline,
   .service-title.marker-border,
   .service-title.marker-bracket {
     font-size: 1.3rem;
@@ -319,18 +271,7 @@
   display: inline-block;
 }
 
-.pricing-price.marker-underline::after {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 3px;
-  background: linear-gradient(90deg, #1e3f2b, #55f997);
-  transition: width 0.5s ease;
-}
-
-.pricing-item:hover .pricing-price.marker-underline::after {
+.pricing-item:hover {
   width: 100%;
 }
 
