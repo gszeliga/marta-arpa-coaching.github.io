@@ -46,3 +46,9 @@ url = "#"
 enabled = true
 header = "Get In Touch"
 action = ""
+
+[server]
+[[server.headers]]
+for = "/**"
+[server.headers.values]
+Content-Security-Policy = "default-src 'self'; frame-src 'self' https://*.brevo.com https://*.sendinblue.com https://*.sibforms.com; script-src 'self' 'unsafe-inline' https://*.brevo.com https://*.sendinblue.com https://*.sibforms.com; style-src 'self' 'unsafe-inline' https://*.brevo.com https://*.sendinblue.com https://*.sibforms.com; style-src-attr 'unsafe-inline'"

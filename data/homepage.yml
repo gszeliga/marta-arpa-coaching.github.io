@@ -1,10 +1,10 @@
 banner:
   enable: true
   image: images/banner-coaching-es.png
-  contents: Wanna know more about our newsletter?
+  contents: ¿Quieres saber más?
   button:
-    contents: Learn More
-    url: "#"
+    contents: Subscribete
+    url: /newsletter/main
   columns:
     - title: Coaching Ejecutivo
       text: Empoderar a líderes y equipos para maximizar su rendimiento y alcanzar objetivos estratégicos.
