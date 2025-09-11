@@ -1,4 +1,4 @@
-baseURL = "http://www.martaarpa.com"
+baseURL = "http://martaarpa.com"
 canonifyURLs = true
 languageCode = "en-us"
 #title = "Marta Arpa Coaching"
