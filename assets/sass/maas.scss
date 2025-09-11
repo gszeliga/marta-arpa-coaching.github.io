@@ -118,3 +118,14 @@
     grid-column: span 1;
   }
 }
+
+// Check adjustments
+.clean-list {
+  @extend .benefits-list;
+  font-size: 1.1rem;
+}
+
+.clean-list li:hover {
+  //background: rgba(85, 249, 151, 0.05);
+  padding-left: 10px;
+}
