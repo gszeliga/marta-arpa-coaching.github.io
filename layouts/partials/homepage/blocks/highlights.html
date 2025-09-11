@@ -4,7 +4,7 @@
       {{- $item_cols := (div 12 (.item.items_per_row | default 3)) }} {{- range
       .item.items }}
       <section class="col-{{ $item_cols }} col-12-narrower">
-        <div class="box highlight ripple">
+        <div class="box highlight card ripple">
           <!-- <i class="icon solid major {{ .icon }}"></i> -->
           <div class="icon-wrapper">
             <img src="{{ .iconPath | relURL }}" alt="{{ .title }}" />

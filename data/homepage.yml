@@ -37,10 +37,10 @@ items:
         content: >
           Mi compromiso es acompañarte en ese camino, aportando mi experiencia, conocimiento y pasión por el desarrollo humano.
   - type: heading
-    heading: A gigantic heading you can use for whatever
-    contents: With a much smaller subtitle hanging out just below it
+    heading: La Invitación
+    contents: <p class='invitation'>Te invito a emprender juntos un viaje de <span class='marker-highlight'>descubrimiento y transformación</span>.</p><span class='invitation-extra'>Cada persona y cada organización tiene un potencial único esperando ser desarrollado. Mi compromiso es acompañarte en ese camino, aportando mi experiencia, conocimiento y pasión por el desarrollo humano.</span>
   - type: cta
-    contents: Are you ready to continue your quest?
+    contents: Que te parece si hacemos una sesion gratis?
     button:
-      contents: Insert Coin
-      url: "#"
+      contents: Apuntate aqui
+      url: https://meet.brevo.com/marta-arpa/sesion-gratuita-
