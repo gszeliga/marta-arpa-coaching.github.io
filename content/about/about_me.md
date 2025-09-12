@@ -13,7 +13,7 @@ image_alt: "Hello!"
 sidebar_right: sidebar-about-me
 ---
 
-<h2 class="underline-highlight">Mi Filosofía y Enfoque</h2>
+<h2 class="underline-highlight-dark">Mi Filosofía y Enfoque</h2>
 
 ### ![coach](/images/about/icons/coach-color.png) Como Coach
 
