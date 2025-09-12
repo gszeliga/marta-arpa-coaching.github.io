@@ -8,7 +8,7 @@ banner:
   columns:
     - title: Coaching Ejecutivo
       text: Empoderar a líderes y equipos para maximizar su rendimiento y alcanzar objetivos estratégicos.
-      icon: /images/icons/leadership.png
+      icon: /images/icons/communications.png
     - title: Coaching Personal
       text: Fomentar una transformación profunda para el desarrollo integral y la realización personal.
       icon: /images/icons/management.png
