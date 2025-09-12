@@ -40,7 +40,7 @@ items:
     heading: La Invitación
     contents: <p class='invitation'>Te invito a emprender juntos un viaje de <span class='marker-highlight'>descubrimiento y transformación</span>.</p><span class='invitation-extra'>Cada persona y cada organización tiene un potencial único esperando ser desarrollado. Mi compromiso es acompañarte en ese camino, aportando mi experiencia, conocimiento y pasión por el desarrollo humano.</span>
   - type: cta
-    contents: Que te parece si hacemos una sesion gratis?
+    contents: ¿Empezamos con una sesión gratis?
     button:
       contents: Apuntate aqui
       url: https://meet.brevo.com/marta-arpa/sesion-gratuita-
