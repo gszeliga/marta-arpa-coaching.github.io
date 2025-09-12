@@ -46,6 +46,21 @@
   background: linear-gradient(90deg, #55f997, #d7f7e4);
 }
 
+.underline-highlight-dark {
+  position: relative;
+  text-decoration: none;
+}
+
+.underline-highlight-dark::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #1e3f2b, #d7f7e4);
+}
+
 /* 9. Badge Style */
 .badge-highlight {
   background: linear-gradient(135deg, #d7f7e4, rgba(85, 249, 151, 0.3));

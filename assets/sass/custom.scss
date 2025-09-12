@@ -89,6 +89,11 @@ body {
 // big fucking heading
 header.major h2 {
   color: #1e3f2b;
+  margin-bottom: 0em;
+}
+
+header.major p {
+  border-top: none;
 }
 
 #footer {
@@ -143,16 +148,27 @@ article h3 img {
   }
 
   &.style2 {
-    background: #e9e9e7;
-    background-image: url("images/background-invitation.png");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
+    background: #d7f7e4;
 
-    /* Ensure the section adapts to content */
-    min-height: 400px; /* Set a minimum height */
-    position: relative;
+    img {
+      max-height: 100px;
+    }
+
+    // background-image: url("images/background-invitation.png");
+    // background:
+    //   linear-gradient(
+    //     to bottom,
+    //     rgba(30, 63, 43, 0.1),
+    //     rgba(85, 249, 151, 0.1)
+    //   ),
+    //   url("images/background-invitation-simple.png") center/cover no-repeat;
+    // background-size: contain;
+    // background-position: left top;
+    // background-repeat: no-repeat;
+
+    /* Adjust height based on image aspect ratio */
+    //min-height: 60vh;
+    //padding: 40px 0;
   }
 
   // &.style2 {
@@ -187,6 +203,11 @@ article h3 img {
     //     }
     // }
   }
+}
+
+.wrapper.style2 > * {
+  position: relative;
+  z-index: 2;
 }
 
 .icon-wrapper img {

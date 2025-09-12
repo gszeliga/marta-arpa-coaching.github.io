@@ -38,7 +38,7 @@ items:
           Mi compromiso es acompañarte en ese camino, aportando mi experiencia, conocimiento y pasión por el desarrollo humano.
   - type: heading
     heading: La Invitación
-    contents: <p class='invitation'>Te invito a emprender juntos un viaje de <span class='marker-highlight'>descubrimiento y transformación</span>.</p><span class='invitation-extra'>Cada persona y cada organización tiene un potencial único esperando ser desarrollado. Mi compromiso es acompañarte en ese camino, aportando mi experiencia, conocimiento y pasión por el desarrollo humano.</span>
+    contents: <img src="images/background-invitation-simple-pad.png"/> <p class='invitation'>Te invito a emprender juntos un viaje de <span class='underline-highlight-dark'>descubrimiento y transformación</span>.</p><span class='invitation-extra'>Cada persona y cada organización tiene un potencial único esperando ser desarrollado. Mi compromiso es acompañarte en ese camino, aportando mi experiencia, conocimiento y pasión por el desarrollo humano.</span>
   - type: cta
     contents: ¿Empezamos con una sesión gratis?
     button:
