@@ -6,7 +6,7 @@
 }
 
 .logo-video {
-  max-height: 18vh;
+  max-height: 20vh;
   width: auto;
   object-fit: contain;
 
@@ -19,14 +19,14 @@
 /* Responsive breakpoints */
 @media (max-width: 810px) {
   .logo-video {
-    max-height: 4vh;
+    max-height: 5vh;
     max-width: 200px;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 380px) {
   .logo-video {
-    height: 35px;
+    height: 5vh;
     max-width: 150px;
   }
 }

@@ -246,9 +246,25 @@ p.invitation {
   font-weight: 500;
 }
 
-@media (max-width: 385px) {
+@media (max-width: 810px) {
+  p.invitation {
+    //font-weight: bold;
+    font-size: 1.4rem !important;
+  }
   .invitation-extra {
     font-size: 0.9rem;
     font-weight: 500;
+  }
+}
+
+@media (max-width: 412px) {
+  p.invitation {
+    //font-weight: bold;
+    font-size: 1.1rem !important;
+  }
+  .invitation-extra {
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 1vh;
   }
 }
