@@ -2,7 +2,7 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 #title = 'Marta Arpa Coaching'
 theme = 'arcana'
-## sectionPagesMenu = 'main'
+# sectionPagesMenu = 'main'
 
 [caches]
 [caches.images]
