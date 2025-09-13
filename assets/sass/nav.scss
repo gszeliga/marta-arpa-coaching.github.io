@@ -10,8 +10,44 @@
   }
 }
 
+@media screen and (max-width: 840px) {
+  #titleBar {
+    height: 5vh;
+  }
+}
+
+.dropdown-content a.selected {
+  color: #d7f7e4 !important;
+  font-weight: bold;
+}
+
+.dropdown-content a {
+  color: #55f997;
+}
+
 #navPanel {
   background-color: #1e3f2b;
+
+  .link.depth-0 {
+    color: #55f997;
+  }
+
+  .link.depth-1 {
+    color: #d7f7e4;
+  }
+
+  .toolbox {
+    .dropdown {
+      #languageDropdown {
+        color: #55f997;
+      }
+      #languageContent {
+        li a {
+          color: #55f997;
+        }
+      }
+    }
+  }
 }
 
 #nav {
@@ -50,4 +86,12 @@
       text-shadow: 1px 1px 3px rgba(85, 249, 151, 0.4);
     }
   }
+}
+
+#multilingual.dropdown {
+  color: #55f997;
+}
+
+#languageContent {
+  background: #1e3f2b;
 }
