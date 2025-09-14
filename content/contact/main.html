@@ -1,0 +1,88 @@
+---
+title: "Contacto"
+date: 2025-09-13
+menu: main
+---
+
+<p class="page-subtitle">
+  ¿Listo para transformar tu liderazgo y el de tu organización?
+</p>
+
+<div class="container">
+  <!-- Main Contact Grid -->
+  <div class="contact-grid">
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+      <h2 class="section-title">Envíame un mensaje</h2>
+      <form class="contact-form" action="#" method="POST">
+        <div class="form-group">
+          <label for="name" class="form-label">Nombre completo</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-input"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-input"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="company" class="form-label">Empresa (opcional)</label>
+          <input type="text" id="company" name="company" class="form-input" />
+        </div>
+
+        <div class="form-group">
+          <label for="service" class="form-label">Tipo de servicio</label>
+          <select id="service" name="service" class="form-select" required>
+            <option value="">Selecciona un servicio</option>
+            <option value="coaching-ejecutivo">Coaching Ejecutivo</option>
+            <option value="coaching-personal">Coaching Personal</option>
+            <option value="transformacion-equipos">
+              Transformación de Equipos
+            </option>
+            <option value="consultoria-cambio">Consultoría del Cambio</option>
+            <option value="talleres">Talleres Grupales</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message" class="form-label"
+            >Cuéntame sobre tu desafío</label
+          >
+          <textarea
+            id="message"
+            name="message"
+            class="form-textarea"
+            placeholder="Describe tu situación actual, objetivos y cómo puedo ayudarte..."
+            required
+          ></textarea>
+        </div>
+        <div class="form-group centered">
+          <button type="submit" class="form-button">Enviar mensaje</button>
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <h2 class="cta-title">¿Prefieres una llamada?</h2>
+    <p class="cta-text">
+      Agenda una consulta gratuita de 30 minutos para conocernos y explorar cómo
+      puedo ayudarte
+    </p>
+    <a href="#" class="cta-button">Agendar consulta gratuita</a>
+  </section>
+</div>
