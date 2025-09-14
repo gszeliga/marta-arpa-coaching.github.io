@@ -219,3 +219,17 @@ article h3 img {
   display: block;
   margin: 0 auto 1rem auto; /* center + spacing */
 }
+
+.fa-linkedin-in::before {
+  color: #1e3f2b;
+}
+
+.fa-marta-arpa::before {
+  content: "";
+  background-image: url("/images/favicon.png");
+  background-size: 50px 30px; /* Specific size */
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
