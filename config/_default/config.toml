@@ -28,8 +28,9 @@ weight = 4
 description = "A business/corporate style responsive site template."
 images = ['images/metaimage.jpg']
 show_post_dates = false
-[params.footer]
+recaptchaSiteKey = "6Ld-08orAAAAANupWBL2u9QZu78ZB3O4E4-R65a6"
 
+[params.footer]
 [[params.footer.links]]
 header = "Mis Servicios"
 [[params.footer.links.links]]
@@ -74,6 +75,3 @@ url = "https://www.linkedin.com/in/marta-arpa-moragrega/"
 for = "/**"
 [server.headers.values]
 Content-Security-Policy = "default-src 'self'; frame-src 'self' https://*.brevo.com https://*.sendinblue.com https://*.sibforms.com https://www.google.com https://www.gstatic.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.brevo.com https://*.sendinblue.com https://*.sibforms.com https://www.google.com https://www.gstatic.com; connect-src 'self' https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://*.brevo.com https://*.sendinblue.com https://*.sibforms.com; style-src-attr 'unsafe-inline'"
-# [params.csp]
-# script-src = "'self' 'unsafe-inline' https://*.brevo.com https://*.sendinblue.com https://*.sibforms.com https://www.google.com https://www.gstatic.com"
-# frame-src = "'self' https://www.google.com"

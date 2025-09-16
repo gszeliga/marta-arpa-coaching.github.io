@@ -1,0 +1,41 @@
+<!-- <script src="https://www.google.com/recaptcha/enterprise.js?render={{ .sitekey }}"></script>
+
+<script>
+  function onClick(e) {
+    e.preventDefault();
+    grecaptcha.enterprise.ready(async () => {
+      const token = await grecaptcha.enterprise.execute('{{ .sitekey }}', {action: 'LOGIN'});
+      document.getElementById('g-recaptcha-response').value = token;
+      document.getElementById('footer-contact-form').submit();
+    });
+  }
+
+</script> -->
+
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<section class="col-6 col-12-narrower">
+    <h3>{{ .header | default "Get In Touch" }}</h3>
+    <form method="POST" action="{{ .action }}" id="footer-contact-form">
+        <div class="row gtr-50">
+            <div class="col-6 col-12-mobilep">
+                <input type="text" name="name" id="name" placeholder="{{ T "contact_name" }}" />
+            </div>
+            <div class="col-6 col-12-mobilep">
+                <input type="email" name="email" id="email" placeholder="{{ T "contact_email" }}" />
+            </div>
+            <div class="col-12" >
+                <textarea name="message" id="message" placeholder="{{ T "contact_message" }}" rows="5"></textarea>
+            </div>
+            <div class="col-12">
+                <ul class="actions">
+                    <li><input type="submit" class="button alt" value="{{ T "contact_submit" }}"  />
+                </ul>
+            </div>
+              <!-- reCAPTCHA -->
+            <div class="g-recaptcha" data-sitekey="{{ .sitekey }}" ></div>
+        </div>
+    </form>
+</section>
+
