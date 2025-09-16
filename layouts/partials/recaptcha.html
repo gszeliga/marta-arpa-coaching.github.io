@@ -1,0 +1,24 @@
+<div id='{{ .Get "recaptcha-id" | default "my-custom-recaptcha" }}'></div>
+
+<script>
+  var myCustomRecaptcha;
+
+  var onloadCallback = function () {
+    myCustomRecaptcha = grecaptcha.render(
+      '{{ .Get "recaptcha-id" | default "my-custom-recaptcha" }}',
+      {
+        sitekey: "{{ .Site.Params.recaptchaSiteKey }}",
+        theme: '{{ .Get "theme" | default "light" }}',
+        callback: function (response) {
+          console.log("Verification successful!");
+        },
+      },
+    );
+  };
+</script>
+
+<script
+  src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+  async
+  defer
+></script>

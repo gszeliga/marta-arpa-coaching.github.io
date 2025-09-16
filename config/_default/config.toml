@@ -28,8 +28,9 @@ weight = 4
 description = "A business/corporate style responsive site template."
 images = ['images/metaimage.jpg']
 show_post_dates = false
-[params.footer]
+recaptchaSiteKey = "6Ld-08orAAAAANupWBL2u9QZu78ZB3O4E4-R65a6"
 
+[params.footer]
 [[params.footer.links]]
 header = "Mis Servicios"
 [[params.footer.links.links]]
@@ -58,6 +59,11 @@ url = "#"
 enabled = true
 header = "Hablemos"
 action = "https://forms.un-static.com/forms/aef8b2fdc664b89f80b592eea7b003afdf60b908"
+# https://www.iqcomputing.com/support/articles/generate-google-recaptcha-v2-keys/
+# https://www.google.com/recaptcha/admin/site/734712702/setup
+# https://developers.google.com/recaptcha/docs/display#config
+sitekey = "6Ld-08orAAAAANupWBL2u9QZu78ZB3O4E4-R65a6"
+
 
 [[params.social]]
 title = "LinkedIn"
@@ -68,4 +74,4 @@ url = "https://www.linkedin.com/in/marta-arpa-moragrega/"
 [[server.headers]]
 for = "/**"
 [server.headers.values]
-Content-Security-Policy = "default-src 'self'; frame-src 'self' https://*.brevo.com https://*.sendinblue.com https://*.sibforms.com; script-src 'self' 'unsafe-inline' https://*.brevo.com https://*.sendinblue.com https://*.sibforms.com; style-src 'self' 'unsafe-inline' https://*.brevo.com https://*.sendinblue.com https://*.sibforms.com; style-src-attr 'unsafe-inline'"
+Content-Security-Policy = "default-src 'self'; frame-src 'self' https://*.brevo.com https://*.sendinblue.com https://*.sibforms.com https://www.google.com https://www.gstatic.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.brevo.com https://*.sendinblue.com https://*.sibforms.com https://www.google.com https://www.gstatic.com; connect-src 'self' https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://*.brevo.com https://*.sendinblue.com https://*.sibforms.com; style-src-attr 'unsafe-inline'"
