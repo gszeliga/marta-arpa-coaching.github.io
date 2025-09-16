@@ -28,13 +28,16 @@
             <div class="col-12" >
                 <textarea name="message" id="message" placeholder="{{ T "contact_message" }}" rows="5"></textarea>
             </div>
-            <div class="col-12">
+            <div class="col-12 centered">
                 <ul class="actions">
-                    <li><input type="submit" class="button alt" value="{{ T "contact_submit" }}"  />
+                    <li><input type="submit" class="button alt" value="{{ T "contact_submit" }}"  /></li>
+                    <li>
+                      <!-- reCAPTCHA -->
+                      <div class="g-recaptcha" data-sitekey="{{ .sitekey }}" ></div>
+                    </li>
                 </ul>
             </div>
-              <!-- reCAPTCHA -->
-            <div class="g-recaptcha" data-sitekey="{{ .sitekey }}" ></div>
+
         </div>
     </form>
 </section>
