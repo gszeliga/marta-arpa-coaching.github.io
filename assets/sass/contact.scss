@@ -1,5 +1,4 @@
 .container {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
 }
@@ -223,4 +222,8 @@ button:hover {
   box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
   background: #55f997;
   color: #1e3f2b;
+}
+
+.recaptcha-contact-container {
+  padding: 10px;
 }
