@@ -1,23 +1,23 @@
 [[main]]
-name = "Services"
+name = "Serveis"
 weight = 30
 [[main]]
-parent = "Services"
-name = "Coaching Exécutif"
+parent = "Serveis"
+name = "Coaching Executiu"
 url = '/services/coaching-ex/main'
 weight = 31
 [[main]]
-parent = "Services"
-name = "Coaching Personnel"
+parent = "Serveis"
+name = "Coaching Personal"
 url = '/services/coaching-per/main'
 weight = 32
 [[main]]
-parent = "Services"
-name = "PMaaS et CMaaS"
+parent = "Serveis"
+name = "PMaaS i CMaaS"
 url = '/services/maas/main'
 weight = 33
 [[main]]
-parent = "Services"
-name = "Conseil"
+parent = "Serveis"
+name = "Consultoria"
 url = '/services/consultancy/main'
 weight = 34
