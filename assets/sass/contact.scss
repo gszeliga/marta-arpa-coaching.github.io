@@ -243,3 +243,27 @@ button:hover {
     grid-template-columns: 1fr;
   }
 }
+
+@media screen and (max-width: 412px) {
+  // .form-select {
+  //   padding: 1px 2px;
+  // }
+
+  .cta-title,
+  .form-title {
+    font-size: 1.4em;
+  }
+
+  .container {
+    padding: 10px 5px;
+  }
+
+  .form-button,
+  .cta-button {
+    font-size: 0.9em;
+  }
+
+  .page-subtitle {
+    font-size: 1.4em;
+  }
+}
