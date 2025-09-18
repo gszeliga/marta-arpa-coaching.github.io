@@ -3,6 +3,20 @@ description = "A business/corporate style responsive site template."
 images = ['images/metaimage.jpg']
 show_post_dates = false
 
+[languages]
+[languages.en]
+languageName = "Anglais"
+weight = 1
+[languages.fr]
+languageName = "Français"
+weight = 2
+[languages.es]
+languageName = "Espagnol"
+weight = 3
+[languages.cat]
+languageName = "Catalan"
+weight = 4
+
 [params.footer]
 
 [[params.footer.links]]

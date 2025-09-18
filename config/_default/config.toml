@@ -11,16 +11,16 @@ unsafe = true # Allow HTML in md files
 
 [languages]
 [languages.en]
-languageName = "English"
+languageName = "Inglés"
 weight = 1
 [languages.fr]
-languageName = "French"
+languageName = "Francés"
 weight = 2
 [languages.es]
-languageName = "Spanish"
+languageName = "Español"
 weight = 3
 [languages.cat]
-languageName = "Catalan"
+languageName = "Catalán"
 weight = 4
 
 

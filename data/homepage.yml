@@ -13,10 +13,10 @@ banner:
       text: Fomentar una transformación profunda para el desarrollo integral y la realización personal.
       icon: /images/icons/management.png
     - title: PMaaS y CMaaS
-      text: Gestión de proyectos para garantizar una ejecución eficiente y la adaptación organizativa
+      text: Gestión de proyectos para garantizar una ejecución eficiente y la adaptación organizativa.
       icon: /images/icons/activity.png
     - title: Consultoría del Cambio
-      text: Facilitar transformaciones organizativas a través de estrategias personalizadas
+      text: Facilitar transformaciones organizativas a través de estrategias personalizadas.
       icon: /images/icons/adaptation.png
 items:
   - type: highlights
@@ -38,7 +38,7 @@ items:
           Mi compromiso es acompañarte en ese camino, aportando mi experiencia, conocimiento y pasión por el desarrollo humano.
   - type: heading
     heading: La Invitación
-    contents: <img src="images/background-invitation-simple-pad.png"/> <p class='invitation'>Te invito a emprender juntos un viaje de <span class='underline-highlight-dark'>descubrimiento y transformación</span>.</p><span class='invitation-extra'>Cada persona y cada organización tiene un potencial único esperando ser desarrollado. Mi compromiso es acompañarte en ese camino, aportando mi experiencia, conocimiento y pasión por el desarrollo humano.</span>
+    contents: <img src="/images/background-invitation-simple-pad.png"/> <p class='invitation'>Te invito a emprender juntos un viaje de <span class='underline-highlight-dark'>descubrimiento y transformación</span>.</p><span class='invitation-extra'>Cada persona y cada organización tiene un potencial único esperando ser desarrollado. Mi compromiso es acompañarte en ese camino, aportando mi experiencia, conocimiento y pasión por el desarrollo humano.</span>
   - type: cta
     contents: ¿Empezamos con una sesión gratis?
     button:

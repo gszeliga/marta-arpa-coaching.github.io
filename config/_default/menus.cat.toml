@@ -4,20 +4,20 @@ weight = 30
 [[main]]
 parent = "Serveis"
 name = "Coaching Executiu"
-url = '/services/coaching-ex/main'
+url = '/cat/services/coaching-ex/main'
 weight = 31
 [[main]]
 parent = "Serveis"
 name = "Coaching Personal"
-url = '/services/coaching-per/main'
+url = '/cat/services/coaching-per/main'
 weight = 32
 [[main]]
 parent = "Serveis"
 name = "PMaaS i CMaaS"
-url = '/services/maas/main'
+url = '/cat/services/maas/main'
 weight = 33
 [[main]]
 parent = "Serveis"
 name = "Consultoria"
-url = '/services/consultancy/main'
+url = '/cat/services/consultancy/main'
 weight = 34
