@@ -1,0 +1,109 @@
+---
+title: "Contacte"
+date: 2025-09-13
+menu: main
+---
+
+<script
+  src="https://www.google.com/recaptcha/api.js?render=explicit"
+  async
+  defer
+></script>
+
+<p class="page-subtitle">
+  A punt per transformar el teu lideratge i el de la teva organització?
+</p>
+
+<div class="container">
+  <!-- Main Contact Grid -->
+  <div class="contact-grid">
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+      <h2 class="form-title">Envia’m un missatge</h2>
+      <form
+        class="contact-form"
+        action="https://forms.un-static.com/forms/aef8b2fdc664b89f80b592eea7b003afdf60b908"
+        method="POST"
+      >
+        <div class="form-group">
+          <label for="name" class="form-label">Nom complet</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-input"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">Correu electrònic</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-input"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="company" class="form-label">Empresa (opcional)</label>
+          <input type="text" id="company" name="company" class="form-input" />
+        </div>
+
+        <div class="form-group">
+          <label for="service" class="form-label">Tipus de servei</label>
+          <select id="service" name="service" class="form-select" required>
+            <option value="">Selecciona un servei</option>
+            <option value="coaching-ejecutivo">Coaching Executiu</option>
+            <option value="coaching-personal">Coaching Personal</option>
+            <option value="transformacion-equipos">
+              Transformació d’Equips
+            </option>
+            <option value="consultoria-cambio">Consultoria del Canvi</option>
+            <option value="talleres">Tallers Grupals</option>
+            <option value="otro">Altre</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message" class="form-label"
+            >Explica’m el teu repte</label
+          >
+          <textarea
+            id="message"
+            name="message"
+            class="form-textarea"
+            placeholder="Descriu la teva situació actual, objectius i com puc ajudar-te..."
+            required
+          ></textarea>
+        </div>
+        <div class="form-group centered">
+          <div class="submit-contact-grid">
+            <div class="centered">
+              <button type="submit" class="form-button">Enviar missatge</button>
+            </div>
+            <div class="recaptcha-contact-container">
+              {{< recaptcha recaptcha-id="contact-form-recaptcha">}}
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <h2 class="cta-title">Prefereixes una trucada?</h2>
+    <p class="cta-text">
+      Agenda una consulta gratuïta de 30 minuts per conèixer-nos i explorar com
+      puc ajudar-te
+    </p>
+    <a
+      href="https://meet.brevo.com/marta-arpa/sesion-gratuita-"
+      class="cta-button"
+      >Agendar consulta gratuïta</a
+    >
+  </section>
+</div>
