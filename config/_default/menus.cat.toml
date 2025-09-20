@@ -1,0 +1,23 @@
+[[main]]
+name = "Serveis"
+weight = 30
+[[main]]
+parent = "Serveis"
+name = "Coaching Executiu"
+url = '/cat/services/coaching-ex/main'
+weight = 31
+[[main]]
+parent = "Serveis"
+name = "Coaching Personal"
+url = '/cat/services/coaching-per/main'
+weight = 32
+[[main]]
+parent = "Serveis"
+name = "PMaaS i CMaaS"
+url = '/cat/services/maas/main'
+weight = 33
+[[main]]
+parent = "Serveis"
+name = "Consultoria"
+url = '/cat/services/consultancy/main'
+weight = 34

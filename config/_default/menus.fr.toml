@@ -3,6 +3,21 @@ name = "Services"
 weight = 30
 [[main]]
 parent = "Services"
-name = "Stratégie 360"
-url = 'services/strategy'
+name = "Coaching Exécutif"
+url = '/fr/services/coaching-ex/main'
 weight = 31
+[[main]]
+parent = "Services"
+name = "Coaching Personnel"
+url = '/fr/services/coaching-per/main'
+weight = 32
+[[main]]
+parent = "Services"
+name = "PMaaS et CMaaS"
+url = '/fr/services/maas/main'
+weight = 33
+[[main]]
+parent = "Services"
+name = "Conseil"
+url = '/fr/services/consultancy/main'
+weight = 34

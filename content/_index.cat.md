@@ -1,5 +1,5 @@
 ---
-title: Inicio
+title: Inici
 menu: main
 weight: 10
 ---

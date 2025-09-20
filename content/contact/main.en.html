@@ -1,0 +1,108 @@
+---
+title: "Contact"
+date: 2025-09-13
+menu: main
+---
+
+<script
+  src="https://www.google.com/recaptcha/api.js?render=explicit"
+  async
+  defer
+></script>
+
+<p class="page-subtitle">
+  Ready to transform your leadership and your organization?
+</p>
+
+<div class="container">
+  <!-- Main Contact Grid -->
+  <div class="contact-grid">
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+      <h2 class="form-title">Send me a message</h2>
+      <form
+        class="contact-form"
+        action="https://forms.un-static.com/forms/aef8b2fdc664b89f80b592eea7b003afdf60b908"
+        method="POST"
+      >
+        <div class="form-group">
+          <label for="name" class="form-label">Full name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="Full name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">Email address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-input"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="company" class="form-label">Company (optional)</label>
+          <input type="text" id="company" name="company" class="form-input" />
+        </div>
+
+        <div class="form-group">
+          <label for="service" class="form-label">Type of service</label>
+          <select id="service" name="service" class="form-select" required>
+            <option value="">Select a service</option>
+            <option value="coaching-ejecutivo">Executive Coaching</option>
+            <option value="coaching-personal">Personal Coaching</option>
+            <option value="transformacion-equipos">
+              Team Transformation
+            </option>
+            <option value="consultoria-cambio">Change Consulting</option>
+            <option value="talleres">Group Workshops</option>
+            <option value="otro">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message" class="form-label"
+            >Tell me about your challenge</label
+          >
+          <textarea
+            id="message"
+            name="message"
+            class="form-textarea"
+            placeholder=Describe your current situation, goals, and how I can support you..."
+            required
+          ></textarea>
+        </div>
+        <div class="form-group centered">
+          <div class="submit-contact-grid">
+            <div class="centered">
+              <button type="submit" class="form-button">Send message</button>
+            </div>
+            <div class="recaptcha-contact-container">
+              {{< recaptcha recaptcha-id="contact-form-recaptcha">}}
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <h2 class="cta-title">Prefer a call?</h2>
+    <p class="cta-text">
+      Book a free 30-minute consultation to connect and explore how I can help you
+    </p>
+    <a
+      href="https://meet.brevo.com/marta-arpa/sesion-gratuita-"
+      class="cta-button"
+      >Book free consultation</a
+    >
+  </section>
+</div>

@@ -1,0 +1,46 @@
+banner:
+  enable: true
+  image: images/banner-coaching-es.png
+  contents: Vols saber-ne més?
+  button:
+    contents: Subscriu-te
+    url: /newsletter/main
+  columns:
+    - title: Coaching Executiu
+      text: Empoderar líders i equips per maximitzar el seu rendiment i assolir objectius estratègics.
+      icon: /images/icons/communications.png
+    - title: Coaching Personal
+      text: Fomentar una transformació profunda per al creixement integral i la realització personal.
+      icon: /images/icons/management.png
+    - title: PMaaS i CMaaS
+      text: Gestió de projectes per garantir una execució eficient i l’adaptació organitzativa.
+      icon: /images/icons/activity.png
+    - title: Consultoria del Canvi
+      text: Facilitar transformacions organitzatives amb estratègies personalitzades.
+      icon: /images/icons/adaptation.png
+items:
+  - type: highlights
+    items_per_row: 3
+    items:
+      - title: La Meva Filosofia
+        #icon: fa-paper-plane
+        # https://ar.inspiredpencil.com/pictures-2023/philosophy-symbol
+        iconPath: images/icons/philosophy.png
+        content: >
+          L’èxit real d’una persona o organització no rau només en el que aconsegueix, sinó en com es transforma durant el procés i en la seva capacitat per sostenir aquest canvi en el temps
+      - title: El Meu Propòsit
+        iconPath: images/icons/growing-seed.png
+        content: >
+           Catalitzar el **potencial** de persones i organitzacions per crear un impacte positiu i durador en el seu entorn. Cada persona i cada organització té un potencial únic esperant ser desenvolupat.
+      - title: El Meu Compromís
+        iconPath: images/icons/help.png
+        content: >
+         El meu compromís és acompanyar-te en aquest camí, aportant la meva experiència, coneixement i passió pel desenvolupament humà.
+  - type: heading
+    heading: La Invitació
+    contents: <img src="/images/background-invitation-simple-pad.png"/> <p class='invitation'>Et convido a emprendre junts un viatge de <span class='underline-highlight-dark'>descobriment i transformació</span>.</p><span class='invitation-extra'>Cada persona i cada organització té un potencial únic esperant ser desenvolupat. El meu compromís és acompanyar-te en aquest camí, aportant la meva experiència, coneixement i passió pel desenvolupament humà.</span>
+  - type: cta
+    contents: Comencem amb una sessió gratuïta?
+    button:
+      contents: Apunta’t aquí
+      url: https://meet.brevo.com/marta-arpa/sesion-gratuita-
