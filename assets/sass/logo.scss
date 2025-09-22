@@ -1,3 +1,8 @@
+#logo-wrapper {
+  max-width: 100%;
+  overflow: hidden;
+}
+
 .logo-container {
   display: flex;
   justify-content: center; /* Horizontal centering */
@@ -9,6 +14,7 @@
   max-height: 20vh;
   width: auto;
   object-fit: contain;
+  display: block;
 
   /* Crop the edges */
   clip-path: inset(2px 2px 2px 2px); /* Crop 2px from each side */
@@ -18,30 +24,32 @@
 
 /* Responsive breakpoints */
 
-@media screen and (max-width: 1280px) {
-  .logo-video {
-    max-height: 12vh;
-    max-width: 200px;
-  }
-}
+// @media screen and (max-width: 1280px) {
+//   .logo-video {
+//     max-height: 12vh;
+//     max-width: 200px;
+//   }
+// }
 
-@media (max-width: 840px) {
-  .logo-video {
-    max-height: 5vh;
-    max-width: 200px;
-  }
-}
+// @media (max-width: 840px) {
+//   .logo-video {
+//     max-height: 5vh;
+//     max-width: 200px;
+//   }
+// }
 
-@media (max-width: 380px) {
-  .logo-video {
-    height: 5vh;
-    max-width: 150px;
-  }
-}
+// @media (max-width: 380px) {
+//   .logo-video {
+//     height: 5vh;
+//     max-width: 150px;
+//   }
+// }
 
 /* Logo image */
 #logo {
   text-align: center;
+  display: inline-block;
+  max-width: 100%;
 }
 
 #logo img {
@@ -49,4 +57,10 @@
   width: auto;
   display: inline-block;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-video {
+    max-height: 44px; /* Smaller on mobile */
+  }
 }
