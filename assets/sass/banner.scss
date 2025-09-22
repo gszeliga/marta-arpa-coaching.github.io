@@ -128,9 +128,9 @@
   background: radial-gradient(circle, #1e3f2b, #d7f7e4);
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1680px) {
   #banner {
-    height: 40em;
+    min-height: 26em;
   }
 }
 
@@ -140,15 +140,26 @@
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 840px) {
   #banner {
-    height: 40em;
+    height: 42em;
   }
 
   .banner-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
+}
+
+@media (max-width: 480px) {
+  #banner {
+    height: 40em;
+  }
+
+  // .banner-grid {
+  //   grid-template-columns: repeat(2, 1fr);
+  //   gap: 30px;
+  // }
 }
 
 @media (max-width: 380px) {
