@@ -9,6 +9,7 @@
   max-height: 20vh;
   width: auto;
   object-fit: contain;
+  background-color: #1d1d1b !important;
 
   /* Crop the edges */
   clip-path: inset(2px 2px 2px 2px); /* Crop 2px from each side */
