@@ -1,0 +1,1 @@
+<p>¡Gracias por unirte a esta comunidad! <p>A partir de ahora recibirás en tu bandeja de entrada ideas prácticas, reflexiones y herramientas de coaching y consulting para impulsar tu desarrollo personal y profesional. Mi compromiso contigo es mantener el contenido útil, concreto y aplicable, para que cada correo sea un paso más hacia la transformación que buscas.!</p>
