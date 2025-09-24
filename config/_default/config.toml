@@ -32,9 +32,9 @@ recaptchaSiteKey = "6Ld-08orAAAAANupWBL2u9QZu78ZB3O4E4-R65a6"
 
 [params.footer]
 [[params.footer.links]]
-header = "Acerca de mi"
+header = "Acerca de mí"
 [[params.footer.links.links]]
-title = "Acerca de mi"
+title = "Acerca de mí"
 url = "/about/main/"
 
 [[params.footer.links]]
@@ -49,7 +49,7 @@ url = "/services/coaching-per/main/"
 title = "PMaaS y CMaaS"
 url = "/services/maas/main/"
 [[params.footer.links.links]]
-title = "Consultoria"
+title = "Consultoría"
 url = "/services/consultancy/main/"
 
 [[params.footer.links]]
@@ -58,10 +58,10 @@ header = "Contacto"
 title = "Newsletter"
 url = "/newsletter/main/"
 [[params.footer.links.links]]
-title = "Sesion gratis"
+title = "Sesión gratuita"
 url = "https://meet.brevo.com/marta-arpa/sesion-gratuita-"
 [[params.footer.links.links]]
-title = "Enviame un mensaje"
+title = "Envíame un mensaje"
 url = "/contact/main/"
 
 
