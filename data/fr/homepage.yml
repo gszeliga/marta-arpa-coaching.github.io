@@ -4,7 +4,7 @@ banner:
   contents: Vous voulez en savoir plus ?
   button:
     contents: Abonnez-vous
-    url: /newsletter/main
+    url: /fr/newsletter/main
   columns:
     - title: Coaching Exécutif
       text: Autonomiser les leaders et les équipes pour maximiser leur performance et atteindre leurs objectifs stratégiques.
@@ -31,11 +31,11 @@ items:
       - title: Ma Mission
         iconPath: images/icons/growing-seed.png
         content: >
-         Catalyser le **potentiel** des personnes et des organisations pour créer un impact positif et durable dans leur environnement. Chaque personne et chaque organisation possède un potentiel unique qui ne demande qu’à être développé.
+          Catalyser le **potentiel** des personnes et des organisations pour créer un impact positif et durable dans leur environnement. Chaque personne et chaque organisation possède un potentiel unique qui ne demande qu’à être développé.
       - title: Ma Mission
         iconPath: images/icons/help.png
         content: >
-         Mon engagement est de vous accompagner sur ce chemin, en apportant mon expérience, mes connaissances et ma passion pour le développement humain.
+          Mon engagement est de vous accompagner sur ce chemin, en apportant mon expérience, mes connaissances et ma passion pour le développement humain.
   - type: heading
     heading: L’Invitation
     contents: <img src="/images/background-invitation-simple-pad.png"/> <p class='invitation'>Je vous invite à entreprendre ensemble un voyage de <span class='underline-highlight-dark'>découverte et de transformation</span>.</p><span class='invitation-extra'>Chaque personne et chaque organisation possède un potentiel unique qui ne demande qu’à être développé. Mon engagement est de vous accompagner sur ce chemin, en apportant mon expérience, mes connaissances et ma passion pour le développement humain.</span>

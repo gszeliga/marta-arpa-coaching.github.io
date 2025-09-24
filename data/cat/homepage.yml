@@ -4,7 +4,7 @@ banner:
   contents: Vols saber-ne més?
   button:
     contents: Subscriu-te
-    url: /newsletter/main
+    url: /cat/newsletter/main
   columns:
     - title: Coaching Executiu
       text: Empoderar líders i equips per maximitzar el seu rendiment i assolir objectius estratègics.
@@ -31,11 +31,11 @@ items:
       - title: El Meu Propòsit
         iconPath: images/icons/growing-seed.png
         content: >
-           Catalitzar el **potencial** de persones i organitzacions per crear un impacte positiu i durador en el seu entorn. Cada persona i cada organització té un potencial únic esperant ser desenvolupat.
+          Catalitzar el **potencial** de persones i organitzacions per crear un impacte positiu i durador en el seu entorn. Cada persona i cada organització té un potencial únic esperant ser desenvolupat.
       - title: El Meu Compromís
         iconPath: images/icons/help.png
         content: >
-         El meu compromís és acompanyar-te en aquest camí, aportant la meva experiència, coneixement i passió pel desenvolupament humà.
+          El meu compromís és acompanyar-te en aquest camí, aportant la meva experiència, coneixement i passió pel desenvolupament humà.
   - type: heading
     heading: La Invitació
     contents: <img src="/images/background-invitation-simple-pad.png"/> <p class='invitation'>Et convido a emprendre junts un viatge de <span class='underline-highlight-dark'>descobriment i transformació</span>.</p><span class='invitation-extra'>Cada persona i cada organització té un potencial únic esperant ser desenvolupat. El meu compromís és acompanyar-te en aquest camí, aportant la meva experiència, coneixement i passió pel desenvolupament humà.</span>

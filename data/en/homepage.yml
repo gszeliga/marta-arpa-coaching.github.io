@@ -4,7 +4,7 @@ banner:
   contents: Want to know more?
   button:
     contents: Subscribe
-    url: /newsletter/main
+    url: /en/newsletter/main
   columns:
     - title: Executive Coaching
       text: Empower leaders and teams to maximize performance and achieve strategic goals.
@@ -31,11 +31,11 @@ items:
       - title: My Purpose
         iconPath: images/icons/growing-seed.png
         content: >
-         To unlock the **potential** of people and organizations to create a positive and lasting impact on their environment. Everyone has unique potential waiting to be developed.
+          To unlock the **potential** of people and organizations to create a positive and lasting impact on their environment. Everyone has unique potential waiting to be developed.
       - title: My Commitment
         iconPath: images/icons/help.png
         content: >
-           My commitment is to accompany you on this journey, sharing my experience, knowledge, and passion for human development.
+          My commitment is to accompany you on this journey, sharing my experience, knowledge, and passion for human development.
   - type: heading
     heading: The Invitation
     contents: <img src="/images/background-invitation-simple-pad.png"/> <p class='invitation'>I invite you to embark together on a journey of<span class='underline-highlight-dark'>discovery and transformation</span>.</p><span class='invitation-extra'>Every person and every organization has unique potential waiting to be developed. My commitment is to accompany you on this journey, bringing my experience, knowledge, and passion for human development.</span>
