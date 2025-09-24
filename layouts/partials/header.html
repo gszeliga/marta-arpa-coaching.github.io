@@ -1,10 +1,12 @@
+
+
 <div id="header">
     {{ if hugo.IsMultilingual }}
         {{- partial "languages.html" . }}
     {{- end -}}
     <div id="logo-wrapper"><h1><a href="{{ .Site.BaseURL }}" id="logo">
         {{- if .Site.Data.globalheader.image_video}}
-          <video autoplay muted playsinline class="logo-video" aria-label="{{ .Site.Title }}">
+          <video autoplay muted playsinline data-replace-video-with-canvas class="logo-video" aria-label="{{ .Site.Title }}">
             <source src="{{ .Site.Data.globalheader.image_video | relURL }}" type="video/mp4">
             {{ if .Site.Params.logo }}
                 <img src="{{ .Site.Data.globalheader.image | relURL }}" alt="{{ .Site.Title }}" class="logo-fallback">
@@ -44,3 +46,43 @@
         </ul>
     </nav>
 </div>
+
+<style>
+.shy {
+  position: absolute;
+  opacity: 0;
+}
+
+</style>
+
+<script>
+// Toggle this boolean to hide/show the original video alongside the canvas version of the video.
+var hideOrig = true;
+
+// draws the current frame from the video, then sets a timeout to do it again (roughly 30 FPS).
+var drawFrame = function(v,c) {
+  if (v.paused || v.ended) return false;
+  var w = v.videoWidth;
+  var h = v.videoHeight;
+  c.canvas.width = w;
+  c.canvas.height = h;
+  c.drawImage(v,0,0,w,h);
+  v.timeout = setTimeout(drawFrame, 30, v,c);
+}
+
+// creates a canvas element, inserts it, and begins drawing video frames
+document.querySelectorAll('[data-replace-video-with-canvas]').forEach(function(v) {
+  var canvas = document.createElement('canvas');
+  canvas.classList.add('logo-canvas');
+  var ctx = canvas.getContext('2d');
+  v.parentNode.appendChild(canvas);
+  if (hideOrig) v.classList.add('shy');
+
+  drawFrame(v,ctx);
+
+  v.addEventListener('playing', function() {
+    if (typeof v.timeout === 'number') clearTimeout(v.timeout);
+    drawFrame(this,ctx);
+  });
+});
+</script>
