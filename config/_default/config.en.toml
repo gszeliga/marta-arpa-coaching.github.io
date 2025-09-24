@@ -33,5 +33,9 @@ url = "#"
 
 [params.footer.contact_form]
 enabled = true
-header = "Get In Touch"
-action = ""
+header = "Let's talk"
+action = "https://forms.un-static.com/forms/a9ce19c95290561fd95c7ccab9104c6510aed4c4"
+# https://www.iqcomputing.com/support/articles/generate-google-recaptcha-v2-keys/
+# https://www.google.com/recaptcha/admin/site/734712702/setup
+# https://developers.google.com/recaptcha/docs/display#config
+sitekey = "6Ld-08orAAAAANupWBL2u9QZu78ZB3O4E4-R65a6"
