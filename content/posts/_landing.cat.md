@@ -1,1 +1,1 @@
-<p>Gràcies per unir-te a aquesta comunitat!</p> <p>A partir d’ara rebràs al teu correu idees pràctiques, reflexions i eines de coaching i consulting per impulsar el teu desenvolupament personal i professional. El meu compromís amb tu és mantenir el contingut útil, concret i aplicable, perquè cada correu sigui un pas més cap a la transformació que busques.</p>
+<p>Aquest espai ben aviat s’omplirà de posts pensats per inspirar-te, acompanyar-te i donar-te eines útils per al teu creixement personal i professional. Torna aviat i no t’ho perdis!</p>
