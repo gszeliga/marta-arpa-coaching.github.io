@@ -1,7 +1,6 @@
 baseURL = "https://martaarpa.com"
 #canonifyURLs = true
 languageCode = "en-us"
-#title = "Marta Arpa Coaching"
 copyright = "© Marta Arpa. All rights reserved"
 
 defaultContentLanguage = "es"
@@ -25,7 +24,6 @@ weight = 4
 
 
 [params]
-description = "A business/corporate style responsive site template."
 images = ['images/metaimage.jpg']
 show_post_dates = false
 recaptchaSiteKey = "6Ld-08orAAAAANupWBL2u9QZu78ZB3O4E4-R65a6"

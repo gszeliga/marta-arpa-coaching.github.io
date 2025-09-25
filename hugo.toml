@@ -1,6 +1,5 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-#title = 'Marta Arpa Coaching'
 theme = 'arcana'
 # sectionPagesMenu = 'main'
 
@@ -27,3 +26,8 @@ dir = ':cacheDir/images'
 [services]
 [services.googleAnalytics]
 id = 'G-25NEQK4KKL'
+
+[params]
+author = "Marta Arpa"
+description = "Coaching ejecutivo y personal, PMaaS/CMaaS y consultoría del cambio. Empodero líderes, facilito transformaciones profundas y catalizo el potencial de personas y organizaciones."
+keywords = "Marta Arpa, coaching ejecutivo, coaching personal, consultoría del cambio, PMaaS, CMaaS, transformación profunda, empoderar líderes, catalizar potencial, desarrollo organizacional, estrategias personalizadas"
