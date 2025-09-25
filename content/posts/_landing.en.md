@@ -1,1 +1,1 @@
-<p>Thank you for joining this community!</p> <p>From now on, you’ll receive practical ideas, reflections, and coaching and consulting tools straight to your inbox to support your personal and professional growth. My commitment to you is to keep the content useful, clear, and actionable, so that each email is one more step toward the transformation you’re seeking.</p>
+<p>This space will soon be filled with posts designed to inspire you, support you, and provide useful tools for your personal and professional growth. Come back soon and don’t miss it!</p>
