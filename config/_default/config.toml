@@ -2,7 +2,7 @@ baseURL = "https://martaarpa.com"
 #canonifyURLs = true
 languageCode = "en-us"
 #title = "Marta Arpa Coaching"
-copyright = "© Untitled. All rights reserved"
+copyright = "© Marta Arpa. All rights reserved"
 
 defaultContentLanguage = "es"
 
@@ -84,4 +84,4 @@ url = "https://www.linkedin.com/in/marta-arpa-moragrega/"
 [[server.headers]]
 for = "/**"
 [server.headers.values]
-Content-Security-Policy = "default-src 'self'; frame-src 'self' https://*.brevo.com https://*.sendinblue.com https://*.sibforms.com https://www.google.com https://www.gstatic.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.brevo.com https://*.sendinblue.com https://*.sibforms.com https://www.google.com https://www.gstatic.com; connect-src 'self' https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://*.brevo.com https://*.sendinblue.com https://*.sibforms.com; style-src-attr 'unsafe-inline'"
+Content-Security-Policy = "default-src 'self'; frame-src 'self' https://*.brevo.com https://*.sendinblue.com https://*.sibforms.com https://www.google.com https://www.gstatic.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.brevo.com https://*.sendinblue.com https://*.sibforms.com https://www.google.com https://www.gstatic.com https://www.googletagmanager.com; connect-src 'self' https://www.google.com https://www.gstatic.com https://www.google-analytics.com https://analytics.google.com; style-src 'self' 'unsafe-inline' https://*.brevo.com https://*.sendinblue.com https://*.sibforms.com; style-src-attr 'unsafe-inline'"

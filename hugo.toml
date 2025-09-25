@@ -22,3 +22,8 @@ dir = ':cacheDir/images'
 #     pageRef = '/contact/sample'
 #     parent = 'Contact'
 #     weight = 2
+
+
+[services]
+[services.googleAnalytics]
+id = 'G-25NEQK4KKL'
