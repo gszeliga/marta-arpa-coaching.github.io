@@ -8,6 +8,9 @@ defaultContentLanguage = "es"
 [markup.goldmark.renderer]
 unsafe = true # Allow HTML in md files
 
+[outputs]
+home = ["HTML", "RSS", "ROBOTS"]
+
 [languages]
 [languages.en]
 languageName = "Inglés"
