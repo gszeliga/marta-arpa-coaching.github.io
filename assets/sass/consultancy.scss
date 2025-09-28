@@ -370,7 +370,24 @@
     grid-template-columns: 1fr;
   }
 
+  .timeline-content,
+  .timeline-title,
+  .benefit-text,
+  .objective-title {
+    font-size: 1em;
+  }
+
+  .timeline-number,
+  .compact-list {
+    font-size: 0.9em;
+  }
+
   .deliverables-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .circle-icon {
+    width: 20px;
+    height: 20px;
   }
 }
