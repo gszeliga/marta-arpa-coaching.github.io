@@ -157,6 +157,16 @@
   width: 100%;
 }
 
+@media screen and (max-width: 1024px) {
+  .service-title {
+    font-size: 1.2em;
+  }
+
+  .benefits-list {
+    font-size: 1.1em;
+  }
+}
+
 /* Mobile responsive */
 @media screen and (max-width: 768px) {
   .banner-header {
@@ -189,14 +199,20 @@
     font-size: 2.5rem;
   }
 
-  .service-title {
-    font-size: 1.3rem;
-  }
-
   .service-title.marker-highlight,
   .service-title.marker-border,
   .service-title.marker-bracket {
     font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .service-title {
+    font-size: 1em;
+  }
+
+  .benefits-list {
+    font-size: 0.9em;
   }
 }
 
