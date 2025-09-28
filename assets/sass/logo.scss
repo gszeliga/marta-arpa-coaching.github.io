@@ -6,7 +6,7 @@
 }
 
 .logo-video {
-  max-height: 20vh;
+  max-height: 45px;
   width: auto;
   object-fit: contain;
   background-color: #1d1d1b !important;
@@ -19,29 +19,64 @@
 
 /* Responsive breakpoints */
 
-@media screen and (min-width: 1440px) {
+@media (min-width: 80em) {
+  /* ~1280px - Large desktop */
   .logo-video {
-    max-height: 7em;
+    max-height: 150px;
   }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 64em) {
+  /* ~1024px - Desktop */
   .logo-video {
-    max-height: 4em;
+    max-height: 130px;
   }
 }
 
-@media (max-width: 840px) {
-  .logo-video {
-    max-height: 3em;
-  }
-}
+// @media (min-width: 48em) {
+//   /* ~768px - Tablet */
+//   .logo-video {
+//     max-height: 120px;
+//   }
+// }
 
-@media (max-width: 380px) {
-  .logo-video {
-    max-height: 2vh;
-  }
-}
+// @media (min-width: 30em) {
+//   /* ~480px - Large mobile */
+//   .logo-video {
+//     max-height: 100px;
+//   }
+// }
+
+// @media (min-width: 20em) {
+//   /* ~480px - Large mobile */
+//   .logo-video {
+//     max-height: 45px;
+//   }
+// }
+
+// @media screen and (min-width: 1440px) {
+//   .logo-video {
+//     max-height: 7em;
+//   }
+// }
+
+// @media (max-width: 1024px) {
+//   .logo-video {
+//     max-height: 4em;
+//   }
+// }
+
+// @media (max-width: 840px) {
+//   .logo-video {
+//     max-height: 3em;
+//   }
+// }
+
+// @media (max-width: 380px) {
+//   .logo-video {
+//     max-height: 2vh;
+//   }
+// }
 
 /* Logo image */
 #logo {
