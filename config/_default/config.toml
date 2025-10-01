@@ -2,7 +2,7 @@ baseURL = "https://martaarpa.com"
 #canonifyURLs = true
 languageCode = "en-us"
 copyright = "© Marta Arpa. All rights reserved"
-
+title = "Marta Arpa Coaching y Consultoría"
 defaultContentLanguage = "es"
 
 [markup.goldmark.renderer]
