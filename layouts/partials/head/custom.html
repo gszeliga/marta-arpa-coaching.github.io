@@ -1,7 +1,6 @@
 <!-- Google tag (gtag.js) -->
 <script
   async
-  defer
   src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Config.Services.GoogleAnalytics.ID }}"
 ></script>
 <script>
@@ -50,11 +49,3 @@
   property="og:image"
   content="{{ . | absURL }}"
 />{{ end }}
-
-<!-- Preload video in the banner-->
-<link
-  rel="prefetch"
-  href="{{ .Site.Data.globalheader.image_video | relURL }}"
-  as="video"
-  type="video/mp4"
-/>
