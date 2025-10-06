@@ -7,6 +7,13 @@
         <div class="box highlight card ripple">
           <!-- <i class="icon solid major {{ .icon }}"></i> -->
           <div class="icon-wrapper">
+            <link
+              rel="preload"
+              fetchpriority="high"
+              as="image"
+              href="{{ .iconPath | relURL }}"
+              type="image/png"
+            />
             <img src="{{ .iconPath | relURL }}" alt="{{ .title }}" />
           </div>
           <h3>{{ .title }}</h3>

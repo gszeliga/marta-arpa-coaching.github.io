@@ -4,7 +4,7 @@
     {{- end -}}
     <div id="logo-wrapper"><h1><a href="{{ .Site.BaseURL }}" id="logo">
         {{- if .Site.Data.globalheader.image_video}}
-          <video autoplay muted playsinline class="logo-video" aria-label="{{ .Site.Title }}">
+          <video preload="auto" autoplay muted playsinline class="logo-video" aria-label="{{ .Site.Title }}">
             <source src="{{ .Site.Data.globalheader.image_video | relURL }}" type="video/mp4">
             {{ if .Site.Params.logo }}
                 <img src="{{ .Site.Data.globalheader.image | relURL }}" alt="{{ .Site.Title }}" class="logo-fallback">
