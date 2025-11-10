@@ -81,6 +81,11 @@ title = "LinkedIn"
 icon = "fa-linkedin-in"
 url = "https://www.linkedin.com/in/marta-arpa-moragrega/"
 
+[[params.social]]
+title = "Instagram"
+icon = "fa-instagram"
+url = "https://www.instagram.com/marta_arpa_coaching"
+
 [server]
 [[server.headers]]
 for = "/**"
