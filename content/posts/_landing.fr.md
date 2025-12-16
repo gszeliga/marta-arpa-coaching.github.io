@@ -1,1 +1,0 @@
-<p>Cet espace sera bientôt rempli de posts pensés pour vous inspirer, vous accompagner et vous offrir des outils utiles pour votre développement personnel et professionnel. Revenez bientôt et ne le manquez pas!</p>
