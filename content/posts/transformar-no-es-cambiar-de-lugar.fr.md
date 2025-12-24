@@ -6,12 +6,12 @@ summary: |
 image_alt: La seule constante dans la vie est le changement. — Héraclite
 date: "2025-12-15T00:00:00"
 tags:
-  - coachingejecutivo
-  - coachingpersonal
-  - transformación
-  - desarrollohumano
-  - liderazgoconsciente
-  - autenticidad
+  # - coachingejecutivo
+  # - coachingpersonal
+  # - transformación
+  # - desarrollohumano
+  # - liderazgoconsciente
+  # - autenticidad
 ---
 
 Dans un monde qui va de plus en plus vite, nous avons tendance à penser que transformer signifie changer de travail, de ville ou de situation. Pourtant, la véritable transformation ne commence pas à l’extérieur, mais à l’intérieur. Ce n’est ni un déplacement géographique ni un saut impulsif : c’est un ajustement profond dans la manière dont nous observons la réalité et dont nous nous observons nous-mêmes.
