@@ -52,6 +52,9 @@ Four services in `content/services/`: `coaching-ex`, `coaching-per`, `maas`, `co
 - Newsletter: Brevo (Sendinblue)
 - Analytics: Google Analytics + Umami Cloud
 
+### CSS and Per-Language Content
+CSS is compiled once for all languages (single `style.css`). For per-language dynamic content (like banner images), use inline styles in HTML templates rather than SCSS. See `layouts/partials/homepage/banner.html` for an example.
+
 ## Theme
 
 Uses the Arcana theme as a git submodule. Custom templates in `layouts/` override theme defaults. Initialize submodules after cloning:
