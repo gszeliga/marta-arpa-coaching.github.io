@@ -19,6 +19,7 @@
   color: #1e3f2b;
   background-color: #1e3f2b;
   padding: 4% 0;
+  height: 24em;
 
   header {
     background: #1e3f2b;
@@ -113,19 +114,19 @@
 
 @media screen and (max-width: 1680px) {
   #banner {
-    min-height: 26em;
+    height: 22em;
   }
 }
 
 @media screen and (max-width: 1280px) {
   #banner {
-    min-height: 32em;
+    height: 21em;
   }
 }
 
 @media screen and (max-width: 840px) {
   #banner {
-    height: 42em;
+    height: 20em;
   }
 
   .banner-grid {
@@ -137,7 +138,7 @@
 
 @media (max-width: 480px) {
   #banner {
-    height: 40em;
+    height: 16em;
   }
 
   // .banner-grid {
@@ -148,7 +149,7 @@
 
 @media (max-width: 380px) {
   #banner {
-    height: 45em;
+    height: 15em;
   }
 }
 
