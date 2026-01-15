@@ -1,6 +1,6 @@
 banner:
   enable: true
-  image: images/banner-home-es.jpg
+  image: images/banner-home-cat.jpg
   contents: Vols saber-ne més?
   button:
     contents: Subscriu-te
