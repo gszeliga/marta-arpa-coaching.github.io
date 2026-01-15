@@ -4,19 +4,24 @@
   padding: 3em 0 3em 0;
 }
 
+.wrapper.style2 {
+  padding: unset;
+}
+
 #banner {
   position: relative;
-  background-image: none !important;
+  background-image: url("/images/banner-prueba.jpg") !important;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: unset;
+  //background-position: center;
   width: 100%;
   color: #1e3f2b;
-  background-color: #e9e9e7;
+  background-color: #1e3f2b;
   padding: 4% 0;
 
   header {
-    background: radial-gradient(circle, #1e3f2b, #d7f7e4);
+    background: #1e3f2b;
   }
 
   /* optional grayscale overlay */
