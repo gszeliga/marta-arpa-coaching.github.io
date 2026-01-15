@@ -39,7 +39,7 @@ trunk fmt            # Auto-format code
 - `static/` - Static assets (images, fonts)
 
 ### Data-Driven Components
-- Homepage blocks defined in `data/homepage.yml`
+- Homepage blocks: `data/homepage.yml` (Spanish default), with language overrides in `data/{lang}/homepage.yml` (en, fr, cat)
 - Header/logo config in `data/globalheader.yml`
 - Footer links configured in `config/_default/config.toml` under `[params.footer]`
 
