@@ -53,7 +53,12 @@ Four services in `content/services/`: `coaching-ex`, `coaching-per`, `maas`, `co
 - Analytics: Google Analytics + Umami Cloud
 
 ### CSS and Per-Language Content
-CSS is compiled once for all languages (single `style.css`). For per-language dynamic content (like banner images), use inline styles in HTML templates rather than SCSS. See `layouts/partials/homepage/banner.html` for an example.
+CSS is compiled once for all languages (single `style.css`). For per-language dynamic content, use Hugo templates to inject values from data files.
+
+### Banner Images
+- Uses `<img>` element (not background-image) for SEO/accessibility
+- Each `homepage.yml` has `image` and `image_alt` fields for localized alt text
+- Images are 1584×396px (4:1 ratio); responsive heights in `assets/sass/banner.scss` are calculated based on 80% width scaling
 
 ## Theme
 

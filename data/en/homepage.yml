@@ -1,6 +1,7 @@
 banner:
   enable: true
   image: images/banner-home-en.png
+  image_alt: "Turning purpose into real impact for people and organizations"
   contents: Want to know more?
   button:
     contents: Subscribe

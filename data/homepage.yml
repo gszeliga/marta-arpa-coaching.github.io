@@ -1,6 +1,7 @@
 banner:
   enable: true
   image: images/banner-home-es.png
+  image_alt: "Acompaño a personas y organizaciones hacia un impacto real"
   contents: ¿Quieres saber más?
   button:
     contents: Subscribete
