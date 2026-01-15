@@ -4,19 +4,25 @@
   padding: 3em 0 3em 0;
 }
 
+.wrapper.style2 {
+  padding: unset;
+}
+
 #banner {
   position: relative;
-  background-image: none !important;
-  background-size: contain;
+  //background-image: url("/images/banner-prueba.jpg") !important;
+  background-size: 80% auto;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center top;
+  //background-position: center;
   width: 100%;
   color: #1e3f2b;
   background-color: #e9e9e7;
   padding: 4% 0;
+  height: 24em;
 
   header {
-    background: radial-gradient(circle, #1e3f2b, #d7f7e4);
+    background: #1e3f2b;
   }
 
   /* optional grayscale overlay */
@@ -106,21 +112,33 @@
   background: radial-gradient(circle, #1e3f2b, #d7f7e4);
 }
 
+@media screen and (min-width: 2560px) {
+  #banner {
+    height: 28em;
+  }
+}
+
+@media screen and (min-width: 3840px) {
+  #banner {
+    height: 32em;
+  }
+}
+
 @media screen and (max-width: 1680px) {
   #banner {
-    min-height: 26em;
+    height: 22em;
   }
 }
 
 @media screen and (max-width: 1280px) {
   #banner {
-    min-height: 32em;
+    height: 21em;
   }
 }
 
 @media screen and (max-width: 840px) {
   #banner {
-    height: 42em;
+    height: 20em;
   }
 
   .banner-grid {
@@ -132,7 +150,7 @@
 
 @media (max-width: 480px) {
   #banner {
-    height: 40em;
+    height: 16em;
   }
 
   // .banner-grid {
@@ -143,7 +161,7 @@
 
 @media (max-width: 380px) {
   #banner {
-    height: 45em;
+    height: 15em;
   }
 }
 

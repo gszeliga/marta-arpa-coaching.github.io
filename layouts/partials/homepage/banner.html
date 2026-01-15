@@ -1,19 +1,8 @@
-<section id="banner">
-  <div class="container">
-    <header class="banner-header">
-      <h2>{{ .contents | markdownify }}</h2>
-      {{- if .button }}
-      <a href="{{ .button.url }}" class="button">{{ .button.contents }}</a>
-      {{- end }}
+<section id="banner" style="background-image: url('/{{ .image }}');">
+    <header>
+        <h2>{{ .contents | markdownify }}</h2>
+        {{- if .button }}
+            <a href="{{ .button.url }}" class="button">{{ .button.contents }}</a>
+        {{- end }}
     </header>
-    <div class="banner-grid">
-      {{ range .columns }}
-      <div class="banner-column">
-        <img src="{{ .icon | relURL }}" />
-        <h3><span>{{ .title }}</span></h3>
-        <p>{{ .text }}</p>
-      </div>
-      {{ end }}
-    </div>
-  </div>
 </section>
