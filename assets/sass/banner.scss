@@ -17,6 +17,7 @@
   background-image: none;
   padding: 4% 0;
   height: 24em;
+  transition: height 0.3s ease;
 
   header {
     position: absolute;
@@ -25,6 +26,7 @@
     width: 100%;
     z-index: 2;
     background: #1e3f2b;
+    transition: all 0.3s ease;
   }
 }
 
@@ -131,19 +133,19 @@
 
 @media screen and (max-width: 1680px) {
   #banner {
-    height: 22em;
+    height: 21em;
   }
 }
 
 @media screen and (max-width: 1280px) {
   #banner {
-    height: 21em;
+    height: 18em;
   }
 }
 
 @media screen and (max-width: 840px) {
   #banner {
-    height: 20em;
+    height: 18em;
   }
 
   .banner-grid {
@@ -155,18 +157,13 @@
 
 @media (max-width: 480px) {
   #banner {
-    height: 16em;
+    height: 14em;
   }
-
-  // .banner-grid {
-  //   grid-template-columns: repeat(2, 1fr);
-  //   gap: 30px;
-  // }
 }
 
 @media (max-width: 380px) {
   #banner {
-    height: 15em;
+    height: 14em;
   }
 }
 
