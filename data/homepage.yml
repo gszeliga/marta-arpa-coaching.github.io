@@ -1,6 +1,6 @@
 banner:
   enable: true
-  image: images/banner-coaching-es.png
+  image: images/banner-home-es.jpg
   contents: ¿Quieres saber más?
   button:
     contents: Subscribete
