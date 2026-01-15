@@ -1,6 +1,6 @@
 banner:
   enable: true
-  image: images/banner-home-en.jpg
+  image: images/banner-home-en.png
   contents: Want to know more?
   button:
     contents: Subscribe

@@ -11,13 +11,13 @@
 #banner {
   position: relative;
   //background-image: url("/images/banner-prueba.jpg") !important;
-  background-size: contain;
+  background-size: 90% auto;
   background-repeat: no-repeat;
-  background-position: unset;
+  background-position: center top;
   //background-position: center;
   width: 100%;
   color: #1e3f2b;
-  background-color: #1e3f2b;
+  background-color: #e9e9e7;
   padding: 4% 0;
   height: 24em;
 

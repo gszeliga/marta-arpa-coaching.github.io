@@ -1,6 +1,6 @@
 banner:
   enable: true
-  image: images/banner-home-fr.jpg
+  image: images/banner-home-fr.png
   contents: Vous voulez en savoir plus ?
   button:
     contents: Abonnez-vous
