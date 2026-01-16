@@ -20,7 +20,7 @@ trunk check          # Run all linters
 trunk fmt            # Auto-format code
 ```
 
-**Required versions**: Hugo Extended v0.148.0, Dart Sass v1.89.2
+**Required versions**: Hugo Extended v0.154.2, Dart Sass v1.89.2
 
 ## Architecture
 
