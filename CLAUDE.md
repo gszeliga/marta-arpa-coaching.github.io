@@ -29,6 +29,7 @@ trunk fmt            # Auto-format code
 - Language configs in `config/_default/config.*.toml`
 - Translation strings in `i18n/*.toml`
 - Spanish is the default language (`defaultContentLanguage = "es"`)
+- Catalan uses language key `cat` but i18n file is `ca.toml` (RFC 5646 code). The `languageCode = "ca"` config maps them.
 
 ### Directory Layout
 - `content/` - Markdown and HTML source content

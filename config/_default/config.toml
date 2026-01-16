@@ -22,6 +22,7 @@ weight = 2
 languageName = "Español"
 weight = 3
 [languages.cat]
+languageCode = "ca"
 languageName = "Catalán"
 weight = 4
 
@@ -70,10 +71,6 @@ url = "/contact/main/"
 enabled = true
 header = "Hablemos"
 action = "https://forms.un-static.com/forms/4558fb21fb022b78fb17ba7616be6bc4e0c70a4a"
-# https://www.iqcomputing.com/support/articles/generate-google-recaptcha-v2-keys/
-# https://www.google.com/recaptcha/admin/site/734712702/setup
-# https://developers.google.com/recaptcha/docs/display#config
-sitekey = "6Ld-08orAAAAANupWBL2u9QZu78ZB3O4E4-R65a6"
 
 
 [[params.social]]
