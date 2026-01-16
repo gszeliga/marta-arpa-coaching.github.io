@@ -54,7 +54,3 @@ url = "/fr/contact/main/"
 enabled = true
 header = "Parlons-en"
 action = "https://forms.un-static.com/forms/aa737dbb5a6d63dfca1ca4784b9b1cffcac83569"
-# https://www.iqcomputing.com/support/articles/generate-google-recaptcha-v2-keys/
-# https://www.google.com/recaptcha/admin/site/734712702/setup
-# https://developers.google.com/recaptcha/docs/display#config
-sitekey = "6Ld-08orAAAAANupWBL2u9QZu78ZB3O4E4-R65a6"
