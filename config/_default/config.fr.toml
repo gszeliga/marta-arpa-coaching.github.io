@@ -13,6 +13,7 @@ weight = 2
 languageName = "Espagnol"
 weight = 3
 [languages.cat]
+languageCode = "ca"
 languageName = "Catalan"
 weight = 4
 
