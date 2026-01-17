@@ -57,9 +57,10 @@ Four services in `content/services/`: `coaching-ex`, `coaching-per`, `maas`, `co
 CSS is compiled once for all languages (single `style.css`). For per-language dynamic content, use Hugo templates to inject values from data files.
 
 ### Banner Images
-- Uses `<img>` element (not background-image) for SEO/accessibility
-- Each `homepage.yml` has `image` and `image_alt` fields for localized alt text
-- Images are 1584×396px (4:1 ratio); responsive heights in `assets/sass/banner.scss` are calculated based on 80% width scaling
+- Uses `<picture>` element with responsive sources for SEO/accessibility
+- Each `homepage.yml` has `image`, `image_crop`, and `image_alt` fields for localized images and alt text
+- At 768px and below, the cropped version (`image_crop`) is displayed; above 768px, the full image (`image`) is used
+- Responsive heights and widths are configured in `assets/sass/banner.scss`
 
 ## Theme
 

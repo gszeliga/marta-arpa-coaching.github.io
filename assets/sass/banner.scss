@@ -35,7 +35,7 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 80%;
+  width: 85%;
   height: auto;
   z-index: 1;
   object-fit: contain;
@@ -155,15 +155,25 @@
   }
 }
 
+@media (max-width: 768px) {
+  #banner {
+    height: 26em;
+  }
+
+  .banner-image {
+    width: 95%;
+  }
+}
+
 @media (max-width: 480px) {
   #banner {
-    height: 14em;
+    height: 22em;
   }
 }
 
 @media (max-width: 380px) {
   #banner {
-    height: 14em;
+    height: 20em;
   }
 }
 
