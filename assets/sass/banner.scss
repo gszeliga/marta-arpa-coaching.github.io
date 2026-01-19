@@ -16,7 +16,7 @@
   background-color: #e9e9e7;
   background-image: none;
   padding: 4% 0;
-  height: 24em;
+  height: 26em;
   transition: height 0.3s ease;
 
   header {
@@ -27,6 +27,7 @@
     z-index: 2;
     background: #1e3f2b;
     transition: all 0.3s ease;
+    padding: 1.5em 0;
   }
 }
 
@@ -121,31 +122,31 @@
 
 @media screen and (min-width: 2560px) {
   #banner {
-    height: 28em;
+    height: 30em;
   }
 }
 
 @media screen and (min-width: 3840px) {
   #banner {
-    height: 32em;
+    height: 34em;
   }
 }
 
 @media screen and (max-width: 1680px) {
   #banner {
-    height: 21em;
+    height: 23em;
   }
 }
 
 @media screen and (max-width: 1280px) {
   #banner {
-    height: 18em;
+    height: 20em;
   }
 }
 
 @media screen and (max-width: 840px) {
   #banner {
-    height: 18em;
+    height: 20em;
   }
 
   .banner-grid {

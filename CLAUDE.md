@@ -47,6 +47,11 @@ trunk fmt            # Auto-format code
 ### Service Pages
 Four services in `content/services/`: `coaching-ex`, `coaching-per`, `maas`, `consultancy`. Each has HTML content files per language (`main.html`, `main.en.html`, etc.).
 
+### Blog Posts
+- Posts are in `content/posts/` with language suffixes: `post-slug.md` (Spanish default), `post-slug.en.md`, `post-slug.fr.md`, `post-slug.cat.md`
+- Front matter includes: `title`, `image`, `summary`, `image_alt`, `date`, `tags`
+- Post banner images go in `static/images/posts/{post-slug}/banner.png`
+
 ### External Integrations
 - Form backend: un-static.com
 - reCAPTCHA v2 for form validation
