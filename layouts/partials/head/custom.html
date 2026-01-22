@@ -21,6 +21,17 @@
   data-website-id="6d411740-d616-4e37-875f-35102dd154c6"
 ></script>
 
+<!-- Hreflang tags for multilingual SEO -->
+<link rel="alternate" hreflang="{{ .Language.LanguageCode | default .Language.Lang }}" href="{{ .Permalink }}" />
+{{- range .Translations }}
+<link rel="alternate" hreflang="{{ .Language.LanguageCode | default .Language.Lang }}" href="{{ .Permalink }}" />
+{{- end }}
+{{- range .AllTranslations }}
+{{- if eq .Language.Lang "es" }}
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+{{- end }}
+{{- end }}
+
 <!-- Meta tags específicos para Bing -->
 <meta
   name="keywords"
