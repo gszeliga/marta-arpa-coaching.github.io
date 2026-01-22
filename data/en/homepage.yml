@@ -6,7 +6,7 @@ banner:
   contents: Want to know more?
   button:
     contents: Subscribe
-    url: /en/newsletter/main
+    url: /en/newsletter/main/
   columns:
     - title: Executive Coaching
       text: Empower leaders and teams to maximize performance and achieve strategic goals.
