@@ -67,6 +67,16 @@ CSS is compiled once for all languages (single `style.css`). For per-language dy
 - At 768px and below, the cropped version (`image_crop`) is displayed; above 768px, the full image (`image`) is used
 - Responsive heights and widths are configured in `assets/sass/banner.scss`
 
+### URL Conventions
+- All internal URLs must include trailing slashes (e.g., `/services/coaching-ex/main/` not `/services/coaching-ex/main`)
+- This applies to: menu configs (`menus.*.toml`), homepage data files, footer links, and any hardcoded URLs
+- Missing trailing slashes cause 301 redirects which impact SEO
+
+### SEO Configuration
+- Meta descriptions: `[params].description` in each `config/_default/config.*.toml`
+- Hreflang tags: Implemented in `layouts/partials/head/custom.html`
+- x-default hreflang points to Spanish (hardcoded as "es" in template)
+
 ## Theme
 
 Uses the Arcana theme as a git submodule. Custom templates in `layouts/` override theme defaults. Initialize submodules after cloning:
