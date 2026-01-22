@@ -51,6 +51,7 @@ body {
 }
 
 .container {
+  h1,
   h2 {
     color: #d7f7e4;
   }
@@ -88,10 +89,39 @@ body {
   color: #1d1d1b !important;
 }
 
+// Page title h1 styling (matches theme h2 defaults)
+h1 {
+  font-size: 1.75em;
+  letter-spacing: -0.025em;
+}
+
 // big fucking heading
+header.major h1,
 header.major h2 {
   color: #1e3f2b;
   margin-bottom: 0em;
+  font-size: 2.25em;
+}
+
+// Mobile responsive h1 styles
+@media screen and (max-width: 736px) {
+  h1 {
+    font-size: 1.25em;
+    letter-spacing: 0;
+    line-height: 1.35em;
+  }
+
+  header.major h1,
+  header.major h2 {
+    font-size: 1.75em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header.major h1,
+  header.major h2 {
+    font-size: 1.25em;
+  }
 }
 
 header.major p {
@@ -107,6 +137,7 @@ header.major p {
 }
 
 article p,
+article h1,
 article h2,
 article h3 {
   color: #1e3f2b !important;

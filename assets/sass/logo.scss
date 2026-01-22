@@ -78,6 +78,14 @@
 //   }
 // }
 
+/* Logo wrapper - ensure h1 and p have same styling */
+#logo-wrapper h1,
+#logo-wrapper p {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
 /* Logo image */
 #logo {
   text-align: center;

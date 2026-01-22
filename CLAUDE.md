@@ -73,16 +73,29 @@ CSS is compiled once for all languages (single `style.css`). For per-language dy
 - Missing trailing slashes cause 301 redirects which impact SEO
 
 ### SEO Configuration
-- Meta descriptions: `[params].description` in each `config/_default/config.*.toml` (keep between 110-160 chars)
-- Hreflang tags: Implemented in `layouts/partials/head/custom.html`
-- x-default hreflang points to Spanish (hardcoded as "es" in template)
-- Page titles: Conditional brand suffix " | Marta Arpa" added only when title ≤ 45 chars (keeps total under Google's ~60 char limit). Configured in `layouts/partials/head/head.html`
+- **Meta descriptions**: Fallback chain in `layouts/partials/head/custom.html`:
+  1. `.Description` (front matter)
+  2. `.Params.summary` (blog posts)
+  3. `.Summary` (Hugo auto-generated, truncated to 160 chars)
+  4. `.Site.Params.description` (site-wide fallback from `config.*.toml`)
+- **H1 structure**: Each page has exactly one H1:
+  - Homepage: Logo/site title (in header)
+  - Other pages: Page title (in content area)
+  - Configured in `layouts/partials/header.html` (conditional h1/p for logo) and `layouts/_default/single.html`, `layouts/_default/list.html` (h1 for page titles)
+- **Hreflang tags**: Implemented in `layouts/partials/head/custom.html`
+- **x-default hreflang**: Points to Spanish (hardcoded as "es" in template)
+- **Page titles**: Conditional brand suffix " | Marta Arpa" added only when title ≤ 45 chars (keeps total under Google's ~60 char limit). Configured in `layouts/partials/head/head.html`
 
 ## Theme
 
-Uses the Arcana theme as a git submodule. Custom templates in `layouts/` override theme defaults:
+Uses the Arcana theme as a git submodule. **Do not modify files in `themes/arcana/`** - create overrides in `layouts/` instead.
+
+Custom templates in `layouts/` override theme defaults:
+- `layouts/_default/single.html` - Single page template with H1 for page titles
+- `layouts/_default/list.html` - List page template with H1 for section titles
+- `layouts/partials/header.html` - Header with conditional H1/P for logo
 - `layouts/partials/head/head.html` - Page title with conditional brand suffix
-- `layouts/partials/head/custom.html` - Analytics, meta tags, hreflang tags
+- `layouts/partials/head/custom.html` - Analytics, meta tags, meta descriptions, hreflang tags
 
 Initialize submodules after cloning:
 

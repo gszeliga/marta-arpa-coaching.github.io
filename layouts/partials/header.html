@@ -2,7 +2,7 @@
     {{ if hugo.IsMultilingual }}
         {{- partial "languages.html" . }}
     {{- end -}}
-    <div id="logo-wrapper"><h1><a href="{{ .Site.BaseURL }}" id="logo">
+    <div id="logo-wrapper">{{- if .IsHome }}<h1>{{ else }}<p>{{ end -}}<a href="{{ .Site.BaseURL }}" id="logo">
         {{- if .Site.Data.globalheader.image_video}}
           <video autoplay muted playsinline class="logo-video" aria-label="{{ .Site.Title }}">
             <source src="{{ .Site.Data.globalheader.image_video | relURL }}" type="video/mp4">
@@ -16,7 +16,7 @@
             <img src="{{ .Site.Data.globalheader.image | relURL }}" alt="{{ .Site.Data.globalheader.image_alt }}" />
         {{- end }}
         <!-- {{ with .Site.Data.globalheader.title }}{{ . | markdownify }}{{ else }}{{ .Site.Title }}{{ end }} -->
-    </a></h1></div>
+    </a>{{- if .IsHome }}</h1>{{ else }}</p>{{ end -}}</div>
 
     <nav id="nav">
         <ul>

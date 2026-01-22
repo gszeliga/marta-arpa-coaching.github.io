@@ -40,16 +40,17 @@
 <meta name="robots" content="index, follow" />
 <meta name="revisit-after" content="7 days" />
 <meta name="author" content="{{ .Site.Params.author }}" />
+{{- $metaDescription := .Description | default .Params.summary | default (.Summary | plainify | truncate 160) | default .Site.Params.description -}}
 <meta
   name="description"
-  content="{{ .Description | default .Site.Params.description }}"
+  content="{{ $metaDescription }}"
 />
 
 <!-- Open Graph -->
 <meta property="og:title" content="{{ .Title }}" />
 <meta
   property="og:description"
-  content="{{ .Description | default .Site.Params.description }}"
+  content="{{ $metaDescription }}"
 />
 <meta
   property="og:type"
