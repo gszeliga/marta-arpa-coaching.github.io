@@ -48,7 +48,7 @@ trunk fmt            # Auto-format code
 Four services in `content/services/`: `coaching-ex`, `coaching-per`, `maas`, `consultancy`. Each has HTML content files per language (`main.html`, `main.en.html`, etc.).
 
 ### Blog Posts
-- Posts are in `content/posts/` with language suffixes: `post-slug.md` (Spanish default), `post-slug.en.md`, `post-slug.fr.md`, `post-slug.cat.md`
+- Posts are in `content/posts/` with language suffixes: `post-slug.md` (Spanish default), `post-slug.en.md`, `post-slug.fr.md`, `post-slug.ca.md`
 - Front matter includes: `title`, `image`, `summary`, `image_alt`, `date`, `tags`
 - Post banner images go in `static/images/posts/{post-slug}/banner.png`
 
@@ -73,13 +73,18 @@ CSS is compiled once for all languages (single `style.css`). For per-language dy
 - Missing trailing slashes cause 301 redirects which impact SEO
 
 ### SEO Configuration
-- Meta descriptions: `[params].description` in each `config/_default/config.*.toml`
+- Meta descriptions: `[params].description` in each `config/_default/config.*.toml` (keep between 110-160 chars)
 - Hreflang tags: Implemented in `layouts/partials/head/custom.html`
 - x-default hreflang points to Spanish (hardcoded as "es" in template)
+- Page titles: Conditional brand suffix " | Marta Arpa" added only when title ≤ 45 chars (keeps total under Google's ~60 char limit). Configured in `layouts/partials/head/head.html`
 
 ## Theme
 
-Uses the Arcana theme as a git submodule. Custom templates in `layouts/` override theme defaults. Initialize submodules after cloning:
+Uses the Arcana theme as a git submodule. Custom templates in `layouts/` override theme defaults:
+- `layouts/partials/head/head.html` - Page title with conditional brand suffix
+- `layouts/partials/head/custom.html` - Analytics, meta tags, hreflang tags
+
+Initialize submodules after cloning:
 
 ```bash
 git submodule update --init --recursive
