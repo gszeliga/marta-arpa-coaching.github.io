@@ -25,11 +25,11 @@ trunk fmt            # Auto-format code
 ## Architecture
 
 ### Multilingual Content Structure
-- Content files use language suffixes: `_index.es.md`, `_index.en.md`, `_index.fr.md`, `_index.cat.md`
+- Content files use language suffixes: `_index.es.md`, `_index.en.md`, `_index.fr.md`, `_index.ca.md`
 - Language configs in `config/_default/config.*.toml`
 - Translation strings in `i18n/*.toml`
 - Spanish is the default language (`defaultContentLanguage = "es"`)
-- Catalan uses language key `cat` but i18n file is `ca.toml` (RFC 5646 code). The `languageCode = "ca"` config maps them.
+- Catalan uses language key `ca` (RFC 5646 code), matching the i18n file `ca.toml`
 
 ### Directory Layout
 - `content/` - Markdown and HTML source content
@@ -40,7 +40,7 @@ trunk fmt            # Auto-format code
 - `static/` - Static assets (images, fonts)
 
 ### Data-Driven Components
-- Homepage blocks: `data/homepage.yml` (Spanish default), with language overrides in `data/{lang}/homepage.yml` (en, fr, cat)
+- Homepage blocks: `data/homepage.yml` (Spanish default), with language overrides in `data/{lang}/homepage.yml` (en, fr, ca)
 - Header/logo config in `data/globalheader.yml`
 - Footer links configured in `config/_default/config.toml` under `[params.footer]`
 
