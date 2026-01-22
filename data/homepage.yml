@@ -6,7 +6,7 @@ banner:
   contents: ¿Quieres saber más?
   button:
     contents: Subscribete
-    url: /newsletter/main
+    url: /newsletter/main/
   columns:
     - title: Coaching Ejecutivo
       text: Empoderar a líderes y equipos para maximizar su rendimiento y alcanzar objetivos estratégicos.

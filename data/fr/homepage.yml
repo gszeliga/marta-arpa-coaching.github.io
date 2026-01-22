@@ -6,7 +6,7 @@ banner:
   contents: Vous voulez en savoir plus ?
   button:
     contents: Abonnez-vous
-    url: /fr/newsletter/main
+    url: /fr/newsletter/main/
   columns:
     - title: Coaching Exécutif
       text: Autonomiser les leaders et les équipes pour maximiser leur performance et atteindre leurs objectifs stratégiques.
