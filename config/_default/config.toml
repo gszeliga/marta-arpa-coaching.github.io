@@ -28,6 +28,7 @@ weight = 4
 
 
 [params]
+description = "Coaching ejecutivo y personal, consultoría del cambio y gestión de proyectos. Acompaño a personas y organizaciones hacia una transformación con impacto real y duradero."
 images = ['images/metaimage.jpg']
 show_post_dates = false
 recaptchaSiteKey = "6Ld-08orAAAAANupWBL2u9QZu78ZB3O4E4-R65a6"
