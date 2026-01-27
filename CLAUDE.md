@@ -107,6 +107,15 @@ Initialize submodules after cloning:
 git submodule update --init --recursive
 ```
 
+## Git Workflow
+
+**Never push directly to `main`.** All changes must go through a feature branch and pull request:
+
+1. Create a feature branch from `main`
+2. Make changes and commit to the branch
+3. Open a pull request for review
+4. Merge to `main` after approval
+
 ## Deployment
 
 Automatic deployment to GitHub Pages via `.github/workflows/hugo.yaml` on push to `main` branch.
