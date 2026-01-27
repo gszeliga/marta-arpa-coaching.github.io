@@ -1,3 +1,6 @@
+<!-- Content Security Policy -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; frame-src 'self' https://*.brevo.com https://*.sendinblue.com https://*.sibforms.com https://www.google.com https://www.gstatic.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.brevo.com https://*.sendinblue.com https://*.sibforms.com https://www.google.com https://www.gstatic.com https://www.googletagmanager.com https://cloud.umami.is https://analytics.ahrefs.com; connect-src 'self' https://www.google.com https://www.gstatic.com https://www.google-analytics.com https://analytics.google.com https://cloud.umami.is https://analytics.ahrefs.com; style-src 'self' 'unsafe-inline' https://*.brevo.com https://*.sendinblue.com https://*.sibforms.com; style-src-attr 'unsafe-inline'">
+
 <!-- Google tag (gtag.js) -->
 <script
   async
@@ -21,16 +24,29 @@
   data-website-id="6d411740-d616-4e37-875f-35102dd154c6"
 ></script>
 
+<!-- ahrefs analytics -->
+
+<script
+  src="https://analytics.ahrefs.com/analytics.js"
+  data-key="UByeRHLvn8qMEHqQiQl+yQ"
+  async
+></script>
+
 <!-- Hreflang tags for multilingual SEO -->
-<link rel="alternate" hreflang="{{ .Language.LanguageCode | default .Language.Lang }}" href="{{ .Permalink }}" />
+<link
+  rel="alternate"
+  hreflang="{{ .Language.LanguageCode | default .Language.Lang }}"
+  href="{{ .Permalink }}"
+/>
 {{- range .Translations }}
-<link rel="alternate" hreflang="{{ .Language.LanguageCode | default .Language.Lang }}" href="{{ .Permalink }}" />
-{{- end }}
-{{- range .AllTranslations }}
-{{- if eq .Language.Lang "es" }}
+<link
+  rel="alternate"
+  hreflang="{{ .Language.LanguageCode | default .Language.Lang }}"
+  href="{{ .Permalink }}"
+/>
+{{- end }} {{- range .AllTranslations }} {{- if eq .Language.Lang "es" }}
 <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
-{{- end }}
-{{- end }}
+{{- end }} {{- end }}
 
 <!-- Meta tags específicos para Bing -->
 <meta
@@ -40,18 +56,13 @@
 <meta name="robots" content="index, follow" />
 <meta name="revisit-after" content="7 days" />
 <meta name="author" content="{{ .Site.Params.author }}" />
-{{- $metaDescription := .Description | default .Params.summary | default (.Summary | plainify | truncate 160) | default .Site.Params.description -}}
-<meta
-  name="description"
-  content="{{ $metaDescription }}"
-/>
+{{- $metaDescription := .Description | default .Params.summary | default
+(.Summary | plainify | truncate 160) | default .Site.Params.description -}}
+<meta name="description" content="{{ $metaDescription }}" />
 
 <!-- Open Graph -->
 <meta property="og:title" content="{{ .Title }}" />
-<meta
-  property="og:description"
-  content="{{ $metaDescription }}"
-/>
+<meta property="og:description" content="{{ $metaDescription }}" />
 <meta
   property="og:type"
   content="{{ if .IsPage }}article{{ else }}website{{ end }}"

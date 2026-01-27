@@ -56,7 +56,11 @@ Four services in `content/services/`: `coaching-ex`, `coaching-per`, `maas`, `co
 - Form backend: un-static.com
 - reCAPTCHA v2 for form validation
 - Newsletter: Brevo (Sendinblue)
-- Analytics: Google Analytics + Umami Cloud
+- Analytics: Google Analytics, Umami Cloud, Ahrefs
+
+### Content Security Policy
+- CSP is configured via meta tag in `layouts/partials/head/custom.html`
+- When adding new external scripts or services, update the CSP directives accordingly (`script-src`, `connect-src`, `frame-src`, etc.)
 
 ### CSS and Per-Language Content
 CSS is compiled once for all languages (single `style.css`). For per-language dynamic content, use Hugo templates to inject values from data files.
@@ -95,7 +99,7 @@ Custom templates in `layouts/` override theme defaults:
 - `layouts/_default/list.html` - List page template with H1 for section titles
 - `layouts/partials/header.html` - Header with conditional H1/P for logo
 - `layouts/partials/head/head.html` - Page title with conditional brand suffix
-- `layouts/partials/head/custom.html` - Analytics, meta tags, meta descriptions, hreflang tags
+- `layouts/partials/head/custom.html` - CSP, analytics, meta tags, meta descriptions, hreflang tags
 
 Initialize submodules after cloning:
 

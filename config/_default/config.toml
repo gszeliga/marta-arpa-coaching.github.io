@@ -83,9 +83,3 @@ url = "https://www.linkedin.com/in/marta-arpa-moragrega/"
 title = "Instagram"
 icon = "fa-instagram"
 url = "https://www.instagram.com/marta_arpa_coaching"
-
-[server]
-[[server.headers]]
-for = "/**"
-[server.headers.values]
-Content-Security-Policy = "default-src 'self'; frame-src 'self' https://*.brevo.com https://*.sendinblue.com https://*.sibforms.com https://www.google.com https://www.gstatic.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.brevo.com https://*.sendinblue.com https://*.sibforms.com https://www.google.com https://www.gstatic.com https://www.googletagmanager.com https://cloud.umami.is; connect-src 'self' https://www.google.com https://www.gstatic.com https://www.google-analytics.com https://analytics.google.com https://cloud.umami.is; style-src 'self' 'unsafe-inline' https://*.brevo.com https://*.sendinblue.com https://*.sibforms.com; style-src-attr 'unsafe-inline'"
