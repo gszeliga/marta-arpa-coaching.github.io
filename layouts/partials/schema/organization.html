@@ -1,0 +1,17 @@
+{{- /* Organization schema for homepage */ -}}
+{{- $logo := .Site.Params.organization.logo | absURL -}}
+{{- $sameAs := slice -}}
+{{- range .Site.Params.social -}}
+  {{- $sameAs = $sameAs | append .url -}}
+{{- end -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}",
+  "logo": "{{ $logo }}",
+  "description": "{{ .Site.Params.description }}",
+  "sameAs": {{ $sameAs | jsonify | safeJS }}
+}
+</script>

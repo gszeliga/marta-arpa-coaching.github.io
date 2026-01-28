@@ -1,0 +1,36 @@
+{{- /* BlogPosting schema for blog posts */ -}}
+{{- $image := "" -}}
+{{- with .Params.image -}}
+  {{- $image = . | absURL -}}
+{{- end -}}
+{{- $authorName := .Site.Params.author.name | default "Marta Arpa" -}}
+{{- $description := .Params.summary | default .Summary | plainify | truncate 160 -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ .Title }}",
+  "description": "{{ $description }}",
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  {{- with .Lastmod }}
+  "dateModified": "{{ .Format "2006-01-02T15:04:05Z07:00" }}",
+  {{- end }}
+  "url": "{{ .Permalink }}",
+  {{- if $image }}
+  "image": "{{ $image }}",
+  {{- end }}
+  "author": {
+    "@type": "Person",
+    "name": "{{ $authorName }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ .Site.Title }}",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  }
+}
+</script>

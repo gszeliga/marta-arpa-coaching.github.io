@@ -1,0 +1,19 @@
+coaching-ex:
+  serviceType: "Executive Coaching"
+  description: "Coaching ejecutivo diseñado para impulsar el desarrollo individual y colectivo, proporcionando herramientas para afrontar los desafíos del entorno empresarial."
+  areaServed: "España"
+
+coaching-per:
+  serviceType: "Personal Coaching"
+  description: "Coaching personal para fomentar una transformación profunda hacia el desarrollo integral y la realización personal."
+  areaServed: "España"
+
+maas:
+  serviceType: "Project Management as a Service"
+  description: "Gestión de proyectos y cambio como servicio (PMaaS y CMaaS) para garantizar una ejecución eficiente y la adaptación organizativa."
+  areaServed: "España"
+
+consultancy:
+  serviceType: "Change Management Consulting"
+  description: "Consultoría del cambio para facilitar transformaciones organizativas a través de estrategias personalizadas."
+  areaServed: "España"

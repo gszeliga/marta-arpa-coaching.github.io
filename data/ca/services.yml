@@ -1,0 +1,19 @@
+coaching-ex:
+  serviceType: "Coaching Executiu"
+  description: "Coaching executiu dissenyat per impulsar el desenvolupament individual i col·lectiu, proporcionant eines per afrontar els reptes de l'entorn empresarial."
+  areaServed: "Espanya"
+
+coaching-per:
+  serviceType: "Coaching Personal"
+  description: "Coaching personal per fomentar una transformació profunda cap al desenvolupament integral i la realització personal."
+  areaServed: "Espanya"
+
+maas:
+  serviceType: "Gestió de Projectes as a Service"
+  description: "Gestió de projectes i canvi com a servei (PMaaS i CMaaS) per garantir una execució eficient i l'adaptació organitzativa."
+  areaServed: "Espanya"
+
+consultancy:
+  serviceType: "Consultoria del Canvi"
+  description: "Consultoria del canvi per facilitar transformacions organitzatives a través d'estratègies personalitzades."
+  areaServed: "Espanya"
