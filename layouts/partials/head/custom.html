@@ -72,3 +72,6 @@
   property="og:image"
   content="{{ . | absURL }}"
 />{{ end }}
+
+{{- /* JSON-LD Structured Data */ -}}
+{{- partial "schema/main.html" . -}}

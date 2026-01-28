@@ -1,0 +1,45 @@
+{{- /* BreadcrumbList schema for all non-home pages */ -}}
+{{- $breadcrumbs := slice -}}
+{{- $position := 1 -}}
+
+{{- /* Add home as first item */ -}}
+{{- $homeTitle := .Site.Title -}}
+{{- $homeURL := .Site.BaseURL -}}
+{{- if .Language.Lang -}}
+  {{- $homeURL = (printf "%s%s/" .Site.BaseURL .Language.Lang) -}}
+  {{- if eq .Language.Lang .Site.Language.Lang -}}
+    {{- $homeURL = .Site.BaseURL -}}
+  {{- end -}}
+{{- end -}}
+{{- $breadcrumbs = $breadcrumbs | append (dict "position" $position "name" $homeTitle "url" $homeURL) -}}
+{{- $position = add $position 1 -}}
+
+{{- /* Add ancestors in reverse order (from root to current) */ -}}
+{{- $ancestors := .Ancestors.Reverse -}}
+{{- range $ancestors -}}
+  {{- if not .IsHome -}}
+    {{- $breadcrumbs = $breadcrumbs | append (dict "position" $position "name" .Title "url" .Permalink) -}}
+    {{- $position = add $position 1 -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Add current page */ -}}
+{{- $breadcrumbs = $breadcrumbs | append (dict "position" $position "name" .Title "url" .Permalink) -}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {{- range $i, $item := $breadcrumbs -}}
+    {{- if $i }},{{ end }}
+    {
+      "@type": "ListItem",
+      "position": {{ $item.position }},
+      "name": "{{ $item.name }}",
+      "item": "{{ $item.url }}"
+    }
+    {{- end }}
+  ]
+}
+</script>

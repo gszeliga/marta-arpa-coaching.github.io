@@ -1,0 +1,17 @@
+{{- /* Schema.org JSON-LD structured data controller */ -}}
+
+{{- if .IsHome -}}
+  {{- partial "schema/organization.html" . -}}
+{{- end -}}
+
+{{- if and (eq .Section "services") (not .IsSection) -}}
+  {{- partial "schema/service.html" . -}}
+{{- end -}}
+
+{{- if and (eq .Section "posts") (not .IsSection) -}}
+  {{- partial "schema/blogposting.html" . -}}
+{{- end -}}
+
+{{- if not .IsHome -}}
+  {{- partial "schema/breadcrumb.html" . -}}
+{{- end -}}

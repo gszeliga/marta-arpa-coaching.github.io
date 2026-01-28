@@ -1,0 +1,40 @@
+{{- /* Service schema for service pages */ -}}
+{{- /* Extract service key from URL path: /services/{service-key}/main/ */ -}}
+{{- $pathParts := split .RelPermalink "/" -}}
+{{- $serviceKey := "" -}}
+{{- /* Path format: /services/coaching-ex/main/ -> ["", "services", "coaching-ex", "main", ""] */ -}}
+{{- /* For language-prefixed: /en/services/coaching-ex/main/ -> ["", "en", "services", "coaching-ex", "main", ""] */ -}}
+{{- range $i, $part := $pathParts -}}
+  {{- if eq $part "services" -}}
+    {{- $nextIdx := add $i 1 -}}
+    {{- if lt $nextIdx (len $pathParts) -}}
+      {{- $serviceKey = index $pathParts $nextIdx -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $services := .Site.Data.services -}}
+{{- $langServices := index .Site.Data .Language.Lang "services" -}}
+{{- if $langServices -}}
+  {{- $services = $langServices -}}
+{{- end -}}
+
+{{- $service := index $services $serviceKey -}}
+{{- if $service -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "{{ .Title }}",
+  "description": "{{ $service.description }}",
+  "serviceType": "{{ $service.serviceType }}",
+  "areaServed": "{{ $service.areaServed }}",
+  "url": "{{ .Permalink }}",
+  "provider": {
+    "@type": "Organization",
+    "name": "{{ .Site.Title }}",
+    "url": "{{ .Site.BaseURL }}"
+  }
+}
+</script>
+{{- end -}}
