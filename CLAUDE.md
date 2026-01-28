@@ -41,6 +41,7 @@ trunk fmt            # Auto-format code
 
 ### Data-Driven Components
 - Homepage blocks: `data/homepage.yml` (Spanish default), with language overrides in `data/{lang}/homepage.yml` (en, fr, ca)
+- Service metadata for JSON-LD: `data/services.yml` (Spanish default), with language overrides in `data/{lang}/services.yml`
 - Header/logo config in `data/globalheader.yml`
 - Footer links configured in `config/_default/config.toml` under `[params.footer]`
 
@@ -88,7 +89,14 @@ CSS is compiled once for all languages (single `style.css`). For per-language dy
   - Configured in `layouts/partials/header.html` (conditional h1/p for logo) and `layouts/_default/single.html`, `layouts/_default/list.html` (h1 for page titles)
 - **Hreflang tags**: Implemented in `layouts/partials/head/custom.html`
 - **x-default hreflang**: Points to Spanish (hardcoded as "es" in template)
+- **Canonical tags**: Explicit `<link rel="canonical">` on all pages in `layouts/partials/head/custom.html`
 - **Page titles**: Conditional brand suffix " | Marta Arpa" added only when title ≤ 45 chars (keeps total under Google's ~60 char limit). Configured in `layouts/partials/head/head.html`
+- **JSON-LD Structured Data**: Schema.org markup in `layouts/partials/schema/`:
+  - `main.html` - Controller that includes appropriate schemas per page type
+  - `organization.html` - Organization schema (homepage only)
+  - `service.html` - Service schema (service pages, uses `data/services.yml`)
+  - `blogposting.html` - BlogPosting schema (blog posts, includes author and publisher with logo)
+  - `breadcrumb.html` - BreadcrumbList schema (all non-home pages)
 
 ## Theme
 
@@ -99,7 +107,8 @@ Custom templates in `layouts/` override theme defaults:
 - `layouts/_default/list.html` - List page template with H1 for section titles
 - `layouts/partials/header.html` - Header with conditional H1/P for logo
 - `layouts/partials/head/head.html` - Page title with conditional brand suffix
-- `layouts/partials/head/custom.html` - CSP, analytics, meta tags, meta descriptions, hreflang tags
+- `layouts/partials/head/custom.html` - CSP, analytics, meta tags, meta descriptions, hreflang tags, canonical tags, JSON-LD schemas
+- `layouts/partials/schema/*.html` - JSON-LD structured data partials (organization, service, blogposting, breadcrumb)
 
 Initialize submodules after cloning:
 
