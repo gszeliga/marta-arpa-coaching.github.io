@@ -5,6 +5,13 @@
 {{- end -}}
 {{- $authorName := .Site.Params.author.name | default "Marta Arpa" -}}
 {{- $description := .Params.summary | default .Summary | plainify | truncate 160 -}}
+{{- $logo := .Site.Params.organization.logo | absURL -}}
+{{- $authorUrl := "" -}}
+{{- range .Site.Params.social -}}
+  {{- if eq .title "LinkedIn" -}}
+    {{- $authorUrl = .url -}}
+  {{- end -}}
+{{- end -}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -21,12 +28,17 @@
   {{- end }}
   "author": {
     "@type": "Person",
-    "name": "{{ $authorName }}"
+    "name": "{{ $authorName }}"{{- if $authorUrl }},
+    "url": "{{ $authorUrl }}"{{- end }}
   },
   "publisher": {
     "@type": "Organization",
     "name": "{{ .Site.Title }}",
-    "url": "{{ .Site.BaseURL }}"
+    "url": "{{ .Site.BaseURL }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ $logo }}"
+    }
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
