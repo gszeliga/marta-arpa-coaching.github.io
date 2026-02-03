@@ -70,9 +70,8 @@ CSS is compiled once for all languages (single `style.css`). For per-language dy
 - Fonts (Source Sans Pro, FontAwesome) are defined in the theme but overridden in `static/css/` to set `font-display: swap`
 - This ensures text displays immediately with fallback fonts, avoiding invisible text flash (FOIT)
 - Override files: `static/css/font-source-sans-pro.css`, `static/css/fontawesome-all.min.css`
-- Critical fonts are preloaded in `layouts/partials/head/custom.html` to avoid render-blocking waterfall
-- CSS is loaded via direct `<link>` tags in head (not @import) to enable parallel loading
-- The `assets/sass/main.scss` override removes the theme's `@import url()` statements
+- Critical fonts are preloaded in `layouts/partials/head/custom.html`
+- CSS also loaded via `<link>` tags in `head.html` to enable parallel loading (the theme's @import will use cached files)
 - If the theme updates its font files, these overrides may need to be regenerated
 
 ### JavaScript Loading
