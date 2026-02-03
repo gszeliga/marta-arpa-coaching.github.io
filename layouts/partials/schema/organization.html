@@ -1,4 +1,4 @@
-{{- /* Organization schema for homepage */ -}}
+{{- /* ProfessionalService schema for homepage - includes local business signals */ -}}
 {{- $logo := .Site.Params.organization.logo | absURL -}}
 {{- $sameAs := slice -}}
 {{- range .Site.Params.social -}}
@@ -7,11 +7,74 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": "ProfessionalService",
   "name": "{{ .Site.Title }}",
   "url": "{{ .Site.BaseURL }}",
   "logo": "{{ $logo }}",
+  "image": "{{ $logo }}",
   "description": "{{ .Site.Params.description }}",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Barcelona",
+    "addressRegion": "Cataluña",
+    "addressCountry": "ES"
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Barcelona"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Maresme"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Cataluña"
+    },
+    {
+      "@type": "Country",
+      "name": "España"
+    },
+    "Online"
+  ],
+  "serviceType": ["Executive Coaching", "Personal Coaching", "Change Management Consulting", "Project Management"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Coaching & Consulting Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Coaching Ejecutivo",
+          "description": "Executive coaching for leaders and professionals"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Coaching Personal",
+          "description": "Personal coaching for individual growth"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Consultoría del Cambio",
+          "description": "Change management consulting for organizations"
+        }
+      }
+    ]
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "{{ .Site.Params.author.name }}",
+    "jobTitle": "Executive Coach & Consultant",
+    "sameAs": {{ $sameAs | jsonify | safeJS }}
+  },
   "sameAs": {{ $sameAs | jsonify | safeJS }}
 }
 </script>
