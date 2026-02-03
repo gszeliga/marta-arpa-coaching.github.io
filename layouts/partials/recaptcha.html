@@ -1,24 +1,39 @@
 <div id='{{ .Get "recaptcha-id" | default "my-custom-recaptcha" }}'></div>
 
 <script>
-  var myCustomRecaptcha;
+  (function() {
+    var recaptchaId = '{{ .Get "recaptcha-id" | default "my-custom-recaptcha" }}';
+    var siteKey = '{{ .Site.Params.recaptchaSiteKey }}';
+    var theme = '{{ .Get "theme" | default "light" }}';
+    var recaptchaLoaded = false;
 
-  var onloadCallback = function () {
-    myCustomRecaptcha = grecaptcha.render(
-      '{{ .Get "recaptcha-id" | default "my-custom-recaptcha" }}',
-      {
-        sitekey: "{{ .Site.Params.recaptchaSiteKey }}",
-        theme: '{{ .Get "theme" | default "light" }}',
-        callback: function (response) {
-          console.log("Verification successful!");
-        },
-      },
-    );
-  };
+    window.onloadCallback = function() {
+      if (document.getElementById(recaptchaId)) {
+        grecaptcha.render(recaptchaId, {
+          sitekey: siteKey,
+          theme: theme
+        });
+      }
+    };
+
+    function loadRecaptcha() {
+      if (recaptchaLoaded) return;
+      recaptchaLoaded = true;
+
+      var script = document.createElement('script');
+      script.src = 'https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit';
+      script.async = true;
+      script.defer = true;
+      document.head.appendChild(script);
+    }
+
+    // Load reCAPTCHA when user interacts with form
+    var form = document.getElementById(recaptchaId).closest('form');
+    if (form) {
+      var inputs = form.querySelectorAll('input, textarea, select');
+      inputs.forEach(function(input) {
+        input.addEventListener('focus', loadRecaptcha, { once: true });
+      });
+    }
+  })();
 </script>
-
-<script
-  src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-  async
-  defer
-></script>
