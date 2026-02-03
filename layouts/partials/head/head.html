@@ -5,6 +5,8 @@
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ if le (len .Title) $maxTitleLength }}{{ $brandSuffix }}{{ end }}{{ end }}</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="/css/font-source-sans-pro.css" />
+<link rel="stylesheet" href="/css/fontawesome-all.min.css" />
 <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
 {{- partial "analytics/google-tag-manager/head.html" . -}}
 {{- partial "head/custom.html" . -}}

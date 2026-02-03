@@ -71,7 +71,13 @@ CSS is compiled once for all languages (single `style.css`). For per-language dy
 - This ensures text displays immediately with fallback fonts, avoiding invisible text flash (FOIT)
 - Override files: `static/css/font-source-sans-pro.css`, `static/css/fontawesome-all.min.css`
 - Critical fonts are preloaded in `layouts/partials/head/custom.html` to avoid render-blocking waterfall
+- CSS is loaded via direct `<link>` tags in head (not @import) to enable parallel loading
+- The `assets/sass/main.scss` override removes the theme's `@import url()` statements
 - If the theme updates its font files, these overrides may need to be regenerated
+
+### JavaScript Loading
+- JS scripts are loaded with `defer` attribute via `layouts/partials/scripts.html` override
+- This prevents render-blocking while maintaining execution order
 
 ### Header Logo Styling
 - The header uses `<h1>` on homepage and `<p>` on other pages (for SEO H1 structure)
