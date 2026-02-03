@@ -66,6 +66,11 @@ Four services in `content/services/`: `coaching-ex`, `coaching-per`, `maas`, `co
 ### CSS and Per-Language Content
 CSS is compiled once for all languages (single `style.css`). For per-language dynamic content, use Hugo templates to inject values from data files.
 
+### Header Logo Styling
+- The header uses `<h1>` on homepage and `<p>` on other pages (for SEO H1 structure)
+- These elements have different browser defaults, so `assets/sass/logo.scss` explicitly sets identical styles (font-size, line-height, display, padding) on both to ensure consistent header height across all pages
+- Padding uses `em` units, so font-size must also be matched
+
 ### Banner Images
 - Uses `<picture>` element with responsive sources for SEO/accessibility
 - Each `homepage.yml` has `image`, `image_crop`, and `image_alt` fields for localized images and alt text
