@@ -66,6 +66,18 @@ Four services in `content/services/`: `coaching-ex`, `coaching-per`, `maas`, `co
 ### CSS and Per-Language Content
 CSS is compiled once for all languages (single `style.css`). For per-language dynamic content, use Hugo templates to inject values from data files.
 
+### Font Loading
+- Fonts (Source Sans Pro, FontAwesome) are defined in the theme but overridden in `static/css/` to set `font-display: swap`
+- This ensures text displays immediately with fallback fonts, avoiding invisible text flash (FOIT)
+- Override files: `static/css/font-source-sans-pro.css`, `static/css/fontawesome-all.min.css`
+- Critical fonts are preloaded in `layouts/partials/head/custom.html`
+- CSS also loaded via `<link>` tags in `head.html` to enable parallel loading (the theme's @import will use cached files)
+- If the theme updates its font files, these overrides may need to be regenerated
+
+### JavaScript Loading
+- JS scripts are loaded with `defer` attribute via `layouts/partials/scripts.html` override
+- This prevents render-blocking while maintaining execution order
+
 ### Header Logo Styling
 - The header uses `<h1>` on homepage and `<p>` on other pages (for SEO H1 structure)
 - These elements have different browser defaults, so `assets/sass/logo.scss` explicitly sets identical styles (font-size, line-height, display, padding) on both to ensure consistent header height across all pages
