@@ -7,7 +7,10 @@
         <div class="box highlight card ripple">
           <!-- <i class="icon solid major {{ .icon }}"></i> -->
           <div class="icon-wrapper">
-            <img src="{{ .iconPath | relURL }}" alt="{{ .title }}" />
+            <picture>
+              <source srcset="{{ replace .iconPath ".png" ".webp" | relURL }}" type="image/webp">
+              <img src="{{ .iconPath | relURL }}" alt="{{ .title }}" />
+            </picture>
           </div>
           <h3>{{ .title }}</h3>
           <p>{{ .content | markdownify }}</p>

@@ -40,7 +40,7 @@ items:
           Mon engagement est de vous accompagner sur ce chemin, en apportant mon expérience, mes connaissances et ma passion pour le développement humain.
   - type: heading
     heading: L’Invitation
-    contents: <img src="/images/background-invitation-simple-pad.png"/> <p class='invitation'>Je vous invite à entreprendre ensemble un voyage de <span class='underline-highlight-dark'>découverte et de transformation</span>.</p><span class='invitation-extra'>Chaque personne et chaque organisation possède un potentiel unique qui ne demande qu’à être développé. Mon engagement est de vous accompagner sur ce chemin, en apportant mon expérience, mes connaissances et ma passion pour le développement humain.</span>
+    contents: <picture><source srcset="/images/background-invitation-simple-pad.webp" type="image/webp"><img src="/images/background-invitation-simple-pad.png"/></picture> <p class='invitation'>Je vous invite à entreprendre ensemble un voyage de <span class='underline-highlight-dark'>découverte et de transformation</span>.</p><span class='invitation-extra'>Chaque personne et chaque organisation possède un potentiel unique qui ne demande qu’à être développé. Mon engagement est de vous accompagner sur ce chemin, en apportant mon expérience, mes connaissances et ma passion pour le développement humain.</span>
   - type: cta
     contents: On commence par une séance gratuite?
     button:
