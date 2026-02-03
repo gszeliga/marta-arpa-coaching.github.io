@@ -40,7 +40,7 @@ items:
           El meu compromís és acompanyar-te en aquest camí, aportant la meva experiència, coneixement i passió pel desenvolupament humà.
   - type: heading
     heading: La Invitació
-    contents: <img src="/images/background-invitation-simple-pad.png"/> <p class='invitation'>Et convido a emprendre junts un viatge de <span class='underline-highlight-dark'>descobriment i transformació</span>.</p><span class='invitation-extra'>Cada persona i cada organització té un potencial únic esperant ser desenvolupat. El meu compromís és acompanyar-te en aquest camí, aportant la meva experiència, coneixement i passió pel desenvolupament humà.</span>
+    contents: <picture><source srcset="/images/background-invitation-simple-pad.webp" type="image/webp"><img src="/images/background-invitation-simple-pad.png"/></picture> <p class='invitation'>Et convido a emprendre junts un viatge de <span class='underline-highlight-dark'>descobriment i transformació</span>.</p><span class='invitation-extra'>Cada persona i cada organització té un potencial únic esperant ser desenvolupat. El meu compromís és acompanyar-te en aquest camí, aportant la meva experiència, coneixement i passió pel desenvolupament humà.</span>
   - type: cta
     contents: Comencem amb una sessió gratuïta?
     button:

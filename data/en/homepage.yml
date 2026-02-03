@@ -40,7 +40,7 @@ items:
           My commitment is to accompany you on this journey, sharing my experience, knowledge, and passion for human development.
   - type: heading
     heading: The Invitation
-    contents: <img src="/images/background-invitation-simple-pad.png"/> <p class='invitation'>I invite you to embark together on a journey of <span class='underline-highlight-dark'>discovery and transformation</span>.</p><span class='invitation-extra'>Every person and every organization has unique potential waiting to be developed. My commitment is to accompany you on this journey, bringing my experience, knowledge, and passion for human development.</span>
+    contents: <picture><source srcset="/images/background-invitation-simple-pad.webp" type="image/webp"><img src="/images/background-invitation-simple-pad.png"/></picture> <p class='invitation'>I invite you to embark together on a journey of <span class='underline-highlight-dark'>discovery and transformation</span>.</p><span class='invitation-extra'>Every person and every organization has unique potential waiting to be developed. My commitment is to accompany you on this journey, bringing my experience, knowledge, and passion for human development.</span>
   - type: cta
     contents: Shall we start with a free session?
     button:

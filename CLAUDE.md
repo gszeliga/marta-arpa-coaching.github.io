@@ -83,6 +83,31 @@ CSS is compiled once for all languages (single `style.css`). For per-language dy
 - These elements have different browser defaults, so `assets/sass/logo.scss` explicitly sets identical styles (font-size, line-height, display, padding) on both to ensure consistent header height across all pages
 - Padding uses `em` units, so font-size must also be matched
 
+### Image Optimization
+Images use WebP format with PNG fallback for browser compatibility. WebP provides 25-80% smaller files than PNG.
+
+**Adding new images:**
+```bash
+# Resize to 2x display size (for retina) and convert to WebP
+magick input.png -resize 224x224 -quality 85 output.webp
+
+# Example: icon displayed at 112x112 → resize to 224x224
+magick myicon.png -resize 224x224 -quality 85 myicon.webp
+```
+
+**Size guidelines (2x for retina):**
+- Icons (displayed 112x112): resize to 224x224
+- Background images: resize to 2x expected display size
+- Always keep PNG as fallback, reference WebP in `<picture>` element
+
+**Template usage:**
+```html
+<picture>
+  <source srcset="/images/example.webp" type="image/webp">
+  <img src="/images/example.png" alt="Description">
+</picture>
+```
+
 ### Banner Images
 - Uses `<picture>` element with responsive sources for SEO/accessibility
 - Each `homepage.yml` has `image`, `image_crop`, and `image_alt` fields for localized images and alt text
