@@ -3,7 +3,7 @@
         {{- if .image_crop }}
         <source media="(max-width: 768px)" srcset="/{{ .image_crop }}">
         {{- end }}
-        <img src="/{{ .image }}" alt="{{ .image_alt }}" class="banner-image" />
+        <img src="/{{ .image }}" alt="{{ .image_alt }}" class="banner-image" fetchpriority="high" />
     </picture>
     <header>
         <h2>{{ .contents | markdownify }}</h2>
