@@ -1,31 +1,14 @@
 // Badge list container
 .badge-list-container {
-  //background: linear-gradient(135deg, #d7f7e4, #e9e9e7);
   color: #1e3f2b;
-  padding: 30px;
-  //border-radius: 12px;
-  //box-shadow: 0 4px 20px rgba(30, 63, 43, 0.3);
-  /* Thick accent border */
-  border-top: 3px solid #55f997;
-  border-image: linear-gradient(90deg, #1e3f2b, #d7f7e4) 1;
+  padding: 24px 0 0 0;
   margin: 20px 0;
   font-size: 1rem;
-}
-.badge-list-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%;
-  height: 4px;
-  background: linear-gradient(90deg, transparent, #1e3f2b, transparent);
-  border-radius: 0 0 8px 8px;
+  border-top: 2px solid rgba(30, 63, 43, 0.1);
 }
 
 .badge-list-title {
-  color: #55f997;
-  //font-size: 1.5rem;
+  color: #1e3f2b;
   font-weight: 700;
   margin-bottom: 20px;
   text-align: left;
