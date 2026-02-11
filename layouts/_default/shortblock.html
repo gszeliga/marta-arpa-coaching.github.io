@@ -1,0 +1,25 @@
+<article class="post-card">
+    {{- if .Params.image }}
+    <a href="{{ .RelPermalink }}" class="post-card-image-link">
+        <div class="post-card-image">
+            <img src="{{ .Params.image | relURL }}" alt="{{ .Params.image_alt }}" />
+        </div>
+    </a>
+    {{- end }}
+    <div class="post-card-body">
+        <h3 class="post-card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        {{- if .Site.Params.show_post_dates | default true }}
+            {{- with .Date }}<time class="post-card-date">{{ . | time.Format ":date_medium" }}</time>{{ end }}
+        {{- end }}
+        <p class="post-card-summary">
+            {{- with .Params.summary }}{{ . | plainify | truncate 160 }}{{ else }}{{ .Summary }}{{ end -}}
+        </p>
+        {{- with .GetTerms "tags" }}
+        <div class="post-card-tags">
+            {{- range . }}
+                <a href="{{ .RelPermalink }}" class="post-card-tag">{{ .LinkTitle }}</a>
+            {{- end }}
+        </div>
+        {{- end }}
+    </div>
+</article>
