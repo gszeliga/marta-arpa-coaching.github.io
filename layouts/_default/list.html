@@ -10,8 +10,10 @@
         <span class="image featured"><img src="{{ .Params.image | relURL }}" alt="{{ .Params.image_alt }}" /></span>
     {{ end }}
 
+    <div class="post-grid">
     {{ range .RegularPages }}
         {{ .Render "shortblock" }}
     {{ end }}
+    </div>
 
 {{ end }}

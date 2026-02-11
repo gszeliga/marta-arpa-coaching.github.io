@@ -1,19 +1,116 @@
+// Centered showcase
+.showcase-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.showcase-card {
+  text-align: center;
+  padding: 40px 32px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 28px rgba(30, 63, 43, 0.12);
+  }
+}
+
+.showcase-icon {
+  margin-bottom: 20px;
+
+  img {
+    height: 96px;
+    width: auto;
+    transition: transform 0.3s ease;
+  }
+}
+
+.showcase-card:hover .showcase-icon img {
+  transform: scale(1.08);
+}
+
+.showcase-title {
+  color: #1e3f2b;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+}
+
+.showcase-subtitle {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #1e3f2b;
+  opacity: 0.55;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 0 20px 0;
+}
+
+.showcase-desc {
+  color: #1e3f2b;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin: 0 0 24px 0;
+  text-align: center;
+}
+
+.showcase-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.showcase-pill {
+  background: linear-gradient(135deg, #d7f7e4, rgba(85, 249, 151, 0.25));
+  color: #1e3f2b;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.showcase-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 1024px) {
+  .showcase-grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .showcase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-card {
+    padding: 32px 24px;
+  }
+
+  .showcase-title {
+    font-size: 1.6rem;
+  }
+}
+
 /* Main Grid: PMaaS-CMaaS */
 .main-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  //gap: 30px;
+  gap: 24px;
   margin-bottom: 40px;
-  box-shadow: 0 4px 20px rgba(30, 63, 43, 0.1);
-  border-radius: 12px;
 }
 
 /* Column Container */
 .column {
   background: #e9e9e7;
-  //border-radius: 12px;
-  padding: 25px;
-  //box-shadow: 0 4px 20px rgba(30, 63, 43, 0.3);
+  border-radius: 16px;
+  padding: 28px;
 }
 
 /* Column Title */
@@ -24,48 +121,30 @@
   margin-bottom: 20px;
   text-align: center;
   padding-bottom: 10px;
-  //border-bottom: 3px solid #1e3f2b;
 }
 
-/* Sub-grid: 2x2 with spanning first row */
+/* Sub-grid: 2x2 */
 .sub-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  gap: 15px;
-  border-top: 3px solid #55f997;
-  border-image: linear-gradient(90deg, #1e3f2b, #d7f7e4) 1;
+  gap: 16px;
 }
 
 /* Grid Items */
 .grid-item {
-  //background: linear-gradient(135deg, #d7f7e4, #e9e9e7);
   padding: 20px;
-  //border-radius: 8px;
-  //border-left: 4px solid #1e3f2b;
-  transition: all 0.3s ease;
-  //box-shadow: 0 4px 20px rgba(30, 63, 43, 0.3);
-}
-
-.grid-item:last-child {
-  border-right: none;
+  border-radius: 12px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .grid-item:hover {
   transform: translateY(-2px);
-  //box-shadow: 0 4px 15px rgba(85, 249, 151, 0.2);
-  background: rgba(85, 249, 151, 0.05);
 }
 
 /* Spanning first row across two columns */
 .grid-item.span-row {
-  grid-column: span 2; /* Spans both columns */
-  background: linear-gradient(
-    135deg,
-    rgba(85, 249, 151, 0.1),
-    rgba(215, 247, 228, 0.1)
-  );
-  border-left: 4px solid #1e3f2b;
+  grid-column: span 2;
   text-align: center;
 }
 
@@ -93,11 +172,10 @@
 @media (max-width: 768px) {
   .main-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
   }
 
   .column {
-    padding: 20px;
+    padding: 24px;
   }
 
   .sub-grid {
@@ -119,13 +197,272 @@
   }
 }
 
-// Check adjustments
+// Minimal pricing cards
+.minimal-pricing {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.minimal-card {
+  background: rgba(255, 255, 255, 0.6);
+  border-left: 4px solid #55f997;
+  border-radius: 4px 16px 16px 4px;
+  padding: 32px 36px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(30, 63, 43, 0.1);
+  }
+}
+
+.minimal-card-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+
+  h3 {
+    color: #1e3f2b;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0;
+  }
+}
+
+.minimal-card-subtitle {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 400;
+  font-size: 0.95rem;
+  opacity: 0.6;
+}
+
+.minimal-card-badge {
+  background: linear-gradient(135deg, #d7f7e4, rgba(85, 249, 151, 0.3));
+  color: #1e3f2b;
+  padding: 4px 14px;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.minimal-card-desc {
+  color: #1e3f2b;
+  opacity: 0.75;
+  font-size: 1rem;
+  margin: 0 0 24px 0;
+  line-height: 1.6;
+}
+
+.minimal-card-section {
+  color: #1e3f2b;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(30, 63, 43, 0.08);
+}
+
+.minimal-card-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.minimal-card-option {
+  padding: 24px 28px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+
+  h4 {
+    color: #1e3f2b;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+  }
+
+  .minimal-card-badge {
+    margin-bottom: 14px;
+  }
+
+  p {
+    color: #1e3f2b;
+    opacity: 0.7;
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.6;
+  }
+}
+
+// Comparison table
+.compare-table {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.compare-col {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  padding: 24px 20px;
+  position: relative;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(30, 63, 43, 0.1);
+  }
+}
+
+.compare-col-featured {
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 2px 12px rgba(30, 63, 43, 0.1);
+  border: 2px solid #55f997;
+}
+
+.compare-header {
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(30, 63, 43, 0.08);
+
+  h3 {
+    color: #1e3f2b;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 0 0 6px 0;
+  }
+
+  .minimal-card-badge {
+    margin-top: 4px;
+  }
+}
+
+.compare-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  font-size: 0.9rem;
+  color: #1e3f2b;
+  border-bottom: 1px solid rgba(30, 63, 43, 0.05);
+}
+
+.compare-label {
+  font-weight: 600;
+  opacity: 0.6;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.compare-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 16px;
+}
+
+// 3-column variant (coaching-per)
+.compare-table-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 1024px) {
+  .compare-table {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .compare-table-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .compare-table,
+  .compare-table-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.minimal-card-options-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.minimal-card-option-featured {
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 2px 12px rgba(30, 63, 43, 0.1);
+  position: relative;
+
+  .popular-tag {
+    top: 8px;
+    right: 8px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .minimal-pricing-4 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .minimal-card-options-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .minimal-pricing,
+  .minimal-pricing-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .minimal-card {
+    padding: 24px 28px;
+  }
+
+  .minimal-card-header {
+    flex-wrap: wrap;
+  }
+
+  .minimal-card-options {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Checklist inside pricing cards
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    color: #1e3f2b;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(30, 63, 43, 0.08);
+    transition: padding-left 0.3s ease;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:hover {
+      padding-left: 10px;
+    }
+  }
+}
+
 .clean-list {
   @extend .benefits-list;
   font-size: 1.1rem;
-}
-
-.clean-list li:hover {
-  //background: rgba(85, 249, 151, 0.05);
-  padding-left: 10px;
 }

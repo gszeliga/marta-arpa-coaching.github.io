@@ -1,7 +1,7 @@
 /* === Banner Customization === */
 
 .wrapper {
-  padding: 3em 0 3em 0;
+  padding: 4em 0 4em 0;
 }
 
 .wrapper.style2 {
@@ -222,18 +222,17 @@
 // card
 
 .card {
-  transition: all 0.3s ease;
-  border-radius: 12px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 16px;
   padding: 25px;
   background: #e9e9e7;
+  box-shadow: none;
+  border: none;
 }
 
 .card:hover {
-  //background: #d7f7e4;
-  transform: translateY(-8px) scale(1.02);
-  //box-shadow: 0 10px 40px rgba(30, 63, 43, 0.15);
-  //0 0 0 1px rgba(85, 249, 151, 0.3);
-  backdrop-filter: blur(10px);
+  transform: translateY(-4px);
 }
 
 .card:hover h3 {

@@ -3,16 +3,10 @@
 .banner-container {
   max-width: 100%;
   margin: 0 auto;
-  background: #e9e9e7;
   color: #1e3f2b;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(30, 63, 43, 0.1);
-  overflow: hidden;
 }
 
 .banner-header {
-  //background: linear-gradient(135deg, #667eea, #764ba2);
-  //color: #1e3f2b;
   text-align: center;
   padding: 40px 20px;
 }
@@ -33,56 +27,56 @@
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
 
 .services-grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
 
 .service-item {
-  padding: 40px 30px;
+  padding: 32px 28px;
+  background: #e9e9e7;
+  border-radius: 16px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.service-item:nth-child(1) {
-  //border-right: 1px solid #e9ecef;
-  border-bottom: 1px solid #e9ecef;
+.service-item:hover {
+  transform: translateY(-4px);
 }
 
-.service-item:nth-child(2) {
-  border-bottom: 1px solid #e9ecef;
-}
-
-.service-item:nth-child(3) {
-  //grid-column: span 2;
-  //background: #1e3f2b;
+.service-item:hover .service-icon img {
+  transform: scale(1.05);
 }
 
 .service-icon {
   font-size: 3rem;
   margin-bottom: 20px;
   display: block;
+  text-align: center;
   img {
-    max-height: 48px; // adjust as needed
+    max-height: 72px;
+    transition: transform 0.3s ease;
   }
 }
 
 .service-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #d7f7e4;
+  color: #1e3f2b;
   margin: 0 0 15px 0;
 }
 
 .service-price {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #d7f7e4;
+  color: #1e3f2b;
   margin: 0 0 15px 0;
 }
 
 .service-description {
-  //color: #d7f7e4;
   line-height: 1.6;
   margin: 0;
   font-size: 1rem;
@@ -91,70 +85,6 @@
   ul li {
     color: #1e3f2b;
   }
-}
-
-.service-item:hover {
-  width: 100%;
-}
-
-/* Additional subtle enhancements */
-
-/* Hover effect for service items */
-.service-item:hover {
-  background: rgba(215, 247, 228, 0.1);
-  transform: translateY(-2px);
-}
-
-.service-item:hover .service-icon img {
-  transform: scale(1.05);
-  filter: brightness(1.1);
-}
-
-/* Subtle animation for icons */
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-3px);
-  }
-}
-
-.service-icon.floating img {
-  animation: float 3s ease-in-out infinite;
-}
-
-/* Add subtle shadows */
-.service-item.with-shadow {
-  position: relative;
-}
-
-.service-item.with-shadow::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 20px;
-  right: 20px;
-  height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(85, 249, 151, 0.3),
-    transparent
-  );
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.service-item.with-shadow:hover::after {
-  opacity: 1;
-}
-
-// tarifas
-
-.service-item:hover {
-  width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -177,32 +107,17 @@
     font-size: 2rem;
   }
 
-  .services-grid {
-    grid-template-columns: 1fr;
-    //grid-template-rows: auto auto auto;
-  }
-
+  .services-grid,
   .services-grid-2 {
     grid-template-columns: 1fr;
   }
 
   .service-item {
-    border-right: none;
-    padding: 30px 25px;
-  }
-
-  .service-item:nth-child(3) {
-    grid-column: span 1;
+    padding: 28px 24px;
   }
 
   .service-icon {
     font-size: 2.5rem;
-  }
-
-  .service-title.marker-highlight,
-  .service-title.marker-border,
-  .service-title.marker-bracket {
-    font-size: 1.3rem;
   }
 }
 
@@ -221,54 +136,38 @@
 .pricing-container {
   max-width: 100%;
   margin: 0 auto;
-  background: #e9e9e7;
   color: #1e3f2b;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(30, 63, 43, 0.1);
-  overflow: hidden;
 }
 
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
 .pricing-grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 .pricing-grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .pricing-item {
   padding: 30px 20px;
-  transition: all 0.3s ease;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   text-align: center;
-}
-
-.pricing-item:nth-child(1) {
-  //border-right: 1px solid rgba(30, 63, 43, 0.1);
-}
-
-.pricing-item:nth-child(2) {
-  border-bottom: 1px solid rgba(30, 63, 43, 0.1);
-}
-
-.pricing-item:nth-child(3) {
-  //border-right: 1px solid rgba(30, 63, 43, 0.1);
-}
-
-.pricing-item:nth-child(4) {
-  /* Last column - no border */
+  background: #e9e9e7;
+  border-radius: 16px;
 }
 
 .pricing-item:hover {
-  background: rgba(215, 247, 228, 0.15);
-  transform: translateY(-3px);
+  transform: translateY(-4px);
 }
 
 .pricing-title {
@@ -285,10 +184,6 @@
   margin: 0 0 12px 0;
   position: relative;
   display: inline-block;
-}
-
-.pricing-item:hover {
-  width: 100%;
 }
 
 .pricing-description {
@@ -329,78 +224,32 @@
   right: 12px;
   background: #55f997;
   color: #1e3f2b;
-  padding: 4px 10px;
-  border-radius: 15px;
+  padding: 4px 12px;
+  border-radius: 9999px;
   font-size: 0.7rem;
   font-weight: 700;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 /* Responsive */
 @media screen and (max-width: 1024px) {
-  .pricings-grid {
+  .pricing-grid {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-  }
-
-  .pricings-grid-2 {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-  }
-
-  .pricings-grid-3 {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-  }
-
-  .pricing-item:nth-child(1) {
-    //border-right: 1px solid rgba(30, 63, 43, 0.1);
-    border-bottom: 1px solid rgba(30, 63, 43, 0.1);
-  }
-
-  .pricing-item:nth-child(2) {
-    border-bottom: 1px solid rgba(30, 63, 43, 0.1);
-  }
-
-  .pricing-item:nth-child(3) {
-    //border-right: 1px solid rgba(30, 63, 43, 0.1);
-  }
-
-  .pricing-item:nth-child(4) {
-    /* Bottom right - no borders */
   }
 }
 
 @media screen and (max-width: 768px) {
-  .pricing-container {
-    margin: 0 10px;
-  }
-
-  .pricing-grid {
-    /* Fix typo: was "pricings-grid" */
-    grid-template-columns: 1fr;
-  }
-
-  .pricing-grid-2 {
-    /* Fix typo: was "pricings-grid" */
-    grid-template-columns: 1fr;
-  }
-
+  .pricing-grid,
+  .pricing-grid-2,
   .pricing-grid-3 {
-    /* Fix typo: was "pricings-grid" */
     grid-template-columns: 1fr;
   }
 
   .pricing-item {
     padding: 25px 20px;
-    border-right: none !important;
-    border-bottom: 1px solid rgba(30, 63, 43, 0.1) !important;
     text-align: left;
-  }
-
-  .pricing-item:last-child {
-    border-bottom: none !important;
   }
 
   .pricing-title {

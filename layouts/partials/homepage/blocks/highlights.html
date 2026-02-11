@@ -1,6 +1,6 @@
 <section class="wrapper style1">
   <div class="container">
-    <div class="row gtr-200">
+    <div class="row gtr-200 animate-on-scroll stagger-children">
       {{- $item_cols := (div 12 (.item.items_per_row | default 3)) }} {{- range
       .item.items }}
       <section class="col-{{ $item_cols }} col-12-narrower">

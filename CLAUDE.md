@@ -52,6 +52,11 @@ Four services in `content/services/`: `coaching-ex`, `coaching-per`, `maas`, `co
 - Posts are in `content/posts/` with language suffixes: `post-slug.md` (Spanish default), `post-slug.en.md`, `post-slug.fr.md`, `post-slug.ca.md`
 - Front matter includes: `title`, `image`, `summary`, `image_alt`, `date`, `tags`
 - Post banner images go in `static/images/posts/{post-slug}/banner.png`
+- Post list uses a 2-column CSS grid (`.post-grid`) that collapses to 1 column at 840px
+- Post cards (`.post-card`) use the shared design system: translucent white bg, hover lift/shadow, image zoom on hover
+- Tags render as green pill links (`.post-card-tag` / `.post-tag`) matching `showcase-pill` style
+- Card template: `layouts/_default/shortblock.html` overrides the theme's float-based layout
+- Summaries are clamped to 3 lines via `-webkit-line-clamp` for consistent card heights
 
 ### External Integrations
 - Form backend: un-static.com
@@ -62,6 +67,59 @@ Four services in `content/services/`: `coaching-ex`, `coaching-per`, `maas`, `co
 ### Content Security Policy
 - CSP is configured via meta tag in `layouts/partials/head/custom.html`
 - When adding new external scripts or services, update the CSP directives accordingly (`script-src`, `connect-src`, `frame-src`, etc.)
+
+### CSS Design System
+The service pages share a consistent set of reusable UI components defined across SCSS partials:
+
+**Color palette:**
+- `#1e3f2b` — dark green (primary text, backgrounds)
+- `#d7f7e4` — light green (pill gradients, accents)
+- `#55f997` — accent green (borders, highlights)
+- `rgba(255, 255, 255, 0.6)` — translucent white (card backgrounds)
+
+**Shared components** (defined in `assets/sass/maas.scss`, used across all service pages):
+- `showcase-grid` / `showcase-card` / `showcase-pills` — feature cards with icon, title, description, and pill tags
+- `showcase-grid-3` — 3-column variant for coaching-per
+- `minimal-pricing` / `minimal-card` — cards with green left border accent, used for pricing and benefits
+- `minimal-card-options` / `minimal-card-option` — sub-options within minimal cards
+- `compare-table` / `compare-col` — comparison grid (4-column default, `compare-table-3` for 3-column)
+- `benefits-list` — checklist with `circle-icon` checkmarks inside cards
+
+**Consultancy-specific components** (in `assets/sass/consultancy.scss`):
+- `objectives-grid` / `objective-card` — 5-column grid with dark green top border accent
+- `timeline` / `timeline-item` — vertical timeline with numbered circles
+- `deliverables-grid` / `deliverable-card` — 5-column grid with icons, titles, and descriptions
+
+**Post components** (in `assets/sass/posts.scss`):
+- `post-grid` — responsive 2-column grid (1-column at 840px)
+- `post-card` / `post-card-image` / `post-card-body` — top-image cards with hover lift, image zoom
+- `post-card-tag` / `post-tag` — green gradient pill links for tags
+- `post-featured-image` — single post featured image with border-radius
+
+**Contact components** (in `assets/sass/contact.scss`):
+- `contact-form-section` — translucent white form container with green top accent border
+- `form-input` / `form-textarea` / `form-select` — styled inputs with green focus ring
+- `form-button` — submit button matching site-wide button style
+- `cta-section` — dark green CTA with animated radial gradient background
+- `submit-contact-grid` — flex layout centering button and reCAPTCHA
+
+**Utilities** (in `assets/sass/markers.scss`):
+- `marker-highlight` — green background text highlight
+- `underline-highlight` — green underline accent
+- `side-border-highlight` — left border with green gradient background
+- `circle-icon` — green gradient circle with checkmark
+
+### Service Page Icons
+- Style: filled/solid dark green (`#1e3f2b`) on transparent background
+- Size: 512x512 PNG
+- Located in `static/images/services/{service-name}/`
+- When replacing icons from AI-generated composites, use alpha-channel thresholding to split cleanly:
+  ```bash
+  magick composite.png -crop {w}x{h}+{x}+{y} +repage \
+    -channel A -threshold 50% +channel \
+    -trim +repage -resize 440x440 \
+    -gravity center -background none -extent 512x512 output.png
+  ```
 
 ### CSS and Per-Language Content
 CSS is compiled once for all languages (single `style.css`). For per-language dynamic content, use Hugo templates to inject values from data files.
@@ -145,8 +203,9 @@ magick myicon.png -resize 224x224 -quality 85 myicon.webp
 Uses the Arcana theme as a git submodule. **Do not modify files in `themes/arcana/`** - create overrides in `layouts/` instead.
 
 Custom templates in `layouts/` override theme defaults:
-- `layouts/_default/single.html` - Single page template with H1 for page titles
-- `layouts/_default/list.html` - List page template with H1 for section titles
+- `layouts/_default/single.html` - Single page template with H1, tag pills, featured image with border-radius
+- `layouts/_default/list.html` - List page template with H1, post-grid wrapper
+- `layouts/_default/shortblock.html` - Post card with top image, summary, tag pills (replaces theme's float layout)
 - `layouts/partials/header.html` - Header with conditional H1/P for logo
 - `layouts/partials/head/head.html` - Page title with conditional brand suffix
 - `layouts/partials/head/custom.html` - CSP, analytics, meta tags, meta descriptions, hreflang tags, canonical tags, JSON-LD schemas
