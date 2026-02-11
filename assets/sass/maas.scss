@@ -305,6 +305,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
+  margin-top: 12px;
 }
 
 .compare-col {
@@ -371,14 +372,24 @@
   margin-top: 16px;
 }
 
+// 3-column variant (coaching-per)
+.compare-table-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 @media (max-width: 1024px) {
   .compare-table {
     grid-template-columns: 1fr 1fr;
   }
+
+  .compare-table-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
-  .compare-table {
+  .compare-table,
+  .compare-table-3 {
     grid-template-columns: 1fr;
   }
 }
@@ -427,12 +438,31 @@
   }
 }
 
-// Check adjustments
+// Checklist inside pricing cards
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    color: #1e3f2b;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(30, 63, 43, 0.08);
+    transition: padding-left 0.3s ease;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:hover {
+      padding-left: 10px;
+    }
+  }
+}
+
 .clean-list {
   @extend .benefits-list;
   font-size: 1.1rem;
-}
-
-.clean-list li:hover {
-  padding-left: 10px;
 }

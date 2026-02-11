@@ -63,6 +63,46 @@ Four services in `content/services/`: `coaching-ex`, `coaching-per`, `maas`, `co
 - CSP is configured via meta tag in `layouts/partials/head/custom.html`
 - When adding new external scripts or services, update the CSP directives accordingly (`script-src`, `connect-src`, `frame-src`, etc.)
 
+### CSS Design System
+The service pages share a consistent set of reusable UI components defined across SCSS partials:
+
+**Color palette:**
+- `#1e3f2b` — dark green (primary text, backgrounds)
+- `#d7f7e4` — light green (pill gradients, accents)
+- `#55f997` — accent green (borders, highlights)
+- `rgba(255, 255, 255, 0.6)` — translucent white (card backgrounds)
+
+**Shared components** (defined in `assets/sass/maas.scss`, used across all service pages):
+- `showcase-grid` / `showcase-card` / `showcase-pills` — feature cards with icon, title, description, and pill tags
+- `showcase-grid-3` — 3-column variant for coaching-per
+- `minimal-pricing` / `minimal-card` — cards with green left border accent, used for pricing and benefits
+- `minimal-card-options` / `minimal-card-option` — sub-options within minimal cards
+- `compare-table` / `compare-col` — comparison grid (4-column default, `compare-table-3` for 3-column)
+- `benefits-list` — checklist with `circle-icon` checkmarks inside cards
+
+**Consultancy-specific components** (in `assets/sass/consultancy.scss`):
+- `objectives-grid` / `objective-card` — 5-column grid with dark green top border accent
+- `timeline` / `timeline-item` — vertical timeline with numbered circles
+- `deliverables-grid` / `deliverable-card` — 5-column grid with icons, titles, and descriptions
+
+**Utilities** (in `assets/sass/markers.scss`):
+- `marker-highlight` — green background text highlight
+- `underline-highlight` — green underline accent
+- `side-border-highlight` — left border with green gradient background
+- `circle-icon` — green gradient circle with checkmark
+
+### Service Page Icons
+- Style: filled/solid dark green (`#1e3f2b`) on transparent background
+- Size: 512x512 PNG
+- Located in `static/images/services/{service-name}/`
+- When replacing icons from AI-generated composites, use alpha-channel thresholding to split cleanly:
+  ```bash
+  magick composite.png -crop {w}x{h}+{x}+{y} +repage \
+    -channel A -threshold 50% +channel \
+    -trim +repage -resize 440x440 \
+    -gravity center -background none -extent 512x512 output.png
+  ```
+
 ### CSS and Per-Language Content
 CSS is compiled once for all languages (single `style.css`). For per-language dynamic content, use Hugo templates to inject values from data files.
 
