@@ -75,7 +75,15 @@ The service pages share a consistent set of reusable UI components defined acros
 - `#1e3f2b` — dark green (primary text, backgrounds)
 - `#d7f7e4` — light green (pill gradients, accents)
 - `#55f997` — accent green (borders, highlights)
-- `rgba(255, 255, 255, 0.6)` — translucent white (card backgrounds)
+- `rgba(255, 255, 255, 0.6)` — translucent white (card backgrounds, with `backdrop-filter: blur`)
+
+**Homepage highlight cards** (in `assets/sass/banner.scss` + `assets/sass/custom.scss`):
+- "Credo cards" design: glassmorphism bg, green top accent bar (`::before`), icon in green circle backdrop
+- Icons at 72px inside a 120px soft green circle (`linear-gradient(135deg, rgba(215,247,228,0.5), rgba(85,249,151,0.15))`)
+- Center-aligned text (not justified) for short philosophical statements
+- Equal-height cards via flexbox (`display: flex; flex-direction: column; height: 100%`)
+- No ripple effect — clean hover with lift + shadow + icon scale only
+- Section background uses gradient `linear-gradient(180deg, #e9e9e7, #eef6f0)` bridging banner gray to invitation mint
 
 **Shared components** (defined in `assets/sass/maas.scss`, used across all service pages):
 - `showcase-grid` / `showcase-card` / `showcase-pills` — feature cards with icon, title, description, and pill tags
@@ -106,6 +114,7 @@ The service pages share a consistent set of reusable UI components defined acros
 **Utilities** (in `assets/sass/markers.scss`):
 - `marker-highlight` — green background text highlight
 - `underline-highlight` — green underline accent
+- `underline-highlight-dark` — dark green underline; animates (width 0→100%) when inside `.animate-on-scroll.is-visible` containers
 - `side-border-highlight` — left border with green gradient background
 - `circle-icon` — green gradient circle with checkmark
 
@@ -131,6 +140,9 @@ CSS is compiled once for all languages (single `style.css`). For per-language dy
 - Critical fonts are preloaded in `layouts/partials/head/custom.html`
 - CSS also loaded via `<link>` tags in `head.html` to enable parallel loading (the theme's @import will use cached files)
 - If the theme updates its font files, these overrides may need to be regenerated
+
+### Smooth Scrolling
+- `html { scroll-behavior: smooth }` in `assets/sass/custom.scss` enables smooth navigation for all internal links
 
 ### JavaScript Loading
 - JS scripts are loaded with `defer` attribute via `layouts/partials/scripts.html` override
@@ -206,6 +218,7 @@ Custom templates in `layouts/` override theme defaults:
 - `layouts/_default/single.html` - Single page template with H1, tag pills, featured image with border-radius
 - `layouts/_default/list.html` - List page template with H1, post-grid wrapper
 - `layouts/_default/shortblock.html` - Post card with top image, summary, tag pills (replaces theme's float layout)
+- `layouts/partials/homepage/blocks/highlights.html` - Credo cards without ripple effect, icon in `<picture>` with WebP
 - `layouts/partials/header.html` - Header with conditional H1/P for logo
 - `layouts/partials/head/head.html` - Page title with conditional brand suffix
 - `layouts/partials/head/custom.html` - CSP, analytics, meta tags, meta descriptions, hreflang tags, canonical tags, JSON-LD schemas
