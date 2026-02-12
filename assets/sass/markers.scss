@@ -61,6 +61,16 @@
   background: linear-gradient(90deg, #1e3f2b, #d7f7e4);
 }
 
+// Animated reveal when inside scroll-triggered containers
+.animate-on-scroll .underline-highlight-dark::after {
+  width: 0;
+  transition: width 0.6s ease 0.3s;
+}
+
+.animate-on-scroll.is-visible .underline-highlight-dark::after {
+  width: 100%;
+}
+
 /* 9. Badge Style */
 .badge-highlight {
   background: linear-gradient(135deg, #d7f7e4, rgba(85, 249, 151, 0.3));

@@ -1,55 +1,133 @@
-p.about-me {
-  text-align: justify;
-}
+// About Me Page
+// ===============================
 
-.about-me-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.about-me-item {
-  padding: 20px 20px;
-}
-
-p.about-me img {
-  width: 3%;
-  min-height: 3%;
-  padding-left: 1vh;
-}
-
-p.about-me a {
-  border-bottom: none;
-}
-
+// Hero header section
 .about-me-header-grid {
   display: grid;
-  grid-template-columns: 1.8fr 1fr;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 48px;
+  align-items: center;
+  margin-bottom: 3em;
 }
 
+.about-me-header-item {
+  p.about-me {
+    text-align: left;
+  }
+}
+
+// Profile photo
 .profile-pic img {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top;
-  width: 75%;
-  min-height: 8vh;
-  //opacity: 0.8;
-  border-radius: 10%;
-  padding: 20px;
+  width: 80%;
+  border-radius: 16px;
+  box-shadow: 0 8px 28px rgba(30, 63, 43, 0.12);
+  border-left: 4px solid #55f997;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 36px rgba(30, 63, 43, 0.18);
+  }
 }
 
 .centered {
   display: flex;
-  justify-content: center; /* Centers image horizontally */
-  align-items: start; /* Centers image vertically */
+  justify-content: center;
+  align-items: start;
 }
 
-@media (max-width: 810px) {
-  .about-me-header-item img {
-    width: 50%;
+// Section heading
+.about-me-section-heading {
+  margin-top: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+// Philosophy cards grid
+.about-me-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 2em;
+}
+
+// Philosophy card - glassmorphism
+.about-me-item {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 32px 28px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #55f997, #d7f7e4);
   }
 
-  .about-me-grid,
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 28px rgba(30, 63, 43, 0.12);
+  }
+
+  p.about-me {
+    text-align: left;
+  }
+}
+
+// LinkedIn pill
+.linkedin-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(135deg, #d7f7e4, rgba(85, 249, 151, 0.25));
+  color: #1e3f2b;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  vertical-align: middle;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(30, 63, 43, 0.12);
+  }
+
+}
+
+p.about-me a.linkedin-pill {
+  border-bottom: none;
+}
+
+// Responsive
+@media (max-width: 810px) {
   .about-me-header-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .about-me-header-grid .profile-pic {
+    order: -1;
+    justify-content: center;
+  }
+
+  .profile-pic img {
+    width: 60%;
+  }
+
+  .about-me-grid {
     grid-template-columns: 1fr;
   }
 }

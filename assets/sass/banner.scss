@@ -5,7 +5,7 @@
 }
 
 .wrapper.style2 {
-  padding: unset;
+  padding: 3em 0;
 }
 
 #banner {
@@ -196,7 +196,7 @@
   height: 0;
   background: radial-gradient(
     circle,
-    rgba(233, 241, 43, 0.1) 30%,
+    rgba(215, 247, 228, 0.4) 30%,
     rgba(85, 249, 151, 0.1) 70%
   );
   border-radius: 30%;
@@ -225,14 +225,45 @@
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
               box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 16px;
-  padding: 25px;
-  background: #e9e9e7;
+  padding: 32px 28px 36px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
   box-shadow: none;
   border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #55f997, #d7f7e4);
+}
+
+.card .icon-wrapper {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(215, 247, 228, 0.5), rgba(85, 249, 151, 0.15));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem auto;
+}
+
+.card .icon-wrapper img {
+  width: 72px;
+  height: 72px;
+  margin: 0;
 }
 
 .card:hover {
   transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(30, 63, 43, 0.12);
 }
 
 .card:hover h3 {
