@@ -184,6 +184,10 @@ header.major h2 {
   header.major h2 {
     font-size: 1.25em;
   }
+
+  #content > article {
+    padding: 0 1em;
+  }
 }
 
 header.major p {
@@ -312,6 +316,10 @@ header.major p {
       }
     }
   }
+}
+
+#content > article > header {
+  margin-bottom: 1.5em;
 }
 
 article p,

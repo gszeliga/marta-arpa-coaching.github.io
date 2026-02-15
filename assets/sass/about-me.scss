@@ -131,3 +131,10 @@ p.about-me a.linkedin-pill {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 480px) {
+  .about-me-header-grid {
+    gap: 32px;
+    margin-top: 1.5em;
+  }
+}
