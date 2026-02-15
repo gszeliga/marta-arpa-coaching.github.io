@@ -60,5 +60,3 @@ A través del coaching, els líders guanyen claredat, prenen millors decisions i
 El lideratge positiu transforma resultats, equips i cultures.
 És una manera de liderar més humana, més eficaç i més sostenible.
 Si vols desenvolupar un lideratge més conscient i eficaç, tant a nivell personal com dins de la teva organització, estaré encantada d'acompanyar-te.
-
-👉 [Agenda una sessió d'exploració i en parlem.](https://meet.brevo.com/marta-arpa/sesion-gratuita-)

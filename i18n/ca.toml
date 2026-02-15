@@ -12,3 +12,27 @@ other = "Enviar Missatge"
 
 [language_select]
 other = "Seleccionar Idioma"
+
+[service_cta_title]
+other = "Preparat/da per fer el següent pas?"
+
+[service_cta_text]
+other = "Reserva una sessió gratuïta de 30 minuts i parlem dels teus objectius"
+
+[service_cta_button]
+other = "Reservar sessió gratuïta"
+
+[post_cta_title]
+other = "T'interessa treballar junts?"
+
+[post_cta_text]
+other = "Si el que has llegit connecta amb tu, estaré encantada d'acompanyar-te. Reserva una sessió gratuïta i explorem com puc ajudar-te."
+
+[post_cta_button]
+other = "Reservar sessió gratuïta"
+
+[sticky_cta_text]
+other = "Sessió gratuïta"
+
+[sticky_cta_label]
+other = "Reservar una sessió de consulta gratuïta"

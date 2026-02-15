@@ -108,8 +108,13 @@ The service pages share a consistent set of reusable UI components defined acros
 - `contact-form-section` — translucent white form container with green top accent border
 - `form-input` / `form-textarea` / `form-select` — styled inputs with green focus ring
 - `form-button` — submit button matching site-wide button style
-- `cta-section` — dark green CTA with animated radial gradient background
+- `cta-section` — dark green CTA with animated radial gradient background (reused by service page and blog post CTAs)
+- `cta-title` / `cta-text` / `cta-button` — heading, body text, and pill button inside `cta-section`
 - `submit-contact-grid` — flex layout centering button and reCAPTCHA
+
+**CTA components** (in `assets/sass/cta.scss`):
+- `sticky-cta` — fixed bottom-right floating pill button linking to Brevo scheduler; hidden by default, shown via `sticky-cta-visible` class toggled by JS
+- `sticky-cta-icon` / `sticky-cta-text` — icon and label inside sticky button; text hidden at ≤480px (icon-only), entire button hidden at ≤360px
 
 **Utilities** (in `assets/sass/markers.scss`):
 - `marker-highlight` — green background text highlight
@@ -147,6 +152,7 @@ CSS is compiled once for all languages (single `style.css`). For per-language dy
 ### JavaScript Loading
 - JS scripts are loaded with `defer` attribute via `layouts/partials/scripts.html` override
 - This prevents render-blocking while maintaining execution order
+- `scripts.html` also contains the sticky CTA: HTML partial include + IntersectionObserver JS that shows the button after scrolling past one viewport height and hides it near `#footer`, `.cta-section`, or `#cta` elements
 
 ### Header Logo Styling
 - The header uses `<h1>` on homepage and `<p>` on other pages (for SEO H1 structure)
@@ -215,13 +221,16 @@ magick myicon.png -resize 224x224 -quality 85 myicon.webp
 Uses the Arcana theme as a git submodule. **Do not modify files in `themes/arcana/`** - create overrides in `layouts/` instead.
 
 Custom templates in `layouts/` override theme defaults:
-- `layouts/_default/single.html` - Single page template with H1, tag pills, featured image with border-radius
+- `layouts/_default/single.html` - Single page template with H1, tag pills, featured image; conditionally includes CTA partials for services and posts sections
 - `layouts/_default/list.html` - List page template with H1, post-grid wrapper
 - `layouts/_default/shortblock.html` - Post card with top image, summary, tag pills (replaces theme's float layout)
 - `layouts/partials/homepage/blocks/highlights.html` - Credo cards without ripple effect, icon in `<picture>` with WebP
 - `layouts/partials/header.html` - Header with conditional H1/P for logo
 - `layouts/partials/head/head.html` - Page title with conditional brand suffix
 - `layouts/partials/head/custom.html` - CSP, analytics, meta tags, meta descriptions, hreflang tags, canonical tags, JSON-LD schemas
+- `layouts/partials/cta/service.html` - Dark green CTA block appended to service pages (uses `.cta-section` from contact.scss, i18n keys for text)
+- `layouts/partials/cta/post.html` - Dark green CTA block appended to blog posts (same style, different i18n copy)
+- `layouts/partials/cta/sticky.html` - Fixed-position floating pill button on all pages (included via `scripts.html`)
 - `layouts/partials/schema/*.html` - JSON-LD structured data partials (organization, service, blogposting, breadcrumb)
 
 Initialize submodules after cloning:
