@@ -1,8 +1,7 @@
 banner:
   enable: true
-  image: images/banner-home-fr.png
-  image_crop: images/banner-home-fr-crop.png
-  image_alt: "J'accompagne les personnes et les organisations vers un impact réel"
+  headline: "J'accompagne les personnes et les organisations"
+  subtitle: "vers un <span class='banner-underline'>impact réel</span>"
   contents: Vous voulez en savoir plus ?
   button:
     contents: Abonnez-vous

@@ -1,10 +1,8 @@
 <section id="banner">
-    <picture>
-        {{- if .image_crop }}
-        <source media="(max-width: 768px)" srcset="/{{ .image_crop }}">
-        {{- end }}
-        <img src="/{{ .image }}" alt="{{ .image_alt }}" class="banner-image" fetchpriority="high" />
-    </picture>
+    <div class="banner-text">
+        <h2 class="banner-headline">{{ .headline | safeHTML }}</h2>
+        <p class="banner-subtitle">{{ .subtitle | safeHTML }}</p>
+    </div>
     <header>
         <h2>{{ .contents | markdownify }}</h2>
         {{- if .button }}

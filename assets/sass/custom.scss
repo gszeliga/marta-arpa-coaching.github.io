@@ -505,4 +505,17 @@ article ul li {
     transform: none !important;
     transition: none !important;
   }
+
+  .banner-headline,
+  .banner-subtitle,
+  .banner-underline::after,
+  #banner header {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  #banner {
+    animation: none !important;
+  }
 }
