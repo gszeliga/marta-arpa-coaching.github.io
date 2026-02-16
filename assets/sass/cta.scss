@@ -1,0 +1,75 @@
+// === Sticky Floating CTA ===
+
+.sticky-cta {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #1e3f2b;
+  color: #d7f7e4;
+  padding: 12px 20px;
+  border-radius: 9999px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(30, 63, 43, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  // Hidden by default
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+
+  &.sticky-cta-visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  &:hover {
+    background: #55f997;
+    color: #1e3f2b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(85, 249, 151, 0.35);
+  }
+
+  &.sticky-cta-visible:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.sticky-cta-icon {
+  font-size: 1.1em;
+  line-height: 1;
+}
+
+.sticky-cta-text {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 480px) {
+  .sticky-cta {
+    padding: 12px 14px;
+    bottom: 16px;
+    right: 16px;
+  }
+  .sticky-cta-text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .sticky-cta {
+    display: none;
+  }
+}
+
+// Respect prefers-reduced-motion for sticky CTA
+@media (prefers-reduced-motion: reduce) {
+  .sticky-cta {
+    transition: none !important;
+  }
+}

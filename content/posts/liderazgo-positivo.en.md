@@ -60,5 +60,3 @@ Through coaching, leaders gain clarity, make better decisions, and strengthen th
 Positive leadership transforms results, teams, and cultures.
 It is a more human, more effective, and more sustainable way of leading.
 If you want to develop more conscious and effective leadership, both personally and within your organization, I will be happy to support you.
-
-👉 [Book an exploration session and let's talk.](https://meet.brevo.com/marta-arpa/sesion-gratuita-)

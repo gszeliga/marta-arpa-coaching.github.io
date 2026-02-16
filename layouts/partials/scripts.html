@@ -24,3 +24,45 @@ document.addEventListener('DOMContentLoaded', function() {
   targets.forEach(function(el) { observer.observe(el); });
 });
 </script>
+
+{{- partial "cta/sticky.html" . }}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var stickyCta = document.getElementById('sticky-cta');
+  if (!stickyCta) return;
+
+  var hideTargets = document.querySelectorAll('#footer, .cta-section, #cta');
+  var showThreshold = window.innerHeight;
+
+  if (!('IntersectionObserver' in window)) {
+    stickyCta.classList.add('sticky-cta-visible');
+    return;
+  }
+
+  var hideZonesVisible = 0;
+  var scrolledPastBanner = false;
+
+  var hideObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      hideZonesVisible += entry.isIntersecting ? 1 : -1;
+      hideZonesVisible = Math.max(0, hideZonesVisible);
+    });
+    updateVisibility();
+  }, { threshold: 0.1 });
+
+  hideTargets.forEach(function(el) { hideObserver.observe(el); });
+
+  function updateVisibility() {
+    if (scrolledPastBanner && hideZonesVisible === 0) {
+      stickyCta.classList.add('sticky-cta-visible');
+    } else {
+      stickyCta.classList.remove('sticky-cta-visible');
+    }
+  }
+
+  window.addEventListener('scroll', function() {
+    scrolledPastBanner = window.scrollY > showThreshold;
+    updateVisibility();
+  }, { passive: true });
+});
+</script>

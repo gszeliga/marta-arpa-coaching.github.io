@@ -1,8 +1,7 @@
 banner:
   enable: true
-  image: images/banner-home-cat.png
-  image_crop: images/banner-home-cat-crop.png
-  image_alt: "Acompanyo persones i organitzacions cap a un impacte real"
+  headline: "Impulsant persones i organitzacions"
+  subtitle: "cap a un <span class='banner-underline'>impacte real</span>"
   contents: Vols saber-ne més?
   button:
     contents: Subscriu-te

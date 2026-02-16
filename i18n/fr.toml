@@ -12,3 +12,27 @@ other = "Envoyer Message"
 
 [language_select]
 other = "Sélectionner la Langue"
+
+[service_cta_title]
+other = "Prêt(e) à passer à l'étape suivante ?"
+
+[service_cta_text]
+other = "Réservez une séance gratuite de 30 minutes et parlons de vos objectifs"
+
+[service_cta_button]
+other = "Réserver une séance gratuite"
+
+[post_cta_title]
+other = "Envie de travailler ensemble ?"
+
+[post_cta_text]
+other = "Si ce que vous avez lu vous parle, je serai ravie de vous accompagner. Réservez une séance gratuite et explorons comment je peux vous aider."
+
+[post_cta_button]
+other = "Réserver une séance gratuite"
+
+[sticky_cta_text]
+other = "Séance gratuite"
+
+[sticky_cta_label]
+other = "Réserver une séance de consultation gratuite"

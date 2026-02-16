@@ -38,6 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 @import "about-me.scss";
 @import "contact.scss";
 @import "posts.scss";
+@import "cta.scss";
 
 // ===============================
 // Vertical Rhythm & Spacing
@@ -504,5 +505,18 @@ article ul li {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
+  }
+
+  .banner-headline,
+  .banner-subtitle,
+  .banner-underline::after,
+  #banner header {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  #banner {
+    animation: none !important;
   }
 }

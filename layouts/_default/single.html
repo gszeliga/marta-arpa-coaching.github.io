@@ -19,4 +19,10 @@
     {{ end }}
 
     {{- .Content }}
+
+    {{- if eq .Section "services" }}
+        {{- partial "cta/service.html" . }}
+    {{- else if eq .Section "posts" }}
+        {{- partial "cta/post.html" . }}
+    {{- end }}
 {{ end }}

@@ -12,3 +12,27 @@ other = "Send Message"
 
 [language_select]
 other = "Select Language"
+
+[service_cta_title]
+other = "Ready to take the next step?"
+
+[service_cta_text]
+other = "Book a free 30-minute session and let's talk about your goals"
+
+[service_cta_button]
+other = "Book free session"
+
+[post_cta_title]
+other = "Interested in working together?"
+
+[post_cta_text]
+other = "If what you've read resonates with you, I'd love to help. Book a free session and let's explore how I can support you."
+
+[post_cta_button]
+other = "Book free session"
+
+[sticky_cta_text]
+other = "Free session"
+
+[sticky_cta_label]
+other = "Book a free consultation session"

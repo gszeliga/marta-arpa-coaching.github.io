@@ -21,7 +21,7 @@
       recaptchaLoaded = true;
 
       var script = document.createElement('script');
-      script.src = 'https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit';
+      script.src = 'https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl={{ .Page.Lang }}';
       script.async = true;
       script.defer = true;
       document.head.appendChild(script);

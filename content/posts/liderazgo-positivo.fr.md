@@ -60,5 +60,3 @@ Grâce au coaching, les leaders gagnent en clarté, prennent de meilleures déci
 Le leadership positif transforme les résultats, les équipes et les cultures.
 C'est une manière de diriger plus humaine, plus efficace et plus durable.
 Si vous souhaitez développer un leadership plus conscient et plus efficace, tant au niveau personnel qu'au sein de votre organisation, je serai ravie de vous accompagner.
-
-👉 [Prenez rendez-vous pour une session d'exploration et discutons-en.](https://meet.brevo.com/marta-arpa/sesion-gratuita-)

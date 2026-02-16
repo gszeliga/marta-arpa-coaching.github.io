@@ -60,5 +60,3 @@ A través del coaching, los líderes ganan claridad, toman mejores decisiones y 
 El liderazgo positivo transforma resultados, equipos y culturas.
 Es una forma de liderar más humana, más eficaz y más sostenible.
 Si quieres desarrollar un liderazgo más consciente y eficaz, tanto a nivel personal como dentro de tu organización, estaré encantada de acompañarte.
-
-👉 [Agenda una sesión de exploración y lo hablamos.](https://meet.brevo.com/marta-arpa/sesion-gratuita-)
