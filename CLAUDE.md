@@ -60,7 +60,7 @@ Four services in `content/services/`: `coaching-ex`, `coaching-per`, `maas`, `co
 
 ### External Integrations
 - Form backend: un-static.com
-- reCAPTCHA v2 for form validation
+- reCAPTCHA v2 for form validation (multilingual via `hl=` parameter matching page language)
 - Newsletter: Brevo (Sendinblue)
 - Analytics: Google Analytics, Umami Cloud, Ahrefs
 
@@ -145,6 +145,7 @@ CSS is compiled once for all languages (single `style.css`). For per-language dy
 - Critical fonts are preloaded in `layouts/partials/head/custom.html`
 - CSS also loaded via `<link>` tags in `head.html` to enable parallel loading (the theme's @import will use cached files)
 - If the theme updates its font files, these overrides may need to be regenerated
+- **Outfit** (Google Fonts): loaded via `<link>` in `custom.html` for the banner headline only (variable weight 600–900, currently set to 650). CSP allows `fonts.googleapis.com` and `fonts.gstatic.com`
 
 ### Smooth Scrolling
 - `html { scroll-behavior: smooth }` in `assets/sass/custom.scss` enables smooth navigation for all internal links
