@@ -145,7 +145,7 @@ CSS is compiled once for all languages (single `style.css`). For per-language dy
 - Critical fonts are preloaded in `layouts/partials/head/custom.html`
 - CSS also loaded via `<link>` tags in `head.html` to enable parallel loading (the theme's @import will use cached files)
 - If the theme updates its font files, these overrides may need to be regenerated
-- **Outfit** (Google Fonts): loaded via `<link>` in `custom.html` for the banner headline only (variable weight 600–900, currently set to 650). CSP allows `fonts.googleapis.com` and `fonts.gstatic.com`
+- **Outfit** (Google Fonts): loaded via `<link>` in `custom.html` for the banner headline only (variable weight 600–900, banner uses 650). CSP allows `fonts.googleapis.com` and `fonts.gstatic.com`
 
 ### Smooth Scrolling
 - `html { scroll-behavior: smooth }` in `assets/sass/custom.scss` enables smooth navigation for all internal links
@@ -156,9 +156,14 @@ CSS is compiled once for all languages (single `style.css`). For per-language dy
 - `scripts.html` also contains the sticky CTA: HTML partial include + IntersectionObserver JS that shows the button after scrolling past one viewport height and hides it near `#footer`, `.cta-section`, or `#cta` elements
 
 ### Header Logo Styling
+- The header logo is a pure CSS/HTML text element (no video or image), styled in `assets/sass/logo.scss`
+- Structure: `.logo-text` contains `.logo-name` ("Marta" + "A" + "rpa" as separate spans) and `.logo-tagline` ("coaching & consultancy")
+- Font: Source Sans Pro (weight 550 for name, 300 for tagline)
+- Colors: name in sage `#c5d8cc`, "A" transitions to accent green `#55f997`, tagline in `#55f997`
+- Entrance animations: "Marta" slides from left, "Arpa" slides from right, tagline fades up, "A" color-pops to green
 - The header uses `<h1>` on homepage and `<p>` on other pages (for SEO H1 structure)
 - These elements have different browser defaults, so `assets/sass/logo.scss` explicitly sets identical styles (font-size, line-height, display, padding) on both to ensure consistent header height across all pages
-- Padding uses `em` units, so font-size must also be matched
+- Header is hidden at ≤840px (theme's `narrower` breakpoint), replaced by mobile `#titleBar` nav
 
 ### Image Optimization
 Images use WebP format with PNG fallback for browser compatibility. WebP provides 25-80% smaller files than PNG.
@@ -226,7 +231,7 @@ Custom templates in `layouts/` override theme defaults:
 - `layouts/_default/list.html` - List page template with H1, post-grid wrapper
 - `layouts/_default/shortblock.html` - Post card with top image, summary, tag pills (replaces theme's float layout)
 - `layouts/partials/homepage/blocks/highlights.html` - Credo cards without ripple effect, icon in `<picture>` with WebP
-- `layouts/partials/header.html` - Header with conditional H1/P for logo
+- `layouts/partials/header.html` - Header with CSS text logo (animated spans) and conditional H1/P wrapper
 - `layouts/partials/head/head.html` - Page title with conditional brand suffix
 - `layouts/partials/head/custom.html` - CSP, analytics, meta tags, meta descriptions, hreflang tags, canonical tags, JSON-LD schemas
 - `layouts/partials/cta/service.html` - Dark green CTA block appended to service pages (uses `.cta-section` from contact.scss, i18n keys for text)
