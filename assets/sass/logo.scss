@@ -1,84 +1,94 @@
-.logo-container {
-  display: flex;
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
-  min-height: 10vh; /* Give it some height for vertical centering */
-}
+/* === Text Logo Animations === */
 
-.logo-video {
-  max-height: 45px;
-  width: auto;
-  object-fit: contain;
-  background-color: #1d1d1b !important;
-
-  /* Crop the edges */
-  clip-path: inset(2px 2px 2px 2px); /* Crop 2px from each side */
-  /* or */
-  clip-path: inset(5% 5% 5% 5%); /* Crop 5% from each side */
-}
-
-/* Responsive breakpoints */
-
-@media (min-width: 80em) {
-  /* ~1280px - Large desktop */
-  .logo-video {
-    max-height: 150px;
+@keyframes logo-slide-left {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
   }
 }
 
-@media (min-width: 64em) {
-  /* ~1024px - Desktop */
-  .logo-video {
-    max-height: 130px;
+@keyframes logo-slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
   }
 }
 
-// @media (min-width: 48em) {
-//   /* ~768px - Tablet */
-//   .logo-video {
-//     max-height: 120px;
-//   }
-// }
+@keyframes logo-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
 
-// @media (min-width: 30em) {
-//   /* ~480px - Large mobile */
-//   .logo-video {
-//     max-height: 100px;
-//   }
-// }
+@keyframes logo-a-color {
+  from { color: #c5d8cc; }
+  to   { color: #55f997; }
+}
 
-// @media (min-width: 20em) {
-//   /* ~480px - Large mobile */
-//   .logo-video {
-//     max-height: 45px;
-//   }
-// }
+/* === Text Logo === */
 
-// @media screen and (min-width: 1440px) {
-//   .logo-video {
-//     max-height: 7em;
-//   }
-// }
+.logo-text {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+  padding: 0.5em 0;
+}
 
-// @media (max-width: 1024px) {
-//   .logo-video {
-//     max-height: 4em;
-//   }
-// }
+.logo-name {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 550;
+  font-size: clamp(1.6rem, 4vw, 4rem);
+  letter-spacing: -0.02em;
+  color: #c5d8cc;
+  white-space: nowrap;
+}
 
-// @media (max-width: 840px) {
-//   .logo-video {
-//     max-height: 3em;
-//   }
-// }
+.logo-marta {
+  display: inline-block;
+  opacity: 0;
+  animation: logo-slide-left 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s both;
+}
 
-// @media (max-width: 380px) {
-//   .logo-video {
-//     max-height: 2vh;
-//   }
-// }
+.logo-a {
+  display: inline-block;
+  opacity: 0;
+  animation: logo-slide-right 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.6s both,
+             logo-a-color 0.5s cubic-bezier(0.4, 0, 0.2, 1) 1.8s both;
+}
 
-/* Logo wrapper - make h1 and p identical */
+.logo-rpa {
+  display: inline-block;
+  opacity: 0;
+  animation: logo-slide-right 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.6s both;
+}
+
+.logo-tagline {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 300 !important;
+  font-size: clamp(0.6rem, 1.1vw, 1.05rem);
+  color: #55f997 !important;
+  letter-spacing: 0.12em;
+  margin-top: 0.15em;
+  opacity: 0;
+  animation: logo-fade-in 0.7s cubic-bezier(0.4, 0, 0.2, 1) 1.2s both;
+}
+
+/* === Logo wrapper - make h1 and p identical === */
+
 #header #logo-wrapper h1,
 #header #logo-wrapper p {
   padding: 0 0 2em 0;
@@ -95,7 +105,6 @@
   }
 }
 
-/* Match theme's responsive breakpoint */
 @media screen and (max-width: 1280px) {
   #header #logo-wrapper h1,
   #header #logo-wrapper p {
@@ -103,13 +112,28 @@
   }
 }
 
-/* Logo image */
+/* Responsive logo sizing */
+@media screen and (max-width: 980px) {
+  .logo-name {
+    font-size: clamp(1.4rem, 3.5vw, 2.8rem);
+  }
+
+  .logo-tagline {
+    font-size: clamp(0.5rem, 1vw, 0.85rem);
+  }
+
+  .logo-text {
+    padding: 0.3em 0;
+  }
+}
+
+/* Logo link */
 #logo {
   text-align: center;
 }
 
 #logo img {
-  max-height: 78px; // adjust as needed
+  max-height: 78px;
   width: auto;
   display: inline-block;
   margin: 0 auto;
