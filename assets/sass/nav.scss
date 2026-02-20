@@ -1,43 +1,43 @@
 #titleBar {
-  background-color: #F6F1EB;
-  color: #344E41;
-  box-shadow: 0 4px 0 0 #A3B18A;
+  background-color: #344E41;
+  color: #A3B18A;
+  box-shadow: 0 4px 0 0 #163F35;
 
   .toggle {
     &:before {
-      color: #344E41;
+      color: #A3B18A;
     }
   }
 }
 
 .dropdown-content a.selected {
-  color: #163F35 !important;
+  color: #F6F1EB !important;
   font-weight: bold;
 }
 
 .dropdown-content a {
-  color: #344E41;
+  color: #A3B18A;
 }
 
 #navPanel {
-  background-color: #F6F1EB;
+  background-color: #163F35;
 
   .link.depth-0 {
-    color: #344E41;
+    color: #A3B18A;
   }
 
   .link.depth-1 {
-    color: #163F35;
+    color: #F6F1EB;
   }
 
   .toolbox {
     .dropdown {
       #languageDropdown {
-        color: #344E41;
+        color: #A3B18A;
       }
       #languageContent {
         li a {
-          color: #344E41;
+          color: #A3B18A;
         }
       }
     }
@@ -45,7 +45,7 @@
 }
 
 #nav {
-  background-color: #F6F1EB;
+  background-color: #163F35;
 
   &:after {
     background-color: transparent;
@@ -62,7 +62,7 @@
       }
 
       a {
-        color: #163F35;
+        color: #F6F1EB;
         position: relative;
         font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
         font-weight: 500;
@@ -77,14 +77,14 @@
           left: 50%;
           width: 0;
           height: 2px;
-          background: #344E41;
+          background: #A3B18A;
           transition: width 0.3s ease, left 0.3s ease;
         }
       }
 
       a:hover {
-        color: #344E41;
-        text-shadow: 1px 1px 3px rgba(52, 78, 65, 0.3);
+        color: #A3B18A;
+        text-shadow: 1px 1px 3px rgba(163, 177, 138, 0.4);
 
         &::after {
           width: 100%;
@@ -101,16 +101,16 @@
 }
 
 .dropotron {
-  background-color: #F6F1EB !important;
+  background-color: #163F35 !important;
   background-image: none !important;
   border-radius: 0 0 8px 8px !important;
   box-shadow: none !important;
-  border-bottom: 2px solid #344E41;
+  border-bottom: 2px solid #A3B18A;
   padding: 0.5em 0 !important;
 
   > li {
     > a {
-      color: #163F35 !important;
+      color: #F6F1EB !important;
       font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
       font-weight: 500;
       font-size: 0.9em;
@@ -119,7 +119,7 @@
     }
 
     a:hover {
-      color: #344E41 !important;
+      color: #A3B18A !important;
       text-shadow: none;
     }
   }
@@ -132,11 +132,11 @@
 }
 
 #multilingual.dropdown {
-  color: #344E41;
+  color: #A3B18A;
 }
 
 #languageContent {
-  background: #F6F1EB;
+  background: #163F35;
   border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
