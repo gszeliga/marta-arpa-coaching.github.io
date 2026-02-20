@@ -13,14 +13,14 @@
 .slide-title {
   font-size: 2.2rem;
   font-weight: 800;
-  color: #1e3f2b;
+  color: #1b4752;
   text-align: center;
   margin-bottom: 15px;
   line-height: 1.2;
 }
 
 .slide-subtitle {
-  color: #1e3f2b;
+  color: #1b4752;
   font-size: 1.35rem;
   font-weight: 400;
   font-style: italic;
@@ -31,18 +31,18 @@
 .section-title {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #1e3f2b;
+  color: #1b4752;
   margin: 40px 0 20px 0;
   text-align: center;
 }
 
 /* Content Blocks */
 .content-block {
-  background: #e9e9e7;
+  background: #e8dfd3;
   padding: 25px;
   border-radius: 12px;
   margin: 20px 0;
-  border-left: 4px solid #1e3f2b;
+  border-left: 4px solid #1b4752;
 }
 
 .content-block p {
@@ -70,17 +70,17 @@
   padding: 20px;
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.6);
-  border-top: 3px solid #1e3f2b;
+  border-top: 3px solid #1b4752;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .objective-card:nth-child(even) {
-  border-top-color: #55f997;
+  border-top-color: #c0582a;
 }
 
 .objective-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(30, 63, 43, 0.1);
+  box-shadow: 0 8px 24px rgba(27, 71, 82, 0.1);
 }
 
 .objective-icon {
@@ -92,13 +92,13 @@
 .objective-title {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #1e3f2b;
+  color: #1b4752;
   margin-bottom: 10px;
 }
 
 .objective-text {
   font-size: 0.95rem;
-  color: #1e3f2b;
+  color: #1b4752;
 }
 
 /* Methodology Timeline */
@@ -119,7 +119,7 @@
   top: 0;
   bottom: 0;
   width: 3px;
-  background: linear-gradient(180deg, #55f997, #1e3f2b);
+  background: linear-gradient(180deg, #c0582a, #1b4752);
   border-radius: 2px;
 }
 
@@ -135,8 +135,8 @@
   top: 0;
   width: 60px;
   height: 60px;
-  background: #55f997;
-  color: #1e3f2b;
+  background: #c0582a;
+  color: #faf7f1;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -144,11 +144,11 @@
   font-size: 1.5rem;
   font-weight: 800;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  box-shadow: 0 2px 12px rgba(85, 249, 151, 0.4);
+  box-shadow: 0 2px 12px rgba(192, 88, 42, 0.4);
 }
 
 .timeline-content {
-  color: #1e3f2b;
+  color: #1b4752;
   padding: 25px;
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.6);
@@ -169,7 +169,7 @@
 .timeline-title {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #1e3f2b;
+  color: #1b4752;
   margin-bottom: 15px;
 }
 
@@ -192,7 +192,7 @@
 
 .timeline-list li::before {
   content: "•";
-  color: #2a5a3e;
+  color: #245f70;
   font-weight: bold;
   position: absolute;
   left: 0;
@@ -207,7 +207,7 @@
 }
 
 .deliverable-card {
-  color: #1e3f2b;
+  color: #1b4752;
   padding: 28px 20px;
   border-radius: 16px;
   text-align: center;
@@ -217,7 +217,7 @@
 
 .deliverable-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 28px rgba(30, 63, 43, 0.12);
+  box-shadow: 0 8px 28px rgba(27, 71, 82, 0.12);
 }
 
 .deliverable-icon {
@@ -250,7 +250,7 @@
 
 /* Duration and Summary */
 .duration-box {
-  background: #e9e9e7;
+  background: #e8dfd3;
   border: none;
   border-radius: 16px;
   padding: 25px;
@@ -261,13 +261,13 @@
 .duration-title {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #1e3f2b;
+  color: #1b4752;
   margin-bottom: 10px;
 }
 
 .duration-text {
   font-size: 1.1rem;
-  color: #1e3f2b;
+  color: #1b4752;
   font-weight: 600;
 }
 

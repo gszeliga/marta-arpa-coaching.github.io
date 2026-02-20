@@ -8,15 +8,15 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #1e3f2b;
-  color: #d7f7e4;
+  background: #1b4752;
+  color: #faf7f1;
   padding: 12px 20px;
   border-radius: 9999px;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 600;
   font-size: 0.9rem;
   text-decoration: none;
-  box-shadow: 0 4px 20px rgba(30, 63, 43, 0.3);
+  box-shadow: 0 4px 20px rgba(27, 71, 82, 0.3);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   // Hidden by default
   opacity: 0;
@@ -30,10 +30,10 @@
   }
 
   &:hover {
-    background: #55f997;
-    color: #1e3f2b;
+    background: #c0582a;
+    color: #faf7f1;
     transform: translateY(-2px);
-    box-shadow: 0 6px 24px rgba(85, 249, 151, 0.35);
+    box-shadow: 0 6px 24px rgba(192, 88, 42, 0.35);
   }
 
   &.sticky-cta-visible:hover {
