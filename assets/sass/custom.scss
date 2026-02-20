@@ -9,8 +9,8 @@ html {
 }
 
 body {
-  background-color: #d7f7e4;
-  color: #1e3f2b;
+  background-color: #F4F1EC;
+  color: #2F5D50;
   font-family:
     "Inter",
     -apple-system,
@@ -103,32 +103,32 @@ a {
 }
 
 #header {
-  background-color: #1d1d1b;
-  color: #1e3f2b;
+  background-color: #333333;
+  color: #2F5D50;
 }
 
 #header nav li ul {
-  color: #e9e9e7;
+  color: #8FF6B3;
 }
 
 .container {
   h1,
   h2 {
-    color: #d7f7e4;
+    color: #F4F1EC;
   }
 
   h3 {
-    color: #1e3f2b;
+    color: #2F5D50;
   }
 
   p {
-    color: rgba(30, 63, 43, 0.82);
+    color: rgba(47, 93, 80, 0.82);
   }
 }
 
 .button {
-  color: #d7f7e4;
-  background-color: #1d1d1b;
+  color: #F4F1EC;
+  background-color: #333333;
   border-radius: 9999px !important;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 600;
@@ -136,20 +136,20 @@ a {
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
   &.alt {
-    color: #d7f7e4 !important;
-    background-color: #1d1d1b !important;
+    color: #F4F1EC !important;
+    background-color: #333333 !important;
 
     &:hover {
-      background-color: #55f997 !important;
-      color: #1e3f2b !important;
+      background-color: #E07A5F !important;
+      color: #1C1C1C !important;
     }
   }
 
   &:hover {
-    background-color: #55f997;
-    color: #1d1d1b !important;
+    background-color: #E07A5F;
+    color: #1C1C1C !important;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(30, 63, 43, 0.2);
+    box-shadow: 0 4px 12px rgba(47, 93, 80, 0.2);
   }
 
   &:active {
@@ -161,7 +161,7 @@ a {
 // Major section headings
 header.major h1,
 header.major h2 {
-  color: #1e3f2b;
+  color: #2F5D50;
   margin-bottom: 0.5em;
   font-size: 2.25em;
 }
@@ -196,8 +196,8 @@ header.major p {
 }
 
 #footer {
-  background: #d7f7e4;
-  color: #1e3f2b;
+  background: #F4F1EC;
+  color: #2F5D50;
   position: relative;
 
   // Green accent top border
@@ -208,20 +208,20 @@ header.major p {
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, #55f997, #d7f7e4);
+    background: linear-gradient(90deg, #E07A5F, #F4F1EC);
   }
 
   h3 {
-    color: #1e3f2b;
+    color: #2F5D50;
   }
 
   p, li {
-    color: rgba(30, 63, 43, 0.65);
+    color: rgba(47, 93, 80, 0.65);
   }
 
   // Link hover underline animation
   a {
-    color: rgba(30, 63, 43, 0.65);
+    color: rgba(47, 93, 80, 0.65);
     border-bottom-color: transparent;
     position: relative;
     display: inline-block;
@@ -234,12 +234,12 @@ header.major p {
       left: 0;
       width: 0;
       height: 2px;
-      background: linear-gradient(90deg, #1e3f2b, #55f997);
+      background: linear-gradient(90deg, #2F5D50, #E07A5F);
       transition: width 0.3s ease;
     }
 
     &:hover {
-      color: #1e3f2b;
+      color: #2F5D50;
       border-bottom-color: transparent;
 
       &::after {
@@ -251,11 +251,11 @@ header.major p {
   // Social icons in circles
   .icons {
     a {
-      color: #1e3f2b;
+      color: #2F5D50;
       width: 48px;
       height: 48px;
       line-height: 48px;
-      border: 2px solid rgba(30, 63, 43, 0.2);
+      border: 2px solid rgba(47, 93, 80, 0.2);
       border-radius: 50%;
       display: inline-flex;
       align-items: center;
@@ -272,9 +272,9 @@ header.major p {
       }
 
       &:hover {
-        background: #1e3f2b;
-        color: #d7f7e4;
-        border-color: #1e3f2b;
+        background: #2F5D50;
+        color: #F4F1EC;
+        border-color: #2F5D50;
         transform: translateY(-2px);
       }
     }
@@ -285,35 +285,35 @@ header.major p {
   .container input[type="email"],
   .container textarea {
     background: rgba(255, 255, 255, 0.6);
-    border: 1px solid rgba(30, 63, 43, 0.12);
+    border: 1px solid rgba(47, 93, 80, 0.12);
     border-radius: 12px;
-    color: #1e3f2b;
+    color: #2F5D50;
     padding: 12px 16px;
     transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
 
     &::placeholder {
-      color: rgba(30, 63, 43, 0.35);
+      color: rgba(47, 93, 80, 0.35);
     }
 
     &:focus {
       outline: none;
-      border-color: #1e3f2b;
+      border-color: #2F5D50;
       background: rgba(255, 255, 255, 0.85);
-      box-shadow: 0 0 0 3px rgba(85, 249, 151, 0.25);
+      box-shadow: 0 0 0 3px rgba(224, 122, 95, 0.25);
     }
   }
 
   // Copyright separator
   .copyright {
-    border-top: 1px solid rgba(30, 63, 43, 0.1);
+    border-top: 1px solid rgba(47, 93, 80, 0.1);
     padding-top: 2em;
-    color: rgba(30, 63, 43, 0.4);
+    color: rgba(47, 93, 80, 0.4);
 
     a {
-      color: rgba(30, 63, 43, 0.4);
+      color: rgba(47, 93, 80, 0.4);
 
       &:hover {
-        color: #1e3f2b;
+        color: #2F5D50;
       }
     }
   }
@@ -326,16 +326,16 @@ header.major p {
 article h1,
 article h2,
 article h3 {
-  color: #1e3f2b !important;
+  color: #2F5D50 !important;
 }
 
 article p {
-  color: rgba(30, 63, 43, 0.82) !important;
+  color: rgba(47, 93, 80, 0.82) !important;
 }
 
 article .cta-section .cta-title,
 article .cta-section .cta-text {
-  color: #d7f7e4 !important;
+  color: #F4F1EC !important;
 }
 
 article header p {
@@ -358,7 +358,7 @@ article h3 img {
 }
 
 article ul li {
-  color: rgba(30, 63, 43, 0.82);
+  color: rgba(47, 93, 80, 0.82);
 }
 
 #sidebar section img {
@@ -376,11 +376,11 @@ article ul li {
   // padding: 5em 0 3em 0;
 
   &.style1 {
-    background: linear-gradient(180deg, #e9e9e7, #eef6f0);
+    background: linear-gradient(180deg, #8FF6B3, #EDF7F2);
   }
 
   &.style2 {
-    background: linear-gradient(180deg, #eef6f0, #d7f7e4);
+    background: linear-gradient(180deg, #EDF7F2, #F4F1EC);
 
     img {
       max-height: 100px;
@@ -390,8 +390,8 @@ article ul li {
     // background:
     //   linear-gradient(
     //     to bottom,
-    //     rgba(30, 63, 43, 0.1),
-    //     rgba(85, 249, 151, 0.1)
+    //     rgba(47, 93, 80, 0.1),
+    //     rgba(224, 122, 95, 0.1)
     //   ),
     //   url("images/background-invitation-simple.png") center/cover no-repeat;
     // background-size: contain;
@@ -412,21 +412,21 @@ article ul li {
   // }
 
   &.style3 {
-    background: linear-gradient(135deg, #1e3f2b 0%, #2a5a3e 100%);
+    background: linear-gradient(135deg, #2F5D50 0%, #3A6B5C 100%);
 
     header.major h1,
     header.major h2,
     h2, h3 {
-      color: #55f997;
+      color: #E07A5F;
     }
 
     .button {
-      color: #d7f7e4;
-      background-color: #1d1d1b;
+      color: #F4F1EC;
+      background-color: #333333;
 
       &:hover {
-        background-color: #55f997;
-        color: #1d1d1b !important;
+        background-color: #E07A5F;
+        color: #1C1C1C !important;
       }
     }
   }
@@ -451,7 +451,7 @@ article ul li {
 }
 
 .icon.brands::before {
-  color: #1e3f2b;
+  color: #2F5D50;
 }
 
 .favicon {

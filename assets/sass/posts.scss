@@ -20,7 +20,7 @@
 
   &:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 28px rgba(30, 63, 43, 0.12);
+    box-shadow: 0 8px 28px rgba(47, 93, 80, 0.12);
   }
 }
 
@@ -58,7 +58,7 @@
 .post-card-title {
   font-size: 1.3em;
   font-weight: 700;
-  color: #1e3f2b;
+  color: #2F5D50;
   margin: 0 0 12px 0;
   line-height: 1.3;
 
@@ -68,14 +68,14 @@
     border-bottom: none;
 
     &:hover {
-      color: #2a5a3e;
+      color: #3A6B5C;
     }
   }
 }
 
 .post-card-date {
   font-size: 0.85rem;
-  color: #1e3f2b;
+  color: #2F5D50;
   opacity: 0.55;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   margin-bottom: 12px;
@@ -85,7 +85,7 @@
 .post-card-summary {
   font-size: 1rem;
   line-height: 1.7;
-  color: #1e3f2b;
+  color: #2F5D50;
   opacity: 0.8;
   margin: 0;
   display: -webkit-box;
@@ -104,8 +104,8 @@
 }
 
 .post-card-tag {
-  background: linear-gradient(135deg, #d7f7e4, rgba(85, 249, 151, 0.25));
-  color: #1e3f2b;
+  background: linear-gradient(135deg, #F4F1EC, rgba(224, 122, 95, 0.25));
+  color: #2F5D50;
   padding: 4px 14px;
   border-radius: 9999px;
   font-size: 0.8rem;
@@ -116,8 +116,8 @@
   transition: background 0.2s ease;
 
   &:hover {
-    background: linear-gradient(135deg, #55f997, #d7f7e4);
-    color: #1e3f2b;
+    background: linear-gradient(135deg, #E07A5F, #F4F1EC);
+    color: #2F5D50;
   }
 }
 
@@ -137,8 +137,8 @@
 }
 
 .post-tag {
-  background: linear-gradient(135deg, #d7f7e4, rgba(85, 249, 151, 0.25));
-  color: #1e3f2b;
+  background: linear-gradient(135deg, #F4F1EC, rgba(224, 122, 95, 0.25));
+  color: #2F5D50;
   padding: 6px 16px;
   border-radius: 9999px;
   font-size: 0.85rem;
@@ -149,14 +149,14 @@
   transition: background 0.2s ease;
 
   &:hover {
-    background: linear-gradient(135deg, #55f997, #d7f7e4);
-    color: #1e3f2b;
+    background: linear-gradient(135deg, #E07A5F, #F4F1EC);
+    color: #2F5D50;
   }
 }
 
 .post-date {
   font-size: 0.9rem;
-  color: #1e3f2b;
+  color: #2F5D50;
   opacity: 0.55;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
 }

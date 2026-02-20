@@ -20,14 +20,14 @@
 .profile-pic img {
   width: 80%;
   border-radius: 16px;
-  box-shadow: 0 8px 28px rgba(30, 63, 43, 0.12);
-  border-left: 4px solid #55f997;
+  box-shadow: 0 8px 28px rgba(47, 93, 80, 0.12);
+  border-left: 4px solid #E07A5F;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
               box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 36px rgba(30, 63, 43, 0.18);
+    box-shadow: 0 12px 36px rgba(47, 93, 80, 0.18);
   }
 }
 
@@ -71,12 +71,12 @@
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, #55f997, #d7f7e4);
+    background: linear-gradient(90deg, #E07A5F, #F4F1EC);
   }
 
   &:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 28px rgba(30, 63, 43, 0.12);
+    box-shadow: 0 8px 28px rgba(47, 93, 80, 0.12);
   }
 
   p.about-me {
@@ -89,8 +89,8 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: linear-gradient(135deg, #d7f7e4, rgba(85, 249, 151, 0.25));
-  color: #1e3f2b;
+  background: linear-gradient(135deg, #F4F1EC, rgba(224, 122, 95, 0.25));
+  color: #2F5D50;
   padding: 6px 16px;
   border-radius: 9999px;
   font-size: 0.85rem;
@@ -102,7 +102,7 @@
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(30, 63, 43, 0.12);
+    box-shadow: 0 4px 12px rgba(47, 93, 80, 0.12);
   }
 
 }
