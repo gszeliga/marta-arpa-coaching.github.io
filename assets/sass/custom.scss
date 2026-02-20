@@ -122,7 +122,7 @@ a {
   }
 
   p {
-    color: #1e3f2b;
+    color: rgba(30, 63, 43, 0.82);
   }
 }
 
@@ -323,11 +323,14 @@ header.major p {
   margin-bottom: 1.5em;
 }
 
-article p,
 article h1,
 article h2,
 article h3 {
   color: #1e3f2b !important;
+}
+
+article p {
+  color: rgba(30, 63, 43, 0.82) !important;
 }
 
 article .cta-section .cta-title,
@@ -355,7 +358,7 @@ article h3 img {
 }
 
 article ul li {
-  color: #1e3f2b;
+  color: rgba(30, 63, 43, 0.82);
 }
 
 #sidebar section img {
@@ -410,6 +413,12 @@ article ul li {
 
   &.style3 {
     background: linear-gradient(135deg, #1e3f2b 0%, #2a5a3e 100%);
+
+    header.major h1,
+    header.major h2,
+    h2, h3 {
+      color: #55f997;
+    }
 
     .button {
       color: #d7f7e4;

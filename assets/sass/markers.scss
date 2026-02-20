@@ -95,10 +95,10 @@
 /* 14. Side Border Highlight */
 .side-border-highlight {
   border-left: 4px solid #55f997;
-  padding-left: 12px;
-  background: linear-gradient(90deg, rgba(85, 249, 151, 0.1), transparent);
-  padding: 8px 12px;
+  background: linear-gradient(90deg, rgba(85, 249, 151, 0.18), rgba(85, 249, 151, 0.04) 60%, transparent);
+  padding: 14px 18px;
   margin-top: 32px;
+  border-radius: 0 8px 8px 0;
 }
 
 // i.e. <span class="check-icon">✓</span>

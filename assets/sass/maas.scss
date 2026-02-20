@@ -323,9 +323,36 @@
 }
 
 .compare-col-featured {
-  background: rgba(255, 255, 255, 0.85);
-  box-shadow: 0 2px 12px rgba(30, 63, 43, 0.1);
+  background: #1e3f2b;
+  box-shadow: 0 4px 20px rgba(30, 63, 43, 0.25);
   border: 2px solid #55f997;
+
+  .compare-header {
+    border-bottom-color: rgba(215, 247, 228, 0.15);
+
+    h3 {
+      color: #d7f7e4;
+    }
+
+    .minimal-card-badge {
+      background: #55f997;
+      color: #1e3f2b;
+    }
+  }
+
+  .compare-row {
+    color: #d7f7e4;
+    border-bottom-color: rgba(215, 247, 228, 0.08);
+  }
+
+  .compare-label {
+    color: rgba(215, 247, 228, 0.65);
+  }
+
+  .showcase-pill {
+    background: rgba(85, 249, 151, 0.2);
+    color: #d7f7e4;
+  }
 }
 
 .compare-header {
@@ -399,9 +426,23 @@
 }
 
 .minimal-card-option-featured {
-  background: rgba(255, 255, 255, 0.85);
-  box-shadow: 0 2px 12px rgba(30, 63, 43, 0.1);
+  background: #1e3f2b;
+  box-shadow: 0 4px 20px rgba(30, 63, 43, 0.25);
   position: relative;
+
+  h4 {
+    color: #d7f7e4;
+  }
+
+  p {
+    color: rgba(215, 247, 228, 0.8);
+    opacity: 1;
+  }
+
+  .minimal-card-badge {
+    background: #55f997;
+    color: #1e3f2b;
+  }
 
   .popular-tag {
     top: 8px;
