@@ -65,7 +65,7 @@
 }
 
 .showcase-pill {
-  background: linear-gradient(135deg, #d7f7e4, rgba(85, 249, 151, 0.25));
+  background: linear-gradient(135deg, #f8f5ec, rgba(201, 148, 10, 0.25));
   color: #1e3f2b;
   padding: 6px 16px;
   border-radius: 9999px;
@@ -108,7 +108,7 @@
 
 /* Column Container */
 .column {
-  background: #e9e9e7;
+  background: #ede7d9;
   border-radius: 16px;
   padding: 28px;
 }
@@ -207,7 +207,7 @@
 
 .minimal-card {
   background: rgba(255, 255, 255, 0.6);
-  border-left: 4px solid #55f997;
+  border-left: 4px solid #c9940a;
   border-radius: 4px 16px 16px 4px;
   padding: 32px 36px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -241,7 +241,7 @@
 }
 
 .minimal-card-badge {
-  background: linear-gradient(135deg, #d7f7e4, rgba(85, 249, 151, 0.3));
+  background: linear-gradient(135deg, #f8f5ec, rgba(201, 148, 10, 0.3));
   color: #1e3f2b;
   padding: 4px 14px;
   border-radius: 9999px;
@@ -325,33 +325,33 @@
 .compare-col-featured {
   background: #1e3f2b;
   box-shadow: 0 4px 20px rgba(30, 63, 43, 0.25);
-  border: 2px solid #55f997;
+  border: 2px solid #c9940a;
 
   .compare-header {
-    border-bottom-color: rgba(215, 247, 228, 0.15);
+    border-bottom-color: rgba(248, 245, 236, 0.15);
 
     h3 {
-      color: #d7f7e4 !important;
+      color: #f8f5ec !important;
     }
 
     .minimal-card-badge {
-      background: #55f997;
+      background: #c9940a;
       color: #1e3f2b;
     }
   }
 
   .compare-row {
-    color: #d7f7e4;
-    border-bottom-color: rgba(215, 247, 228, 0.08);
+    color: #f8f5ec;
+    border-bottom-color: rgba(248, 245, 236, 0.08);
   }
 
   .compare-label {
-    color: rgba(215, 247, 228, 0.65);
+    color: rgba(248, 245, 236, 0.65);
   }
 
   .showcase-pill {
-    background: rgba(85, 249, 151, 0.2);
-    color: #d7f7e4;
+    background: rgba(201, 148, 10, 0.2);
+    color: #f8f5ec;
   }
 }
 
@@ -431,16 +431,16 @@
   position: relative;
 
   h4 {
-    color: #d7f7e4;
+    color: #f8f5ec;
   }
 
   p {
-    color: rgba(215, 247, 228, 0.8);
+    color: rgba(248, 245, 236, 0.8);
     opacity: 1;
   }
 
   .minimal-card-badge {
-    background: #55f997;
+    background: #c9940a;
     color: #1e3f2b;
   }
 

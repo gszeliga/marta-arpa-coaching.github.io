@@ -9,7 +9,7 @@
   align-items: center;
   gap: 8px;
   background: #1e3f2b;
-  color: #d7f7e4;
+  color: #f8f5ec;
   padding: 12px 20px;
   border-radius: 9999px;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
@@ -30,10 +30,10 @@
   }
 
   &:hover {
-    background: #55f997;
+    background: #c9940a;
     color: #1e3f2b;
     transform: translateY(-2px);
-    box-shadow: 0 6px 24px rgba(85, 249, 151, 0.35);
+    box-shadow: 0 6px 24px rgba(201, 148, 10, 0.35);
   }
 
   &.sticky-cta-visible:hover {

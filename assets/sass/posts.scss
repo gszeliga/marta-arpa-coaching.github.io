@@ -104,7 +104,7 @@
 }
 
 .post-card-tag {
-  background: linear-gradient(135deg, #d7f7e4, rgba(85, 249, 151, 0.25));
+  background: linear-gradient(135deg, #f8f5ec, rgba(201, 148, 10, 0.25));
   color: #1e3f2b;
   padding: 4px 14px;
   border-radius: 9999px;
@@ -116,7 +116,7 @@
   transition: background 0.2s ease;
 
   &:hover {
-    background: linear-gradient(135deg, #55f997, #d7f7e4);
+    background: linear-gradient(135deg, #c9940a, #f8f5ec);
     color: #1e3f2b;
   }
 }
@@ -137,7 +137,7 @@
 }
 
 .post-tag {
-  background: linear-gradient(135deg, #d7f7e4, rgba(85, 249, 151, 0.25));
+  background: linear-gradient(135deg, #f8f5ec, rgba(201, 148, 10, 0.25));
   color: #1e3f2b;
   padding: 6px 16px;
   border-radius: 9999px;
@@ -149,7 +149,7 @@
   transition: background 0.2s ease;
 
   &:hover {
-    background: linear-gradient(135deg, #55f997, #d7f7e4);
+    background: linear-gradient(135deg, #c9940a, #f8f5ec);
     color: #1e3f2b;
   }
 }

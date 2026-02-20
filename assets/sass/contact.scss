@@ -41,7 +41,7 @@
   right: 0;
   height: 4px;
   border-radius: 20px 20px 0 0;
-  background: linear-gradient(90deg, #55f997, #d7f7e4);
+  background: linear-gradient(90deg, #c9940a, #f8f5ec);
 }
 
 .contact-form-section:hover {
@@ -89,7 +89,7 @@
   outline: none;
   border-color: #1e3f2b;
   background: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 0 0 3px rgba(85, 249, 151, 0.25);
+  box-shadow: 0 0 0 3px rgba(201, 148, 10, 0.25);
 }
 
 .form-textarea {
@@ -98,7 +98,7 @@
 }
 
 .form-button {
-  color: #d7f7e4;
+  color: #f8f5ec;
   background-color: #1d1d1b;
   border: none;
   padding: 18px 40px;
@@ -116,7 +116,7 @@
   width: auto;
 
   &:hover {
-    background-color: #55f997;
+    background-color: #c9940a;
     color: #1d1d1b !important;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(30, 63, 43, 0.2);
@@ -131,7 +131,7 @@
 /* CTA Section */
 .cta-section {
   background: linear-gradient(135deg, #1e3f2b, #2a5a3e);
-  color: #d7f7e4;
+  color: #f8f5ec;
   text-align: center;
   padding: 60px 40px;
   border-radius: 16px;
@@ -149,7 +149,7 @@
   height: 200%;
   background: radial-gradient(
     circle,
-    rgba(85, 249, 151, 0.1) 0%,
+    rgba(201, 148, 10, 0.1) 0%,
     transparent 70%
   );
   animation: float 6s ease-in-out infinite;
@@ -168,7 +168,7 @@
 .cta-title {
   font-size: 2.2rem;
   font-weight: 700;
-  color: #d7f7e4;
+  color: #f8f5ec;
   margin-bottom: 20px;
   position: relative;
   z-index: 2;
@@ -176,7 +176,7 @@
 
 .cta-text {
   font-size: 1.2rem;
-  color: #d7f7e4;
+  color: #f8f5ec;
   margin-bottom: 30px;
   position: relative;
   z-index: 2;
@@ -184,7 +184,7 @@
 }
 
 .cta-button {
-  background: #d7f7e4;
+  background: #f8f5ec;
   color: #1e3f2b;
   padding: 18px 40px;
   border: none;
@@ -204,8 +204,8 @@
 
 .cta-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(85, 249, 151, 0.3);
-  background: #55f997;
+  box-shadow: 0 4px 12px rgba(201, 148, 10, 0.3);
+  background: #c9940a;
   color: #1e3f2b;
 }
 

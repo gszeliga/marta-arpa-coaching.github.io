@@ -1,43 +1,43 @@
 #titleBar {
   background-color: #1d1d1b;
-  color: #55f997;
+  color: #c9940a;
   box-shadow: 0 4px 0 0 #1e3f2b;
 
   .toggle {
     &:before {
-      color: #55f997;
+      color: #c9940a;
     }
   }
 }
 
 .dropdown-content a.selected {
-  color: #d7f7e4 !important;
+  color: #f8f5ec !important;
   font-weight: bold;
 }
 
 .dropdown-content a {
-  color: #55f997;
+  color: #c9940a;
 }
 
 #navPanel {
   background-color: #1e3f2b;
 
   .link.depth-0 {
-    color: #55f997;
+    color: #c9940a;
   }
 
   .link.depth-1 {
-    color: #d7f7e4;
+    color: #f8f5ec;
   }
 
   .toolbox {
     .dropdown {
       #languageDropdown {
-        color: #55f997;
+        color: #c9940a;
       }
       #languageContent {
         li a {
-          color: #55f997;
+          color: #c9940a;
         }
       }
     }
@@ -62,7 +62,7 @@
       }
 
       a {
-        color: #d7f7e4;
+        color: #f8f5ec;
         position: relative;
         font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
         font-weight: 500;
@@ -77,14 +77,14 @@
           left: 50%;
           width: 0;
           height: 2px;
-          background: #55f997;
+          background: #c9940a;
           transition: width 0.3s ease, left 0.3s ease;
         }
       }
 
       a:hover {
-        color: #55f997;
-        text-shadow: 1px 1px 3px rgba(85, 249, 151, 0.4);
+        color: #c9940a;
+        text-shadow: 1px 1px 3px rgba(201, 148, 10, 0.4);
 
         &::after {
           width: 100%;
@@ -105,12 +105,12 @@
   background-image: none !important;
   border-radius: 0 0 8px 8px !important;
   box-shadow: none !important;
-  border-bottom: 2px solid #55f997;
+  border-bottom: 2px solid #c9940a;
   padding: 0.5em 0 !important;
 
   > li {
     > a {
-      color: #d7f7e4 !important;
+      color: #f8f5ec !important;
       font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
       font-weight: 500;
       font-size: 0.9em;
@@ -119,7 +119,7 @@
     }
 
     a:hover {
-      color: #55f997 !important;
+      color: #c9940a !important;
       text-shadow: none;
     }
   }
@@ -132,7 +132,7 @@
 }
 
 #multilingual.dropdown {
-  color: #55f997;
+  color: #c9940a;
 }
 
 #languageContent {

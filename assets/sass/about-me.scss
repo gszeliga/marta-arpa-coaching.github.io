@@ -21,7 +21,7 @@
   width: 80%;
   border-radius: 16px;
   box-shadow: 0 8px 28px rgba(30, 63, 43, 0.12);
-  border-left: 4px solid #55f997;
+  border-left: 4px solid #c9940a;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
               box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -71,7 +71,7 @@
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, #55f997, #d7f7e4);
+    background: linear-gradient(90deg, #c9940a, #f8f5ec);
   }
 
   &:hover {
@@ -89,7 +89,7 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: linear-gradient(135deg, #d7f7e4, rgba(85, 249, 151, 0.25));
+  background: linear-gradient(135deg, #f8f5ec, rgba(201, 148, 10, 0.25));
   color: #1e3f2b;
   padding: 6px 16px;
   border-radius: 9999px;

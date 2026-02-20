@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-color: #d7f7e4;
+  background-color: #f8f5ec;
   color: #1e3f2b;
   font-family:
     "Inter",
@@ -108,13 +108,13 @@ a {
 }
 
 #header nav li ul {
-  color: #e9e9e7;
+  color: #ede7d9;
 }
 
 .container {
   h1,
   h2 {
-    color: #d7f7e4;
+    color: #f8f5ec;
   }
 
   h3 {
@@ -127,7 +127,7 @@ a {
 }
 
 .button {
-  color: #d7f7e4;
+  color: #f8f5ec;
   background-color: #1d1d1b;
   border-radius: 9999px !important;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
@@ -136,17 +136,17 @@ a {
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
   &.alt {
-    color: #d7f7e4 !important;
+    color: #f8f5ec !important;
     background-color: #1d1d1b !important;
 
     &:hover {
-      background-color: #55f997 !important;
+      background-color: #c9940a !important;
       color: #1e3f2b !important;
     }
   }
 
   &:hover {
-    background-color: #55f997;
+    background-color: #c9940a;
     color: #1d1d1b !important;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(30, 63, 43, 0.2);
@@ -196,7 +196,7 @@ header.major p {
 }
 
 #footer {
-  background: #d7f7e4;
+  background: #f8f5ec;
   color: #1e3f2b;
   position: relative;
 
@@ -208,7 +208,7 @@ header.major p {
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, #55f997, #d7f7e4);
+    background: linear-gradient(90deg, #c9940a, #f8f5ec);
   }
 
   h3 {
@@ -234,7 +234,7 @@ header.major p {
       left: 0;
       width: 0;
       height: 2px;
-      background: linear-gradient(90deg, #1e3f2b, #55f997);
+      background: linear-gradient(90deg, #1e3f2b, #c9940a);
       transition: width 0.3s ease;
     }
 
@@ -273,7 +273,7 @@ header.major p {
 
       &:hover {
         background: #1e3f2b;
-        color: #d7f7e4;
+        color: #f8f5ec;
         border-color: #1e3f2b;
         transform: translateY(-2px);
       }
@@ -299,7 +299,7 @@ header.major p {
       outline: none;
       border-color: #1e3f2b;
       background: rgba(255, 255, 255, 0.85);
-      box-shadow: 0 0 0 3px rgba(85, 249, 151, 0.25);
+      box-shadow: 0 0 0 3px rgba(201, 148, 10, 0.25);
     }
   }
 
@@ -335,7 +335,7 @@ article p {
 
 article .cta-section .cta-title,
 article .cta-section .cta-text {
-  color: #d7f7e4 !important;
+  color: #f8f5ec !important;
 }
 
 article header p {
@@ -376,11 +376,11 @@ article ul li {
   // padding: 5em 0 3em 0;
 
   &.style1 {
-    background: linear-gradient(180deg, #e9e9e7, #eef6f0);
+    background: linear-gradient(180deg, #ede7d9, #f5f0e6);
   }
 
   &.style2 {
-    background: linear-gradient(180deg, #eef6f0, #d7f7e4);
+    background: linear-gradient(180deg, #f5f0e6, #f8f5ec);
 
     img {
       max-height: 100px;
@@ -391,7 +391,7 @@ article ul li {
     //   linear-gradient(
     //     to bottom,
     //     rgba(30, 63, 43, 0.1),
-    //     rgba(85, 249, 151, 0.1)
+    //     rgba(201, 148, 10, 0.1)
     //   ),
     //   url("images/background-invitation-simple.png") center/cover no-repeat;
     // background-size: contain;
@@ -417,15 +417,15 @@ article ul li {
     header.major h1,
     header.major h2,
     h2, h3 {
-      color: #55f997;
+      color: #c9940a;
     }
 
     .button {
-      color: #d7f7e4;
+      color: #f8f5ec;
       background-color: #1d1d1b;
 
       &:hover {
-        background-color: #55f997;
+        background-color: #c9940a;
         color: #1d1d1b !important;
       }
     }
