@@ -102,6 +102,62 @@ a {
   flex-grow: 1;
 }
 
+// ===============================
+// Image Band (homepage)
+// ===============================
+
+.image-band-section.wrapper {
+  padding: 0 !important;
+}
+
+.image-band-frame {
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  -webkit-mask-image:
+    linear-gradient(to bottom, transparent 0%, black 16%, black 84%, transparent 100%),
+    linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(to bottom, transparent 0%, black 16%, black 84%, transparent 100%),
+    linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
+  mask-composite: intersect;
+}
+
+
+.image-band-frame picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+// Slow ambient drift — gives the image a living, present-moment quality
+@keyframes image-band-drift {
+  from { transform: scale(1)    translateY(0); }
+  to   { transform: scale(1.05) translateY(-1.5%); }
+}
+
+.image-band-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+  animation: image-band-drift 10s ease-in-out infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .image-band-frame img {
+    animation: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .image-band-frame {
+    height: 260px;
+  }
+}
+
 #header {
   background-color: #1d1d1b;
   color: #1e3f2b;

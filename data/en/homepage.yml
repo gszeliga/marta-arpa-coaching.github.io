@@ -20,23 +20,9 @@ banner:
       text: Facilitate organizational transformations through tailored strategies.
       icon: /images/icons/adaptation.png
 items:
-  - type: highlights
-    items_per_row: 3
-    items:
-      - title: My Philosophy
-        #icon: fa-paper-plane
-        # https://ar.inspiredpencil.com/pictures-2023/philosophy-symbol
-        iconPath: images/icons/philosophy.png
-        content: >
-          True success for a person or an organization is not only about what is achieved, but how transformation takes place during the process and the ability to sustain that change over time.
-      - title: My Purpose
-        iconPath: images/icons/growing-seed.png
-        content: >
-          To unlock the **potential** of people and organizations to create a positive and lasting impact on their environment. Everyone has unique potential waiting to be developed.
-      - title: My Commitment
-        iconPath: images/icons/help.png
-        content: >
-          My commitment is to accompany you on this journey, sharing my experience, knowledge, and passion for human development.
+  - type: image_band
+    imagePath: images/homepage/coaching-group.png
+    imageAlt: Group coaching session
   - type: heading
     heading: The Invitation
     contents: <picture><source srcset="/images/background-invitation-simple-pad.webp" type="image/webp"><img src="/images/background-invitation-simple-pad.png"/></picture> <p class='invitation'>I invite you to embark together on a journey of <span class='underline-highlight-dark'>discovery and transformation</span>.</p><span class='invitation-extra'>Every person and every organization has unique potential waiting to be developed. My commitment is to accompany you on this journey, bringing my experience, knowledge, and passion for human development.</span>

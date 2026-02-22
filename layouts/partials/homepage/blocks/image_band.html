@@ -1,0 +1,10 @@
+<section class="wrapper style1 image-band-section">
+  <div class="container">
+    <div class="image-band-frame animate-on-scroll">
+      <picture>
+        <source srcset="{{ replace .item.imagePath ".png" ".webp" | relURL }}" type="image/webp">
+        <img src="{{ .item.imagePath | relURL }}" alt="{{ .item.imageAlt | default "" }}" loading="lazy" />
+      </picture>
+    </div>
+  </div>
+</section>

@@ -77,13 +77,14 @@ The service pages share a consistent set of reusable UI components defined acros
 - `#55f997` — accent green (borders, highlights)
 - `rgba(255, 255, 255, 0.6)` — translucent white (card backgrounds, with `backdrop-filter: blur`)
 
-**Homepage highlight cards** (in `assets/sass/banner.scss` + `assets/sass/custom.scss`):
-- "Credo cards" design: glassmorphism bg, green top accent bar (`::before`), icon in green circle backdrop
-- Icons at 72px inside a 120px soft green circle (`linear-gradient(135deg, rgba(215,247,228,0.5), rgba(85,249,151,0.15))`)
-- Center-aligned text (not justified) for short philosophical statements
-- Equal-height cards via flexbox (`display: flex; flex-direction: column; height: 100%`)
-- No ripple effect — clean hover with lift + shadow + icon scale only
-- Section background uses gradient `linear-gradient(180deg, #e9e9e7, #eef6f0)` bridging banner gray to invitation mint
+**Homepage image band** (`type: image_band` in `data/homepage.yml`, template `layouts/partials/homepage/blocks/image_band.html`, styles in `assets/sass/custom.scss`):
+- Replaces the former "credo cards" (highlights) block between the banner and the invitation section
+- Full container-width frame, fixed height 420px (260px on mobile ≤640px), `object-fit: cover` centered
+- Image is pre-processed as a 45% duotone blend: shadows → `#1e3f2b`, highlights → `#eef6f0` (the section bg color), over 55% of the original — baked into the PNG/WebP files, no CSS filter needed
+- Gradient mask fades on all four edges (`mask-image` intersect): 16% top/bottom, 4% left/right — image dissolves into the `linear-gradient(180deg, #e9e9e7, #eef6f0)` section background
+- Slow ambient drift animation (`image-band-drift` keyframes, 10s alternate): subtle scale 1→1.05 + 1.5% upward drift; disabled via `prefers-reduced-motion`
+- Source image: `static/images/homepage/coaching-group.png` + `.webp`; to replace, regenerate duotone with: `magick new.png -colorspace Gray \( -size 1x256 gradient:"#1e3f2b-#eef6f0" \) -clut /tmp/dt.png && magick new.png /tmp/dt.png -define compose:args=45,55 -compose Dissolve -composite out.png`
+- Data fields: `imagePath` (path relative to `static/`), `imageAlt` (localized per language file)
 
 **Shared components** (defined in `assets/sass/maas.scss`, used across all service pages):
 - `showcase-grid` / `showcase-card` / `showcase-pills` — feature cards with icon, title, description, and pill tags

@@ -20,23 +20,9 @@ banner:
       text: Facilitar transformaciones organizativas a través de estrategias personalizadas.
       icon: /images/icons/adaptation.png
 items:
-  - type: highlights
-    items_per_row: 3
-    items:
-      - title: Mi Filosofia
-        #icon: fa-paper-plane
-        # https://ar.inspiredpencil.com/pictures-2023/philosophy-symbol
-        iconPath: images/icons/philosophy.png
-        content: >
-          El verdadero éxito de una persona u organización no reside únicamente en lo que logra, sino en cómo se transforma durante el proceso y en su capacidad para sostener ese cambio en el tiempo
-      - title: Mi Propósito
-        iconPath: images/icons/growing-seed.png
-        content: >
-          Catalizar el **potencial** de personas y organizaciones para crear un impacto positivo y duradero en su entorno. Cada persona y cada organización tiene un potencial único esperando ser desarrollado.
-      - title: Mi compromiso
-        iconPath: images/icons/help.png
-        content: >
-          Mi compromiso es acompañarte en ese camino, aportando mi experiencia, conocimiento y pasión por el desarrollo humano.
+  - type: image_band
+    imagePath: images/homepage/coaching-group.png
+    imageAlt: Sesión de coaching grupal
   - type: heading
     heading: La Invitación
     contents: <picture><source srcset="/images/background-invitation-simple-pad.webp" type="image/webp"><img src="/images/background-invitation-simple-pad.png"/></picture> <p class='invitation'>Te invito a emprender juntos un viaje de <span class='underline-highlight-dark'>descubrimiento y transformación</span>.</p><span class='invitation-extra'>Cada persona y cada organización tiene un potencial único esperando ser desarrollado. Mi compromiso es acompañarte en ese camino, aportando mi experiencia, conocimiento y pasión por el desarrollo humano.</span>
