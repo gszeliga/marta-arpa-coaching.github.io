@@ -105,56 +105,24 @@ a {
 // ===============================
 // Image Band (homepage)
 // ===============================
+// Gradients and image are stacked in a single background-image declaration —
+// the compositor handles blending before any stacking context can interfere.
 
-.image-band-section.wrapper {
-  padding: 0 !important;
-}
-
-.image-band-frame {
-  width: 100%;
+.image-band-section.wrapper.style1 {
   height: 420px;
-  overflow: hidden;
-  -webkit-mask-image:
-    linear-gradient(to bottom, transparent 0%, black 16%, black 84%, transparent 100%),
-    linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
-  -webkit-mask-composite: source-in;
-  mask-image:
-    linear-gradient(to bottom, transparent 0%, black 16%, black 84%, transparent 100%),
-    linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
-  mask-composite: intersect;
+  padding: 0;
+  background-image:
+    linear-gradient(to bottom, #e9e9e7 0%, transparent 25%),
+    linear-gradient(to top,    #eef6f0 0%, transparent 25%),
+    var(--band-img);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
-
-.image-band-frame picture {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-// Slow ambient drift — gives the image a living, present-moment quality
-@keyframes image-band-drift {
-  from { transform: scale(1)    translateY(0); }
-  to   { transform: scale(1.05) translateY(-1.5%); }
-}
-
-.image-band-frame img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
-  display: block;
-  animation: image-band-drift 10s ease-in-out infinite alternate;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .image-band-frame img {
-    animation: none;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .image-band-frame {
-    height: 260px;
+@media screen and (max-width: 768px) {
+  .image-band-section.wrapper.style1 {
+    height: 41vw;
   }
 }
 
