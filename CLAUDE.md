@@ -79,11 +79,24 @@ The service pages share a consistent set of reusable UI components defined acros
 
 **Homepage image band** (`type: image_band` in `data/homepage.yml`, template `layouts/partials/homepage/blocks/image_band.html`, styles in `assets/sass/custom.scss`):
 - Replaces the former "credo cards" (highlights) block between the banner and the invitation section
-- Full container-width frame, fixed height 420px (260px on mobile ≤640px), `object-fit: cover` centered
+- Full container-width frame, fixed height 420px (`41vw` on mobile ≤768px), CSS `background-size: cover` centered
 - Image is pre-processed as a 45% duotone blend: shadows → `#1e3f2b`, highlights → `#eef6f0` (the section bg color), over 55% of the original — baked into the PNG/WebP files, no CSS filter needed
-- Gradient mask fades on all four edges (`mask-image` intersect): 16% top/bottom, 4% left/right — image dissolves into the `linear-gradient(180deg, #e9e9e7, #eef6f0)` section background
-- Slow ambient drift animation (`image-band-drift` keyframes, 10s alternate): subtle scale 1→1.05 + 1.5% upward drift; disabled via `prefers-reduced-motion`
-- Source image: `static/images/homepage/coaching-group.png` + `.webp`; to replace, regenerate duotone with: `magick new.png -colorspace Gray \( -size 1x256 gradient:"#1e3f2b-#eef6f0" \) -clut /tmp/dt.png && magick new.png /tmp/dt.png -define compose:args=45,55 -compose Dissolve -composite out.png`
+- Background-image stack (gradients + photo in one declaration) — compositor handles blending before any stacking context interferes
+- CSS left/right gradients at **15%** must always exceed the canvas-extension proportion baked into the image file. Rule: `CSS_gradient% > canvas_px / total_image_width`. Current image has 600px canvas on each side of a 4426px total width = 13.5%; 15% > 13.5% ✓
+- Top/bottom CSS gradients at 25%; top and right edges of current image are naturally near-`#eef6f0` after duotone, bottom and left edges use canvas extension for smooth blending
+- Source image: `static/images/homepage/coaching-group.png` + `.webp`; full processing pipeline:
+  ```bash
+  # 1. Trim transparency, crop to 4:3 avoiding dark edges, upscale 2x
+  magick src.png -trim +repage trimmed.png
+  magick trimmed.png -crop WxH+X+0 +repage cropped.png
+  magick cropped.png -filter Lanczos -resize 2WxH /tmp/2x.png
+  # 2. Duotone
+  magick /tmp/2x.png -colorspace Gray \( -size 1x256 gradient:"#1e3f2b-#eef6f0" \) -clut /tmp/dt.png
+  magick /tmp/2x.png /tmp/dt.png -define compose:args=45,55 -compose Dissolve -composite -flatten /tmp/blended.png
+  # 3. Canvas extension (600px each side) so edges = #eef6f0
+  magick /tmp/blended.png -gravity Center -background "#eef6f0" -extent WIDTHx2420 out.png
+  magick out.png -quality 85 out.webp
+  ```
 - Data fields: `imagePath` (path relative to `static/`), `imageAlt` (localized per language file)
 
 **Shared components** (defined in `assets/sass/maas.scss`, used across all service pages):
