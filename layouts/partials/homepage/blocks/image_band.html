@@ -1,5 +1,5 @@
 <section class="wrapper style1 image-band-section"
-  style="--band-img: url('{{ replace .item.imagePath ".png" ".webp" | relURL }}')"
+  style="--band-img: url('{{ .item.imagePath | relURL }}')"
   role="img"
   aria-label="{{ .item.imageAlt | default "" }}">
 </section>
