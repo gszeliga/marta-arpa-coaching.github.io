@@ -10,7 +10,7 @@ html {
 
 body {
   background-color: #d7f7e4;
-  color: #1e3f2b;
+  color: #2f5d50;
   font-family:
     "Inter",
     -apple-system,
@@ -104,7 +104,7 @@ a {
 
 #header {
   background-color: #1d1d1b;
-  color: #1e3f2b;
+  color: #2f5d50;
 }
 
 #header nav li ul {
@@ -118,11 +118,11 @@ a {
   }
 
   h3 {
-    color: #1e3f2b;
+    color: #2f5d50;
   }
 
   p {
-    color: #1e3f2b;
+    color: #2f5d50;
   }
 }
 
@@ -141,7 +141,7 @@ a {
 
     &:hover {
       background-color: #55f997 !important;
-      color: #1e3f2b !important;
+      color: #2f5d50 !important;
     }
   }
 
@@ -161,7 +161,7 @@ a {
 // Major section headings
 header.major h1,
 header.major h2 {
-  color: #1e3f2b;
+  color: #2f5d50;
   margin-bottom: 0.5em;
   font-size: 2.25em;
 }
@@ -197,7 +197,7 @@ header.major p {
 
 #footer {
   background: #d7f7e4;
-  color: #1e3f2b;
+  color: #2f5d50;
   position: relative;
 
   // Green accent top border
@@ -212,7 +212,7 @@ header.major p {
   }
 
   h3 {
-    color: #1e3f2b;
+    color: #2f5d50;
   }
 
   p, li {
@@ -234,12 +234,12 @@ header.major p {
       left: 0;
       width: 0;
       height: 2px;
-      background: linear-gradient(90deg, #1e3f2b, #55f997);
+      background: linear-gradient(90deg, #2f5d50, #55f997);
       transition: width 0.3s ease;
     }
 
     &:hover {
-      color: #1e3f2b;
+      color: #2f5d50;
       border-bottom-color: transparent;
 
       &::after {
@@ -251,7 +251,7 @@ header.major p {
   // Social icons in circles
   .icons {
     a {
-      color: #1e3f2b;
+      color: #2f5d50;
       width: 48px;
       height: 48px;
       line-height: 48px;
@@ -272,9 +272,9 @@ header.major p {
       }
 
       &:hover {
-        background: #1e3f2b;
+        background: #2f5d50;
         color: #d7f7e4;
-        border-color: #1e3f2b;
+        border-color: #2f5d50;
         transform: translateY(-2px);
       }
     }
@@ -287,7 +287,7 @@ header.major p {
     background: rgba(255, 255, 255, 0.6);
     border: 1px solid rgba(30, 63, 43, 0.12);
     border-radius: 12px;
-    color: #1e3f2b;
+    color: #2f5d50;
     padding: 12px 16px;
     transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
 
@@ -297,7 +297,7 @@ header.major p {
 
     &:focus {
       outline: none;
-      border-color: #1e3f2b;
+      border-color: #2f5d50;
       background: rgba(255, 255, 255, 0.85);
       box-shadow: 0 0 0 3px rgba(85, 249, 151, 0.25);
     }
@@ -313,7 +313,7 @@ header.major p {
       color: rgba(30, 63, 43, 0.4);
 
       &:hover {
-        color: #1e3f2b;
+        color: #2f5d50;
       }
     }
   }
@@ -327,7 +327,7 @@ article p,
 article h1,
 article h2,
 article h3 {
-  color: #1e3f2b !important;
+  color: #2f5d50 !important;
 }
 
 article .cta-section .cta-title,
@@ -355,7 +355,7 @@ article h3 img {
 }
 
 article ul li {
-  color: #1e3f2b;
+  color: #2f5d50;
 }
 
 #sidebar section img {
@@ -409,7 +409,7 @@ article ul li {
   // }
 
   &.style3 {
-    background: linear-gradient(135deg, #1e3f2b 0%, #2a5a3e 100%);
+    background: linear-gradient(135deg, #2f5d50 0%, #3d7a68 100%);
 
     .button {
       color: #d7f7e4;
@@ -442,7 +442,7 @@ article ul li {
 }
 
 .icon.brands::before {
-  color: #1e3f2b;
+  color: #2f5d50;
 }
 
 .favicon {

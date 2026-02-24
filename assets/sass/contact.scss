@@ -5,7 +5,7 @@
 
 .page-subtitle {
   font-size: 1.8rem;
-  color: #1e3f2b;
+  color: #2f5d50;
   opacity: 0.8;
   margin-bottom: 30px;
 }
@@ -52,7 +52,7 @@
 .form-title {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #1e3f2b;
+  color: #2f5d50;
   margin-bottom: 25px;
   position: relative;
   text-align: center;
@@ -65,7 +65,7 @@
 .form-label {
   display: block;
   font-weight: 600;
-  color: #1e3f2b;
+  color: #2f5d50;
   margin-bottom: 8px;
   font-size: 1rem;
 }
@@ -79,7 +79,7 @@
   font-size: 1rem;
   font-family: inherit;
   background: rgba(255, 255, 255, 0.8);
-  color: #1e3f2b;
+  color: #2f5d50;
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -87,7 +87,7 @@
 .form-textarea:focus,
 .form-select:focus {
   outline: none;
-  border-color: #1e3f2b;
+  border-color: #2f5d50;
   background: rgba(255, 255, 255, 0.95);
   box-shadow: 0 0 0 3px rgba(85, 249, 151, 0.25);
 }
@@ -130,7 +130,7 @@
 
 /* CTA Section */
 .cta-section {
-  background: linear-gradient(135deg, #1e3f2b, #2a5a3e);
+  background: linear-gradient(135deg, #2f5d50, #3d7a68);
   color: #d7f7e4;
   text-align: center;
   padding: 60px 40px;
@@ -185,7 +185,7 @@
 
 .cta-button {
   background: #d7f7e4;
-  color: #1e3f2b;
+  color: #2f5d50;
   padding: 18px 40px;
   border: none;
   border-radius: 9999px;
@@ -206,7 +206,7 @@
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(85, 249, 151, 0.3);
   background: #55f997;
-  color: #1e3f2b;
+  color: #2f5d50;
 }
 
 .submit-contact-grid {

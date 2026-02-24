@@ -1,7 +1,7 @@
 #titleBar {
   background-color: #1d1d1b;
   color: #55f997;
-  box-shadow: 0 4px 0 0 #1e3f2b;
+  box-shadow: 0 4px 0 0 #2f5d50;
 
   .toggle {
     &:before {
@@ -20,7 +20,7 @@
 }
 
 #navPanel {
-  background-color: #1e3f2b;
+  background-color: #2f5d50;
 
   .link.depth-0 {
     color: #55f997;
@@ -45,7 +45,7 @@
 }
 
 #nav {
-  background-color: #1e3f2b;
+  background-color: #2f5d50;
 
   &:after {
     background-color: transparent;
@@ -101,7 +101,7 @@
 }
 
 .dropotron {
-  background-color: #1e3f2b !important;
+  background-color: #2f5d50 !important;
   background-image: none !important;
   border-radius: 0 0 8px 8px !important;
   box-shadow: none !important;
@@ -136,7 +136,7 @@
 }
 
 #languageContent {
-  background: #1e3f2b;
+  background: #2f5d50;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
