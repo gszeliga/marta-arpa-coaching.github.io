@@ -2,10 +2,10 @@ banner:
   enable: true
   headline: "Turning purpose into <span class='banner-underline'>real impact</span>"
   subtitle: "for people and organizations"
-  contents: Want to know more?
+  contents: Shall we start with a free session?
   button:
-    contents: Subscribe
-    url: /en/newsletter/main/
+    contents: Sign up here
+    url: https://meet.brevo.com/marta-arpa/sesion-gratuita-
   columns:
     - title: Executive Coaching
       text: Empower leaders and teams to maximize performance and achieve strategic goals.
@@ -41,7 +41,7 @@ items:
     heading: The Invitation
     contents: <picture><source srcset="/images/background-invitation-simple-pad.webp" type="image/webp"><img src="/images/background-invitation-simple-pad.png"/></picture> <p class='invitation'>I invite you to embark together on a journey of <span class='underline-highlight-dark'>discovery and transformation</span>.</p><span class='invitation-extra'>Every person and every organization has unique potential waiting to be developed. My commitment is to accompany you on this journey, bringing my experience, knowledge, and passion for human development.</span>
   - type: cta
-    contents: Shall we start with a free session?
+    contents: Want to know more?
     button:
-      contents: Sign up here
-      url: https://meet.brevo.com/marta-arpa/sesion-gratuita-
+      contents: Subscribe
+      url: /en/newsletter/main/

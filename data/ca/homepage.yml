@@ -2,10 +2,10 @@ banner:
   enable: true
   headline: "Impulsant persones i organitzacions"
   subtitle: "cap a un <span class='banner-underline'>impacte real</span>"
-  contents: Vols saber-ne més?
+  contents: Comencem amb una sessió gratuïta?
   button:
-    contents: Subscriu-te
-    url: /ca/newsletter/main/
+    contents: Apunta't aquí
+    url: https://meet.brevo.com/marta-arpa/sesion-gratuita-
   columns:
     - title: Coaching Executiu
       text: Empoderar líders i equips per maximitzar el seu rendiment i assolir objectius estratègics.
@@ -41,7 +41,7 @@ items:
     heading: La Invitació
     contents: <picture><source srcset="/images/background-invitation-simple-pad.webp" type="image/webp"><img src="/images/background-invitation-simple-pad.png"/></picture> <p class='invitation'>Et convido a emprendre junts un viatge de <span class='underline-highlight-dark'>descobriment i transformació</span>.</p><span class='invitation-extra'>Cada persona i cada organització té un potencial únic esperant ser desenvolupat. El meu compromís és acompanyar-te en aquest camí, aportant la meva experiència, coneixement i passió pel desenvolupament humà.</span>
   - type: cta
-    contents: Comencem amb una sessió gratuïta?
+    contents: Vols saber-ne més?
     button:
-      contents: Apunta’t aquí
-      url: https://meet.brevo.com/marta-arpa/sesion-gratuita-
+      contents: Subscriu-te
+      url: /ca/newsletter/main/

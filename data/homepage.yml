@@ -2,10 +2,10 @@ banner:
   enable: true
   headline: "Acompaño a personas y organizaciones"
   subtitle: "hacia un <span class='banner-underline'>impacto real</span>"
-  contents: ¿Quieres saber más?
+  contents: ¿Empezamos con una sesión gratis?
   button:
-    contents: Subscribete
-    url: /newsletter/main/
+    contents: Apuntate aqui
+    url: https://meet.brevo.com/marta-arpa/sesion-gratuita-
   columns:
     - title: Coaching Ejecutivo
       text: Empoderar a líderes y equipos para maximizar su rendimiento y alcanzar objetivos estratégicos.
@@ -41,7 +41,7 @@ items:
     heading: La Invitación
     contents: <picture><source srcset="/images/background-invitation-simple-pad.webp" type="image/webp"><img src="/images/background-invitation-simple-pad.png"/></picture> <p class='invitation'>Te invito a emprender juntos un viaje de <span class='underline-highlight-dark'>descubrimiento y transformación</span>.</p><span class='invitation-extra'>Cada persona y cada organización tiene un potencial único esperando ser desarrollado. Mi compromiso es acompañarte en ese camino, aportando mi experiencia, conocimiento y pasión por el desarrollo humano.</span>
   - type: cta
-    contents: ¿Empezamos con una sesión gratis?
+    contents: ¿Quieres saber más?
     button:
-      contents: Apuntate aqui
-      url: https://meet.brevo.com/marta-arpa/sesion-gratuita-
+      contents: Subscribete
+      url: /newsletter/main/
