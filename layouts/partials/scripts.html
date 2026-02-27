@@ -5,6 +5,31 @@
 <script defer src="{{ (resources.Get "js/util.js").RelPermalink }}"></script>
 <script defer src="{{ (resources.Get "js/main.js").RelPermalink }}"></script>
 
+<!-- Image band: animate only after photo has loaded -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var band = document.querySelector('.image-band-section');
+  if (!band) return;
+
+  function activate() { band.classList.add('band-ready'); }
+
+  // Try inline style first, fall back to computed style
+  var imgUrl = (band.style.getPropertyValue('--band-img') ||
+                getComputedStyle(band).getPropertyValue('--band-img') || '').trim();
+  var match = imgUrl.match(/url\(['"]?([^'")\s]+)['"]?\)/);
+
+  if (!match) { activate(); return; }
+
+  var img = new Image();
+  img.onload = activate;
+  img.onerror = activate;
+  // Safety net: activate after 3s even if load event never fires
+  var fallback = setTimeout(activate, 3000);
+  img.onload = img.onerror = function() { clearTimeout(fallback); activate(); };
+  img.src = match[1];
+});
+</script>
+
 <!-- Scroll animations with IntersectionObserver -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {

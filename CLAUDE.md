@@ -79,25 +79,25 @@ The service pages share a consistent set of reusable UI components defined acros
 
 **Homepage image band** (`type: image_band` in `data/homepage.yml`, template `layouts/partials/homepage/blocks/image_band.html`, styles in `assets/sass/custom.scss`):
 - Replaces the former "credo cards" (highlights) block between the banner and the invitation section
-- Full container-width frame, fixed height 420px (`41vw` on mobile ≤768px), CSS `background-size: cover` centered
-- Image is pre-processed as a 45% duotone blend: shadows → `#1e3f2b`, highlights → `#eef6f0` (the section bg color), over 55% of the original — baked into the PNG/WebP files, no CSS filter needed
-- Background-image stack (gradients + photo in one declaration) — compositor handles blending before any stacking context interferes
-- CSS left/right gradients at **15%** must always exceed the canvas-extension proportion baked into the image file. Rule: `CSS_gradient% > canvas_px / total_image_width`. Current image has 600px canvas on each side of a 4426px total width = 13.5%; 15% > 13.5% ✓
-- Top/bottom CSS gradients at 25%; top and right edges of current image are naturally near-`#eef6f0` after duotone, bottom and left edges use canvas extension for smooth blending
-- Source image: `static/images/homepage/coaching-group.png` + `.webp`; full processing pipeline:
+- Fixed height 500px desktop, `50vw` on mobile ≤768px; `background-size: cover` centered
+- **Section** always visible with `background-color: #eef6f0` — matches La Invitación's top colour so the placeholder blends seamlessly while the image loads
+- **`::before` pseudo-element** holds the full treatment (gradients + photo via `var(--band-img)`); starts at `opacity: 0` and animates in only after the image has loaded
+- **JS preload** in `layouts/partials/scripts.html`: reads `--band-img` from the element's inline style, preloads the URL via `new Image()`, then adds `.band-ready` class on load — triggering the `::before` animation. 3s safety-net timeout in case the load event never fires
+- **Animation**: `band-fade-up` keyframe (opacity 0→1, translateY 10px→0), 1s duration, 700ms delay — picks up where the banner's CSS animation choreography ends (~600ms last banner step)
+- **Gradients** (on `::before`): top 15% → `#e9e9e7`, bottom 15% → `#eef6f0`, left/right 6% → `#eef6f0`; all use explicit `rgba()` endpoints to avoid transparent-black interpolation
+- **Image selection**: for seamless edge blending without canvas extension, choose images where left/right/top edges are naturally bright (near-white walls, windows). After duotone processing bright areas map to near-`#eef6f0`, requiring only the 6% CSS gradient to dissolve them. Dark edges (bookshelves, furniture) require canvas extension — see rule: `CSS_gradient% > canvas_px / total_image_width`
+- **Current image**: `static/images/homepage/coaching-group-raw.webp` (134KB) — raw photo, no duotone, converted from `session-back.png` (1.97MB PNG → 134KB WebP, 15× compression). PNG kept as `coaching-group-raw.png`
+- **Duotone pipeline** (for future processed images):
   ```bash
-  # 1. Trim transparency, crop to 4:3 avoiding dark edges, upscale 2x
-  magick src.png -trim +repage trimmed.png
-  magick trimmed.png -crop WxH+X+0 +repage cropped.png
-  magick cropped.png -filter Lanczos -resize 2WxH /tmp/2x.png
-  # 2. Duotone
+  magick src.png -filter Lanczos -resize 2Wx2H -background white -alpha remove -alpha off /tmp/2x.png
   magick /tmp/2x.png -colorspace Gray \( -size 1x256 gradient:"#1e3f2b-#eef6f0" \) -clut /tmp/dt.png
-  magick /tmp/2x.png /tmp/dt.png -define compose:args=45,55 -compose Dissolve -composite -flatten /tmp/blended.png
-  # 3. Canvas extension (600px each side) so edges = #eef6f0
-  magick /tmp/blended.png -gravity Center -background "#eef6f0" -extent WIDTHx2420 out.png
+  magick /tmp/2x.png /tmp/dt.png -define compose:args=35,65 -compose Dissolve -composite \
+    -background white -alpha remove -alpha off /tmp/blended.png
+  # If edges need canvas extension (600px each side example):
+  magick /tmp/blended.png -gravity Center -background "#eef6f0" -extent WIDTHxHEIGHT out.png
   magick out.png -quality 85 out.webp
   ```
-- Data fields: `imagePath` (path relative to `static/`), `imageAlt` (localized per language file)
+- Data fields: `imagePath` (path relative to `static/`, point to `.webp`), `imageAlt` (localized per language file)
 
 **Shared components** (defined in `assets/sass/maas.scss`, used across all service pages):
 - `showcase-grid` / `showcase-card` / `showcase-pills` — feature cards with icon, title, description, and pill tags
