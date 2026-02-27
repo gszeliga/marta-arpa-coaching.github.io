@@ -21,7 +21,7 @@ banner:
       icon: /images/icons/adaptation.png
 items:
   - type: image_band
-    imagePath: images/homepage/coaching-group.png
+    imagePath: images/homepage/coaching-group-raw.webp
     imageAlt: Group coaching session
   - type: heading
     heading: The Invitation
