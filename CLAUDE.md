@@ -77,13 +77,27 @@ The service pages share a consistent set of reusable UI components defined acros
 - `#55f997` — accent green (borders, highlights)
 - `rgba(255, 255, 255, 0.6)` — translucent white (card backgrounds, with `backdrop-filter: blur`)
 
-**Homepage highlight cards** (in `assets/sass/banner.scss` + `assets/sass/custom.scss`):
-- "Credo cards" design: glassmorphism bg, green top accent bar (`::before`), icon in green circle backdrop
-- Icons at 72px inside a 120px soft green circle (`linear-gradient(135deg, rgba(215,247,228,0.5), rgba(85,249,151,0.15))`)
-- Center-aligned text (not justified) for short philosophical statements
-- Equal-height cards via flexbox (`display: flex; flex-direction: column; height: 100%`)
-- No ripple effect — clean hover with lift + shadow + icon scale only
-- Section background uses gradient `linear-gradient(180deg, #e9e9e7, #eef6f0)` bridging banner gray to invitation mint
+**Homepage image band** (`type: image_band` in `data/homepage.yml`, template `layouts/partials/homepage/blocks/image_band.html`, styles in `assets/sass/custom.scss`):
+- Replaces the former "credo cards" (highlights) block between the banner and the invitation section
+- Fixed height 500px desktop, `50vw` on mobile ≤768px; `background-size: cover` centered
+- **Section** always visible with `background-color: #eef6f0` — matches La Invitación's top colour so the placeholder blends seamlessly while the image loads
+- **`::before` pseudo-element** holds the full treatment (gradients + photo via `var(--band-img)`); starts at `opacity: 0` and animates in only after the image has loaded
+- **JS preload** in `layouts/partials/scripts.html`: reads `--band-img` from the element's inline style, preloads the URL via `new Image()`, then adds `.band-ready` class on load — triggering the `::before` animation. 3s safety-net timeout in case the load event never fires
+- **Animation**: `band-fade-up` keyframe (opacity 0→1, translateY 10px→0), 1s duration, 700ms delay — picks up where the banner's CSS animation choreography ends (~600ms last banner step)
+- **Gradients** (on `::before`): top 15% → `#e9e9e7`, bottom 15% → `#eef6f0`, left/right 6% → `#eef6f0`; all use explicit `rgba()` endpoints to avoid transparent-black interpolation
+- **Image selection**: for seamless edge blending without canvas extension, choose images where left/right/top edges are naturally bright (near-white walls, windows). After duotone processing bright areas map to near-`#eef6f0`, requiring only the 6% CSS gradient to dissolve them. Dark edges (bookshelves, furniture) require canvas extension — see rule: `CSS_gradient% > canvas_px / total_image_width`
+- **Current image**: `static/images/homepage/coaching-group-raw.webp` (134KB) — raw photo, no duotone, converted from `session-back.png` (1.97MB PNG → 134KB WebP, 15× compression). PNG kept as `coaching-group-raw.png`
+- **Duotone pipeline** (for future processed images):
+  ```bash
+  magick src.png -filter Lanczos -resize 2Wx2H -background white -alpha remove -alpha off /tmp/2x.png
+  magick /tmp/2x.png -colorspace Gray \( -size 1x256 gradient:"#1e3f2b-#eef6f0" \) -clut /tmp/dt.png
+  magick /tmp/2x.png /tmp/dt.png -define compose:args=35,65 -compose Dissolve -composite \
+    -background white -alpha remove -alpha off /tmp/blended.png
+  # If edges need canvas extension (600px each side example):
+  magick /tmp/blended.png -gravity Center -background "#eef6f0" -extent WIDTHxHEIGHT out.png
+  magick out.png -quality 85 out.webp
+  ```
+- Data fields: `imagePath` (path relative to `static/`, point to `.webp`), `imageAlt` (localized per language file)
 
 **Shared components** (defined in `assets/sass/maas.scss`, used across all service pages):
 - `showcase-grid` / `showcase-card` / `showcase-pills` — feature cards with icon, title, description, and pill tags
