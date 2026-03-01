@@ -127,6 +127,39 @@
   }
 }
 
+/* Logo inside mobile titleBar — fixed size, vertically centred in 44px bar */
+#titleBar .title {
+  display: inline-flex;
+  align-items: center;
+  height: 44px;
+  vertical-align: top;
+}
+
+#titleBar h1,
+#titleBar p {
+  font-size: 1rem !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: 1 !important;
+
+  a {
+    font-size: 1rem !important;
+    letter-spacing: normal !important;
+  }
+}
+
+#titleBar .logo-text {
+  padding: 0;
+}
+
+#titleBar .logo-name {
+  font-size: 1.1rem;
+}
+
+#titleBar .logo-tagline {
+  font-size: 0.4rem;
+}
+
 /* Logo link */
 #logo {
   text-align: center;
