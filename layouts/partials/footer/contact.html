@@ -1,5 +1,3 @@
-<script src="https://www.google.com/recaptcha/api.js?hl={{ site.Language.Lang }}" async defer></script>
-
 <section class="col-6 col-12-narrower">
     <h3>{{ .header | default "Get In Touch" }}</h3>
     <form method="POST" action="{{ .action }}" id="footer-contact-form">
@@ -17,8 +15,8 @@
                 <ul class="actions">
                     <li><input type="submit" class="button alt" value="{{ T "contact_submit" }}"  /></li>
                     <li>
-                      <!-- reCAPTCHA -->
-                      <div class="g-recaptcha" data-sitekey="{{ site.Params.recaptchaSiteKey }}" ></div>
+                      <!-- reCAPTCHA (lazy-loaded on first form interaction) -->
+                      <div id="footer-recaptcha-widget"></div>
                     </li>
                 </ul>
             </div>
@@ -26,4 +24,44 @@
         </div>
     </form>
 </section>
+
+<script>
+(function() {
+  var widgetId = 'footer-recaptcha-widget';
+  var siteKey = '{{ site.Params.recaptchaSiteKey }}';
+  var lang = '{{ site.Language.Lang }}';
+  var loaded = false;
+
+  function renderWidget() {
+    if (document.getElementById(widgetId)) {
+      grecaptcha.render(widgetId, { sitekey: siteKey });
+    }
+  }
+
+  function loadRecaptcha() {
+    if (loaded) return;
+    loaded = true;
+
+    if (window.grecaptcha) {
+      renderWidget();
+      return;
+    }
+
+    window.recaptchaOnloadFooter = renderWidget;
+    var script = document.createElement('script');
+    script.src = 'https://www.google.com/recaptcha/api.js?onload=recaptchaOnloadFooter&render=explicit&hl=' + lang;
+    script.async = true;
+    script.defer = true;
+    document.head.appendChild(script);
+  }
+
+  var form = document.getElementById(widgetId).closest('form');
+  if (form) {
+    var inputs = form.querySelectorAll('input, textarea, select');
+    inputs.forEach(function(input) {
+      input.addEventListener('focus', loadRecaptcha, { once: true });
+    });
+  }
+})();
+</script>
 
