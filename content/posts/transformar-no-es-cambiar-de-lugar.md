@@ -1,8 +1,7 @@
 ---
 title: "Transformar no es cambiar de lugar: es cambiar de perspectiva"
 image: images/posts/transformacion/banner.png
-summary: |
-  En un mundo que se mueve cada vez más rápido, tendemos a pensar que transformar significa cambiar de trabajo, de ciudad o de situación. Sin embargo, la verdadera transformación no empieza fuera, sino dentro. No es un movimiento geográfico ni un salto impulsivo: es un ajuste profundo en la forma en la que observamos la realidad y nos observamos a nosotros mismos.
+summary: "Transformar no es cambiar de lugar: es un ajuste profundo en cómo observamos la realidad. La verdadera transformación empieza dentro."
 image_alt: La única constante en la vida es el cambio — Heráclito
 date: "2025-12-15T00:00:00"
 tags:

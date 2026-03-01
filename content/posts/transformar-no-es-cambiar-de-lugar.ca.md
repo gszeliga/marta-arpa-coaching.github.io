@@ -1,8 +1,7 @@
 ---
 title: "Transformar no és canviar de lloc: és canviar de perspectiva"
 image: images/posts/transformacion/banner.cat.png
-summary: |
-  En un món que es mou cada vegada més ràpid, tendim a pensar que transformar vol dir canviar de feina, de ciutat o de situació. Tanmateix, la veritable transformació no comença a fora, sinó a dins. No és un moviment geogràfic ni un salt impulsiu: és un ajust profund en la manera com observem la realitat i com ens observem a nosaltres mateixos.
+summary: "Tendim a pensar que transformar vol dir canviar de lloc. Tanmateix, la veritable transformació no comença a fora, sinó a dins."
 image_alt: L’única constant a la vida és el canvi. — Heràclit
 date: "2025-12-15T00:00:00"
 tags:

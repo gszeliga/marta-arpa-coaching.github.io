@@ -1,8 +1,7 @@
 ---
 title: "Positive leadership: a way of leading that transforms people and organizations"
 image: images/posts/liderazgo-positivo/banner.png
-summary: |
-  Leadership is changing. Today, organizations need leaders who can generate trust, commitment, and sustainable results. In this new context, positive leadership has become one of the most valued competencies in companies and organizations.
+summary: "Leadership is changing. Today, organizations need leaders who can generate trust, commitment, and sustainable results."
 image_alt: Positive leadership
 date: "2026-01-19T00:00:00"
 tags:

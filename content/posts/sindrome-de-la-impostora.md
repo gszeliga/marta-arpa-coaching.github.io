@@ -1,8 +1,7 @@
 ---
 title: "Síndrome de la impostora: cuando dudas de ti aunque lo estés haciendo bien"
 image: images/posts/sindrome-de-la-impostora/banner.png
-summary: |
-  ¿Alguna vez has sentido que no mereces tus logros y que, en cualquier momento, alguien descubrirá que "no eres tan capaz"? Esa sensación tiene nombre: síndrome de la impostora. No es un trastorno, sino un patrón de pensamiento que hace que personas competentes duden de sí mismas y atribuyan sus éxitos a la suerte o a factores externos.
+summary: '¿Alguna vez has sentido que no mereces tus logros y que alguien descubrirá que "no eres tan capaz"? Esa sensación tiene nombre: síndrome de la impostora.'
 image_alt: Síndrome de la impostora
 date: "2026-02-22T00:00:00"
 tags:

@@ -1,8 +1,7 @@
 ---
 title: "Syndrome de l'imposteur : quand vous doutez de vous même si tout va bien"
 image: images/posts/sindrome-de-la-impostora/banner.png
-summary: |
-  Vous est-il déjà arrivé de sentir que vous ne méritez pas vos réussites et que, tôt ou tard, quelqu'un découvrira que vous n'êtes « pas si compétent » ? Ce ressenti porte un nom : le syndrome de l'imposteur. Ce n'est pas un trouble, mais un schéma de pensée qui pousse des personnes compétentes à douter d'elles-mêmes et à attribuer leurs succès à la chance ou à des facteurs externes.
+summary: "Avez-vous déjà senti que vous ne méritez pas vos réussites et que quelqu'un le découvrira ? Ce ressenti a un nom : le syndrome de l'imposteur."
 image_alt: Syndrome de l'imposteur
 date: "2026-02-22T00:00:00"
 tags:

@@ -1,8 +1,7 @@
 ---
 title: "Síndrome de la impostora: quan dubtes de tu tot i fer-ho bé"
 image: images/posts/sindrome-de-la-impostora/banner.png
-summary: |
-  Has sentit mai que no mereixes els teus èxits i que, en qualsevol moment, algú descobrirà que "no ets tan capaç"? Aquesta sensació té nom: síndrome de la impostora. No és un trastorn, sinó un patró de pensament que fa que persones competents dubtin d'elles mateixes i atribueixin els seus èxits a la sort o a factors externs.
+summary: 'Has sentit mai que no mereixes els teus èxits i que algú descobrirà que "no ets tan capaç"? Aquesta sensació té nom: síndrome de la impostora.'
 image_alt: Síndrome de la impostora
 date: "2026-02-22T00:00:00"
 tags:

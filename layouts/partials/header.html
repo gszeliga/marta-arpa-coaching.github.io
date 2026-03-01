@@ -16,6 +16,7 @@
             <img src="{{ .Site.Data.globalheader.image | relURL }}" alt="{{ .Site.Data.globalheader.image_alt }}" />
         {{- end }}
         <!-- {{ with .Site.Data.globalheader.title }}{{ . | markdownify }}{{ else }}{{ .Site.Title }}{{ end }} -->
+        {{- if .IsHome }}<span class="sr-only">{{ .Site.Title }}</span>{{ end -}}
     </a>{{- if .IsHome }}</h1>{{ else }}</p>{{ end -}}</div>
 
     <nav id="nav">
