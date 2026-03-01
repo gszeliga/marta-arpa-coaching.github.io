@@ -57,6 +57,7 @@ Four services in `content/services/`: `coaching-ex`, `coaching-per`, `maas`, `co
 - Tags render as green pill links (`.post-card-tag` / `.post-tag`) matching `showcase-pill` style
 - Card template: `layouts/_default/shortblock.html` overrides the theme's float-based layout
 - Summaries are clamped to 3 lines via `-webkit-line-clamp` for consistent card heights
+- **`summary` field doubles as the meta description** — keep it under 160 chars as a complete, natural sentence (don't rely on auto-truncation for crafted copy)
 
 ### External Integrations
 - Form backend: un-static.com
@@ -137,6 +138,9 @@ The service pages share a consistent set of reusable UI components defined acros
 - `side-border-highlight` — left border with green gradient background
 - `circle-icon` — green gradient circle with checkmark
 
+**Accessibility utilities** (in `assets/sass/custom.scss`):
+- `sr-only` — visually hides content while keeping it readable by screen readers and crawlers (standard clip pattern)
+
 ### Service Page Icons
 - Style: filled/solid dark green (`#1e3f2b`) on transparent background
 - Size: 512x512 PNG
@@ -211,14 +215,15 @@ magick myicon.png -resize 224x224 -quality 85 myicon.webp
 - Missing trailing slashes cause 301 redirects which impact SEO
 
 ### SEO Configuration
-- **Meta descriptions**: Fallback chain in `layouts/partials/head/custom.html`:
+- **Meta descriptions**: Fallback chain in `layouts/partials/head/custom.html`, entire result truncated to 155 chars:
   1. `.Description` (front matter)
   2. `.Params.summary` (blog posts)
-  3. `.Summary` (Hugo auto-generated, truncated to 160 chars)
+  3. `.Summary` (Hugo auto-generated)
   4. `.Site.Params.description` (site-wide fallback from `config.*.toml`)
+  - Keep `.Description` (homepage `_index.*.md`) and `.Params.summary` (posts) naturally under 160 chars — don't rely on truncation for crafted copy
 - **H1 structure**: Each page has exactly one H1:
-  - Homepage: Logo/site title (in header)
-  - Other pages: Page title (in content area)
+  - Homepage: Logo wrapper uses `<h1>` containing the logo video/image plus a `<span class="sr-only">{{ .Site.Title }}</span>` for crawler-readable text
+  - Other pages: Logo wrapper uses `<p>`; page title rendered as `<h1>` in content area
   - Configured in `layouts/partials/header.html` (conditional h1/p for logo) and `layouts/_default/single.html`, `layouts/_default/list.html` (h1 for page titles)
 - **Hreflang tags**: Implemented in `layouts/partials/head/custom.html`
 - **x-default hreflang**: Points to Spanish (hardcoded as "es" in template)
