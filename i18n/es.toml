@@ -36,3 +36,15 @@ other = "Sesión gratuita"
 
 [sticky_cta_label]
 other = "Agendar una sesión gratuita de consulta"
+
+[lang_name_es]
+other = "Español"
+
+[lang_name_en]
+other = "Inglés"
+
+[lang_name_fr]
+other = "Francés"
+
+[lang_name_ca]
+other = "Catalán"

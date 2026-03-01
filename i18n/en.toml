@@ -36,3 +36,15 @@ other = "Free session"
 
 [sticky_cta_label]
 other = "Book a free consultation session"
+
+[lang_name_es]
+other = "Spanish"
+
+[lang_name_en]
+other = "English"
+
+[lang_name_fr]
+other = "French"
+
+[lang_name_ca]
+other = "Catalan"

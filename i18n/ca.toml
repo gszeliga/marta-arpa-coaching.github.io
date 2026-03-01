@@ -36,3 +36,15 @@ other = "Sessió gratuïta"
 
 [sticky_cta_label]
 other = "Reservar una sessió de consulta gratuïta"
+
+[lang_name_es]
+other = "Espanyol"
+
+[lang_name_en]
+other = "Anglès"
+
+[lang_name_fr]
+other = "Francès"
+
+[lang_name_ca]
+other = "Català"
