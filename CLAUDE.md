@@ -62,6 +62,9 @@ Four services in `content/services/`: `coaching-ex`, `coaching-per`, `maas`, `co
 ### External Integrations
 - Form backend: un-static.com
 - reCAPTCHA v2 for form validation (multilingual via `hl=` parameter matching page language)
+  - **Lazy-loaded** on both the contact page (`layouts/shortcodes/recaptcha.html`) and the footer form (`layouts/partials/footer/contact.html`) — the API script is only fetched when the user first focuses a form field, preventing render-blocking on every page load
+  - Each instance uses a unique `onload` callback name to avoid conflicts: `onloadCallback` (contact page shortcode) and `recaptchaOnloadFooter` (footer)
+  - `dns-prefetch` hints for `www.google.com` and `www.gstatic.com` in `custom.html` pre-resolve DNS without blocking render
 - Newsletter: Brevo (Sendinblue)
 - Analytics: Google Analytics, Umami Cloud, Ahrefs
 
@@ -252,6 +255,7 @@ Custom templates in `layouts/` override theme defaults:
 - `layouts/partials/cta/post.html` - Dark green CTA block appended to blog posts (same style, different i18n copy)
 - `layouts/partials/cta/sticky.html` - Fixed-position floating pill button on all pages (included via `scripts.html`)
 - `layouts/partials/schema/*.html` - JSON-LD structured data partials (organization, service, blogposting, breadcrumb)
+- `layouts/partials/languages.html` - Language switcher dropdown; uses `T (printf "lang_name_%s" .Language.Lang)` instead of `.Language.LanguageName` so names are translated per active language (`.Language.LanguageName` always resolves from the default Spanish config regardless of which language is active)
 
 Initialize submodules after cloning:
 
