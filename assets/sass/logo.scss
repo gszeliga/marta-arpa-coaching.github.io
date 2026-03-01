@@ -34,7 +34,7 @@
 }
 
 @keyframes logo-a-color {
-  from { color: #c5d8cc; }
+  from { color: #d6f7e2; }
   to   { color: #55f997; }
 }
 
@@ -49,11 +49,11 @@
 }
 
 .logo-name {
-  font-family: "DM Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 550;
   font-size: clamp(1.4rem, 3.5vw, 3.5rem);
   letter-spacing: -0.02em;
-  color: #c5d8cc;
+  color: #d6f7e2;
   white-space: nowrap;
 }
 
@@ -77,9 +77,9 @@
 }
 
 .logo-tagline {
-  font-family: "DM Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 300 !important;
-  font-size: clamp(0.6rem, 1.1vw, 1.05rem);
+  font-size: clamp(0.45rem, 0.85vw, 0.8rem);
   color: #55f997 !important;
   letter-spacing: 0.12em;
   margin-top: 0.15em;
@@ -119,7 +119,7 @@
   }
 
   .logo-tagline {
-    font-size: clamp(0.5rem, 1vw, 0.85rem);
+    font-size: clamp(0.4rem, 0.75vw, 0.7rem);
   }
 
   .logo-text {

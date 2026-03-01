@@ -164,6 +164,7 @@ CSS is compiled once for all languages (single `style.css`). For per-language dy
 - CSS also loaded via `<link>` tags in `head.html` to enable parallel loading (the theme's @import will use cached files)
 - If the theme updates its font files, these overrides may need to be regenerated
 - **Outfit** (Google Fonts): loaded via `<link>` in `custom.html` for the banner headline only (variable weight 600–900, banner uses 650). CSP allows `fonts.googleapis.com` and `fonts.gstatic.com`
+- **Plus Jakarta Sans** (Google Fonts): loaded alongside Outfit (weight 300–600) for the header logo
 
 ### Smooth Scrolling
 - `html { scroll-behavior: smooth }` in `assets/sass/custom.scss` enables smooth navigation for all internal links
@@ -176,8 +177,8 @@ CSS is compiled once for all languages (single `style.css`). For per-language dy
 ### Header Logo Styling
 - The header logo is a pure CSS/HTML text element (no video or image), styled in `assets/sass/logo.scss`
 - Structure: `.logo-text` contains `.logo-name` ("Marta" + "A" + "rpa" as separate spans) and `.logo-tagline` ("coaching & consultancy")
-- Font: Source Sans Pro (weight 550 for name, 300 for tagline)
-- Colors: name in sage `#c5d8cc`, "A" transitions to accent green `#55f997`, tagline in `#55f997`
+- Font: Plus Jakarta Sans (weight 550 for name, 300 for tagline) — closest free match to Fakt Soft (the original logo font)
+- Colors: name/rpa in `#d6f7e2`, "A" transitions from `#d6f7e2` to accent green `#55f997`, tagline in `#55f997`
 - Entrance animations: "Marta" slides from left, "Arpa" slides from right, tagline fades up, "A" color-pops to green
 - The header uses `<h1>` on homepage and `<p>` on other pages (for SEO H1 structure)
 - These elements have different browser defaults, so `assets/sass/logo.scss` explicitly sets identical styles (font-size, line-height, display, padding) on both to ensure consistent header height across all pages
