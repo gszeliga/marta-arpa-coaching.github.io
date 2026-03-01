@@ -1,8 +1,7 @@
 ---
 title: "Transforming is not about changing places: it’s about changing perspective"
 image: images/posts/transformacion/banner.en.png
-summary: |
-  In a world that moves increasingly fast, we tend to think that transformation means changing jobs, cities, or situations. However, true transformation does not begin outside, but within. It is not a geographical move nor an impulsive leap: it is a deep shift in how we observe reality and how we observe ourselves.
+summary: "We often think transformation means changing jobs or cities. But true transformation begins within: a deep shift in how we observe reality."
 image_alt: The only constant in life is change. — Heraclitus
 date: "2025-12-15T00:00:00"
 tags:

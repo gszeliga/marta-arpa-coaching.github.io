@@ -1,8 +1,7 @@
 ---
 title: "Liderazgo positivo: una forma de liderar que transforma personas y organizaciones"
 image: images/posts/liderazgo-positivo/banner.png
-summary: |
-  El liderazgo está cambiando. Hoy las organizaciones necesitan líderes capaces de generar confianza, compromiso y resultados sostenibles. En este nuevo contexto, el liderazgo positivo se ha convertido en una de las competencias más valoradas en empresas y organizaciones.
+summary: "El liderazgo está cambiando. Hoy las organizaciones necesitan líderes capaces de generar confianza, compromiso y resultados sostenibles."
 image_alt: Liderazgo positivo
 date: "2026-01-19T00:00:00"
 tags:

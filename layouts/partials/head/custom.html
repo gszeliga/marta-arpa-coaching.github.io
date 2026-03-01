@@ -70,8 +70,7 @@
 <meta name="robots" content="index, follow" />
 <meta name="revisit-after" content="7 days" />
 <meta name="author" content="{{ .Site.Params.author }}" />
-{{- $metaDescription := .Description | default .Params.summary | default
-(.Summary | plainify | truncate 160) | default .Site.Params.description -}}
+{{- $metaDescription := (.Description | default .Params.summary | default (.Summary | plainify) | default .Site.Params.description) | truncate 155 -}}
 <meta name="description" content="{{ $metaDescription }}" />
 
 <!-- Open Graph -->

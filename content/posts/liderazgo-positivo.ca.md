@@ -1,8 +1,7 @@
 ---
 title: "Lideratge positiu: una manera de liderar que transforma persones i organitzacions"
 image: images/posts/liderazgo-positivo/banner.png
-summary: |
-  El lideratge està canviant. Avui les organitzacions necessiten líders capaços de generar confiança, compromís i resultats sostenibles. En aquest nou context, el lideratge positiu s'ha convertit en una de les competències més valorades a les empreses i organitzacions.
+summary: "El lideratge està canviant. Avui les organitzacions necessiten líders capaços de generar confiança, compromís i resultats sostenibles."
 image_alt: Lideratge positiu
 date: "2026-01-19T00:00:00"
 tags:

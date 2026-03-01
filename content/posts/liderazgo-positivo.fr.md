@@ -1,8 +1,7 @@
 ---
 title: "Le leadership positif : une manière de diriger qui transforme les personnes et les organisations"
 image: images/posts/liderazgo-positivo/banner.png
-summary: |
-  Le leadership évolue. Aujourd'hui, les organisations ont besoin de leaders capables de générer confiance, engagement et résultats durables. Dans ce nouveau contexte, le leadership positif est devenu l'une des compétences les plus valorisées dans les entreprises et les organisations.
+summary: "Le leadership évolue. Aujourd'hui, les organisations ont besoin de leaders capables de générer confiance, engagement et résultats durables."
 image_alt: Leadership positif
 date: "2026-01-19T00:00:00"
 tags:

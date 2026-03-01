@@ -1,8 +1,7 @@
 ---
 title: "Impostor Syndrome: When You Doubt Yourself Even Though You're Doing Well"
 image: images/posts/sindrome-de-la-impostora/banner.png
-summary: |
-  Have you ever felt you don't deserve your achievements and that, at any moment, someone will discover you're "not that capable"? That feeling has a name: impostor syndrome. It's not a disorder, but a thinking pattern that leads competent people to doubt themselves and attribute their success to luck or external factors.
+summary: 'Have you ever felt you don''t deserve your achievements and that someone will discover you''re "not that capable"? That feeling has a name: impostor syndrome.'
 image_alt: Impostor syndrome
 date: "2026-02-22T00:00:00"
 tags:
